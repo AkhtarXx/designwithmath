@@ -1,0 +1,3510 @@
+{
+  "a roaring bengal tiger face in lush jungle": {
+    "title": "Roar of the Emerald Monsoon",
+    "subtitle": "Coupled Analytical SDF Sculpture & Warped Harmonic Stripe Field for a Bengal Tiger Amid Layered Jungle Foliage",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "atmo",
+        "expr": "fbmT(x*1.6, y*1.6, t)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.05, 0.32, smoothstep(-1.0, 1.0, y)) + 0.05*atmo"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.16, 0.55, smoothstep(-1.0, 1.0, y)) + 0.08*atmo"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.10, 0.30, smoothstep(-1.0, 1.0, y)) + 0.04*atmo"
+      },
+      {
+        "var": "shaft",
+        "expr": "exp(-abs(x - 0.55 - 0.35*sin(t))*4.5) * smoothstep(-0.9, 0.9, y)"
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.10*shaft"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.16*shaft"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.06*shaft"
+      },
+      {
+        "var": "bokeh",
+        "expr": "0.0"
+      },
+      {
+        "loop": {
+          "var": "bokeh",
+          "iter": "s",
+          "start": 1,
+          "end": 18,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "bx",
+              "expr": "-1.45 + 2.9*hash21(s*3.7, 1.3)"
+            },
+            {
+              "var": "by",
+              "expr": "-0.85 + 1.7*hash21(2.1, s*5.9)"
+            },
+            {
+              "var": "br",
+              "expr": "0.03 + 0.05*hash21(s*7.3, 4.4)"
+            },
+            {
+              "var": "pulse",
+              "expr": "0.5 + 0.5*sin(t + s*1.7)"
+            },
+            {
+              "var": "d_b",
+              "expr": "sdCircle(x - bx, y - by, br)"
+            }
+          ],
+          "update": "acc + 0.55*pulse*ee(38.0 * d_b)"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.10*bokeh"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.22*bokeh"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.08*bokeh"
+      },
+      {
+        "var": "head_d",
+        "expr": "sdEllipse(x, y - 0.02, 0.62, 0.52)"
+      },
+      {
+        "var": "cheek_d",
+        "expr": "sdEllipse(sx - 0.52, y + 0.10, 0.30, 0.34)"
+      },
+      {
+        "var": "head_d",
+        "expr": "smin(head_d, cheek_d, 0.12)"
+      },
+      {
+        "var": "ear_d",
+        "expr": "sdCircle(sx - 0.46, y - 0.50, 0.155)"
+      },
+      {
+        "var": "head_d",
+        "expr": "smin(head_d, ear_d, 0.10)"
+      },
+      {
+        "var": "head_mask",
+        "expr": "ee(240.0 * head_d)"
+      },
+      {
+        "var": "ear_inner",
+        "expr": "ee(260.0 * (sdEllipse(sx - 0.46, y - 0.50, 0.085, 0.10) - 0.012))"
+      },
+      {
+        "var": "headR",
+        "expr": "0.86"
+      },
+      {
+        "var": "headG",
+        "expr": "0.48"
+      },
+      {
+        "var": "headB",
+        "expr": "0.13"
+      },
+      {
+        "var": "shade",
+        "expr": "0.62 + 0.38*exp(-2.2*((sx - 0.18)*(sx - 0.18) + (y - 0.30)*(y - 0.30)))"
+      },
+      {
+        "var": "headR",
+        "expr": "headR * shade"
+      },
+      {
+        "var": "headG",
+        "expr": "headG * shade"
+      },
+      {
+        "var": "headB",
+        "expr": "headB * shade"
+      },
+      {
+        "var": "headR",
+        "expr": "mix(headR, 0.95, ear_inner)"
+      },
+      {
+        "var": "headG",
+        "expr": "mix(headG, 0.72, ear_inner)"
+      },
+      {
+        "var": "headB",
+        "expr": "mix(headB, 0.55, ear_inner)"
+      },
+      {
+        "var": "stripe_field",
+        "expr": "abs(sin(13.0*y + 4.0*cos(3.6*sx + 0.5*sin(t)) + 2.2*fbm(sx*3.4, y*3.4)))"
+      },
+      {
+        "var": "stripe_mask",
+        "expr": "ee(230.0 * (stripe_field - 0.30)) * head_mask"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(bgR, headR, head_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(bgG, headG, head_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(bgB, headB, head_mask)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.07, stripe_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.05, stripe_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.04, stripe_mask)"
+      },
+      {
+        "var": "muzzle_d",
+        "expr": "sdEllipse(x, y + 0.16, 0.34, 0.26)"
+      },
+      {
+        "var": "muzzle_mask",
+        "expr": "ee(240.0 * muzzle_d) * head_mask"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.94, muzzle_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.88, muzzle_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.76, muzzle_mask)"
+      },
+      {
+        "var": "eye_d",
+        "expr": "sdEllipse(sx - 0.20, y - 0.30, 0.135, 0.075)"
+      },
+      {
+        "var": "eye_mask",
+        "expr": "ee(260.0 * eye_d)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.03, eye_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.02, eye_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.02, eye_mask)"
+      },
+      {
+        "var": "iris_d",
+        "expr": "sdEllipse(sx - 0.20, y - 0.30, 0.095, 0.058)"
+      },
+      {
+        "var": "iris_mask",
+        "expr": "ee(280.0 * iris_d)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.95, iris_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.68, iris_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.10, iris_mask)"
+      },
+      {
+        "var": "pupil_d",
+        "expr": "sdEllipse(sx - 0.20, y - 0.30, 0.022, 0.052)"
+      },
+      {
+        "var": "pupil_mask",
+        "expr": "ee(300.0 * pupil_d)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.02, pupil_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.01, pupil_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.01, pupil_mask)"
+      },
+      {
+        "var": "catch_d",
+        "expr": "sdCircle(sx - 0.235, y - 0.325, 0.016)"
+      },
+      {
+        "var": "catch_mask",
+        "expr": "ee(320.0 * catch_d)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 1.0, catch_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 1.0, catch_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.95, catch_mask)"
+      },
+      {
+        "var": "brow_d",
+        "expr": "sdSegment(sx, y, 0.08, 0.42, 0.34, 0.385) - 0.022"
+      },
+      {
+        "var": "brow_mask",
+        "expr": "ee(260.0 * brow_d) * head_mask"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.05, brow_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.04, brow_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.03, brow_mask)"
+      },
+      {
+        "var": "nose_d",
+        "expr": "sdTriangle(x, y, -0.085, -0.02, 0.085, -0.02, 0.0, 0.10)"
+      },
+      {
+        "var": "nose_mask",
+        "expr": "ee(280.0 * nose_d)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.72, nose_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.20, nose_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.24, nose_mask)"
+      },
+      {
+        "var": "jaw_d",
+        "expr": "sdEllipse(x, y + 0.34, 0.30, 0.20)"
+      },
+      {
+        "var": "jaw_mask",
+        "expr": "ee(250.0 * jaw_d) * head_mask"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.42, jaw_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.05, jaw_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.06, jaw_mask)"
+      },
+      {
+        "var": "fang_d",
+        "expr": "sdTriangle(sx, y, 0.10, 0.20, 0.20, 0.20, 0.155, 0.02)"
+      },
+      {
+        "var": "fang_mask",
+        "expr": "ee(300.0 * fang_d)"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.98, fang_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.96, fang_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.88, fang_mask)"
+      },
+      {
+        "var": "whiskers",
+        "expr": "0.0"
+      },
+      {
+        "loop": {
+          "var": "whiskers",
+          "iter": "s",
+          "start": 1,
+          "end": 5,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "wy",
+              "expr": "-0.02 - s*0.045"
+            },
+            {
+              "var": "w_d",
+              "expr": "sdSegment(sx, y, 0.16, wy, 0.82, wy - 0.05 - 0.03*sin(t + s)) - 0.006"
+            }
+          ],
+          "update": "max(acc, ee(300.0 * w_d))"
+        }
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.97, whiskers * (1.0 - head_mask))"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.95, whiskers * (1.0 - head_mask))"
+      }
+    ],
+    "H0": "clamp(hR, 0.0, 1.0)",
+    "H1": "clamp(hG, 0.0, 1.0)",
+    "H2": "clamp(hB, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 10.238
+  },
+  "a glowing bioluminescent jellyfish swimming in deep ocean": {
+    "title": "Abyssal Aurora: The Bioluminescent Medusa",
+    "subtitle": "Coupled Analytical SDF Bell, Harmonic Organ Field & Sinusoidal Tentacle Summation H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "bellY",
+        "expr": "0.26 + 0.04 * sin(t)"
+      },
+      {
+        "var": "bellSquash",
+        "expr": "1.0 + 0.06 * sin(t + 1.5)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.005, 0.02, smoothstep(-1.0, 1.0, y))"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.01, 0.06, smoothstep(-1.0, 1.0, y))"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.04, 0.18, smoothstep(-1.0, 1.0, y))"
+      },
+      {
+        "var": "depth",
+        "expr": "fbmT(x * 1.8, y * 1.8, t)"
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.015 * depth"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.03 * depth"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.05 * depth"
+      },
+      {
+        "var": "shaft",
+        "expr": "exp(-abs(x - 0.5 + 0.2 * sin(t)) * 2.2) * smoothstep(-0.2, 0.9, y)"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.05 * shaft"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.08 * shaft"
+      },
+      {
+        "loop": {
+          "var": "bokeh",
+          "iter": "s",
+          "start": 1,
+          "end": 24,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "bx",
+              "expr": "hash21(s * 3.7, 1.3) * 3.2 - 1.6"
+            },
+            {
+              "var": "by",
+              "expr": "hash21(2.1, s * 5.9) * 2.0 - 1.0"
+            },
+            {
+              "var": "br",
+              "expr": "0.012 + 0.02 * hash21(s * 1.7, 7.7)"
+            },
+            {
+              "var": "tw",
+              "expr": "0.5 + 0.5 * sin(t * 2.0 + s * 2.4)"
+            },
+            {
+              "var": "d_s",
+              "expr": "sdCircle(x - bx, y - by, br)"
+            }
+          ],
+          "update": "acc + (0.35 + 0.65 * tw) * ee(40.0 * d_s)"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.05 * bokeh"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.10 * bokeh"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.16 * bokeh"
+      },
+      {
+        "loop": {
+          "var": "caustics",
+          "iter": "s",
+          "start": 1,
+          "end": 12,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ca",
+              "expr": "0.52 * s"
+            },
+            {
+              "var": "w_s",
+              "expr": "sin(x * (3.0 + 0.5 * s) + ca + t + 2.0 * fbmT(x * 2.0, y * 2.0 + ca, t))"
+            },
+            {
+              "var": "d_s",
+              "expr": "abs(y + 0.62 + 0.06 * w_s)"
+            }
+          ],
+          "update": "acc + exp(-d_s * 26.0)"
+        }
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.06 * caustics * smoothstep(-0.3, -1.0, y)"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.09 * caustics * smoothstep(-0.3, -1.0, y)"
+      },
+      {
+        "var": "bellD",
+        "expr": "smax(sdEllipse(x, y - bellY, 0.46 * bellSquash, 0.34 / bellSquash), (bellY - 0.05) - y, 0.05)"
+      },
+      {
+        "var": "bellM",
+        "expr": "ee(240.0 * bellD)"
+      },
+      {
+        "var": "bellShade",
+        "expr": "sqrt(max(0.0, 1.0 - (x * x) / (0.46 * 0.46) - ((y - bellY) * (y - bellY)) / (0.34 * 0.34)))"
+      },
+      {
+        "var": "bellR",
+        "expr": "0.10 + 0.55 * bellShade"
+      },
+      {
+        "var": "bellG",
+        "expr": "0.45 + 0.50 * bellShade"
+      },
+      {
+        "var": "bellB",
+        "expr": "0.55 + 0.42 * bellShade"
+      },
+      {
+        "var": "rimD",
+        "expr": "abs(bellD) - 0.015"
+      },
+      {
+        "var": "rimM",
+        "expr": "ee(300.0 * rimD) * bellM"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.35, rimM)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.95, rimM)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 1.0, rimM)"
+      },
+      {
+        "var": "scallop",
+        "expr": "abs(sin(9.0 * atan2(x, y - bellY + 0.02))) - 0.4"
+      },
+      {
+        "var": "scallopM",
+        "expr": "ee(180.0 * (abs(y - (bellY - 0.05)) - 0.03)) * ee(120.0 * scallop) * bellM"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.9, 0.6 * scallopM)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.4, 0.6 * scallopM)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.95, 0.6 * scallopM)"
+      },
+      {
+        "var": "organD",
+        "expr": "sdEllipse(x, y - bellY - 0.02, 0.16, 0.14)"
+      },
+      {
+        "var": "organM",
+        "expr": "ee(260.0 * organD)"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.95, organM)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.25, organM)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.75, organM)"
+      },
+      {
+        "var": "ribD",
+        "expr": "abs(sdRing(sx, y - bellY, 0.30, 0.008))"
+      },
+      {
+        "var": "ribM",
+        "expr": "ee(220.0 * (ribD - 0.006)) * bellM * step(y, bellY)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.9, 0.5 * ribM)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.95, 0.5 * ribM)"
+      },
+      {
+        "var": "specD",
+        "expr": "sdEllipse(x + 0.16, y - bellY - 0.12, 0.07, 0.045)"
+      },
+      {
+        "var": "specM",
+        "expr": "ee(320.0 * specD)"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 1.0, specM)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 1.0, specM)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 1.0, specM)"
+      },
+      {
+        "var": "r_final",
+        "expr": "mix(bgR, bellR, bellM)"
+      },
+      {
+        "var": "g_final",
+        "expr": "mix(bgG, bellG, bellM)"
+      },
+      {
+        "var": "b_final",
+        "expr": "mix(bgB, bellB, bellM)"
+      },
+      {
+        "loop": {
+          "var": "tentacles",
+          "iter": "s",
+          "start": 1,
+          "end": 16,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ax",
+              "expr": "-0.42 + 0.056 * s + 0.03 * sin(t + s)"
+            },
+            {
+              "var": "tx",
+              "expr": "x + 0.055 * sin(7.0 * y + t + s * 0.9)"
+            },
+            {
+              "var": "d_s",
+              "expr": "sdCapsule(tx, y, ax, bellY - 0.05, ax + 0.04 * sin(t + s * 1.3), bellY - 0.95, 0.011)"
+            }
+          ],
+          "update": "acc + ee(200.0 * d_s)"
+        }
+      },
+      {
+        "var": "tenCol",
+        "expr": "0.5 + 0.5 * sin(3.0 * y + t)"
+      },
+      {
+        "var": "r_final",
+        "expr": "mix(r_final, 0.55 + 0.35 * tenCol, tentacles * 0.85)"
+      },
+      {
+        "var": "g_final",
+        "expr": "mix(g_final, 0.9, tentacles * 0.85)"
+      },
+      {
+        "var": "b_final",
+        "expr": "mix(b_final, 0.95, tentacles * 0.85)"
+      },
+      {
+        "loop": {
+          "var": "bubbles",
+          "iter": "s",
+          "start": 1,
+          "end": 10,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ph",
+              "expr": "fract(0.11 * s + 0.16 * t)"
+            },
+            {
+              "var": "bux",
+              "expr": "-0.9 + 0.2 * s + 0.06 * sin(t * 2.0 + s * 2.0)"
+            },
+            {
+              "var": "buy",
+              "expr": "-1.0 + 2.0 * ph"
+            },
+            {
+              "var": "bur",
+              "expr": "0.012 + 0.008 * hash21(s * 4.3, 9.1)"
+            },
+            {
+              "var": "d_s",
+              "expr": "sdCircle(x - bux, y - buy, bur)"
+            }
+          ],
+          "update": "acc + ee(260.0 * d_s)"
+        }
+      },
+      {
+        "var": "r_final",
+        "expr": "mix(r_final, 0.8, bubbles * 0.6)"
+      },
+      {
+        "var": "g_final",
+        "expr": "mix(g_final, 0.95, bubbles * 0.6)"
+      },
+      {
+        "var": "b_final",
+        "expr": "mix(b_final, 1.0, bubbles * 0.6)"
+      },
+      {
+        "var": "glow",
+        "expr": "exp(-2.2 * sqrt(x * x + (y - bellY) * (y - bellY)))"
+      },
+      {
+        "var": "r_final",
+        "expr": "r_final + 0.10 * glow"
+      },
+      {
+        "var": "g_final",
+        "expr": "g_final + 0.22 * glow"
+      },
+      {
+        "var": "b_final",
+        "expr": "b_final + 0.30 * glow"
+      }
+    ],
+    "H0": "clamp(r_final, 0.0, 1.0)",
+    "H1": "clamp(g_final, 0.0, 1.0)",
+    "H2": "clamp(b_final, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 6.5,
+    "motion_energy": 14.397
+  },
+  "a crystal lighthouse on a rocky cliff under dancing northern lights aurora": {
+    "title": "Crystal Lighthouse on Jagged Cliff Beneath Dancing Auroral Curtains",
+    "subtitle": "Analytical SDF Sculpture with Harmonic Auroral Summation Field H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "skyTop",
+        "expr": "smoothstep(-1.0, 1.0, y)"
+      },
+      {
+        "var": "skyR",
+        "expr": "mix(0.02, 0.06, skyTop)"
+      },
+      {
+        "var": "skyG",
+        "expr": "mix(0.03, 0.10, skyTop)"
+      },
+      {
+        "var": "skyB",
+        "expr": "mix(0.10, 0.28, skyTop)"
+      },
+      {
+        "var": "neb",
+        "expr": "0.5 + 0.5 * fbmT(x * 1.8, y * 1.8, t)"
+      },
+      {
+        "var": "skyR",
+        "expr": "skyR + 0.04 * neb"
+      },
+      {
+        "var": "skyG",
+        "expr": "skyG + 0.06 * neb"
+      },
+      {
+        "var": "skyB",
+        "expr": "skyB + 0.12 * neb"
+      },
+      {
+        "loop": {
+          "var": "star_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 40,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "sx_star",
+              "expr": "hash21(s * 3.7, 1.3) * 3.2 - 1.6"
+            },
+            {
+              "var": "sy_star",
+              "expr": "hash21(s * 5.1, 2.9) * 1.8 - 0.9"
+            },
+            {
+              "var": "sr",
+              "expr": "0.004 + 0.006 * hash21(s * 7.3, 4.1)"
+            },
+            {
+              "var": "tw",
+              "expr": "0.5 + 0.5 * sin(t * 2.0 + s * 1.7)"
+            },
+            {
+              "var": "d_star",
+              "expr": "sdCircle(x - sx_star, y - sy_star, sr)"
+            }
+          ],
+          "update": "max(acc, ee(260.0 * d_star) * tw)"
+        }
+      },
+      {
+        "var": "skyR",
+        "expr": "skyR + 0.85 * star_mask"
+      },
+      {
+        "var": "skyG",
+        "expr": "skyG + 0.90 * star_mask"
+      },
+      {
+        "var": "skyB",
+        "expr": "skyB + 1.00 * star_mask"
+      },
+      {
+        "loop": {
+          "var": "aurora_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 18,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ay",
+              "expr": "0.48 + 0.14 * s * 0.18 + 0.12 * sin(2.4 * x + t + s * 0.8) + 0.07 * fbmT(x * 2.2, y * 1.5, t)"
+            },
+            {
+              "var": "ribbon",
+              "expr": "exp(-abs(y - ay) * 11.0)"
+            },
+            {
+              "var": "hue",
+              "expr": "0.5 + 0.5 * sin(s * 1.3 + t * 0.7)"
+            },
+            {
+              "var": "colR",
+              "expr": "mix(0.10, 0.55, hue)"
+            },
+            {
+              "var": "colG",
+              "expr": "mix(0.85, 0.95, hue)"
+            },
+            {
+              "var": "colB",
+              "expr": "mix(0.55, 0.25, hue)"
+            }
+          ],
+          "update": "max(acc, ribbon * colR)"
+        }
+      },
+      {
+        "loop": {
+          "var": "aurora_g",
+          "iter": "s",
+          "start": 1,
+          "end": 18,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ay2",
+              "expr": "0.48 + 0.14 * s * 0.18 + 0.12 * sin(2.4 * x + t + s * 0.8) + 0.07 * fbmT(x * 2.2, y * 1.5, t)"
+            },
+            {
+              "var": "ribbon2",
+              "expr": "exp(-abs(y - ay2) * 11.0)"
+            },
+            {
+              "var": "hue2",
+              "expr": "0.5 + 0.5 * sin(s * 1.3 + t * 0.7)"
+            },
+            {
+              "var": "colG2",
+              "expr": "mix(0.85, 0.95, hue2)"
+            }
+          ],
+          "update": "max(acc, ribbon2 * colG2)"
+        }
+      },
+      {
+        "loop": {
+          "var": "aurora_b",
+          "iter": "s",
+          "start": 1,
+          "end": 18,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ay3",
+              "expr": "0.48 + 0.14 * s * 0.18 + 0.12 * sin(2.4 * x + t + s * 0.8) + 0.07 * fbmT(x * 2.2, y * 1.5, t)"
+            },
+            {
+              "var": "ribbon3",
+              "expr": "exp(-abs(y - ay3) * 11.0)"
+            },
+            {
+              "var": "hue3",
+              "expr": "0.5 + 0.5 * sin(s * 1.3 + t * 0.7)"
+            },
+            {
+              "var": "colB3",
+              "expr": "mix(0.55, 0.25, hue3)"
+            }
+          ],
+          "update": "max(acc, ribbon3 * colB3)"
+        }
+      },
+      {
+        "var": "skyR",
+        "expr": "skyR + 0.55 * aurora_mask"
+      },
+      {
+        "var": "skyG",
+        "expr": "skyG + 0.65 * aurora_g"
+      },
+      {
+        "var": "skyB",
+        "expr": "skyB + 0.45 * aurora_b"
+      },
+      {
+        "var": "seaY",
+        "expr": "-0.42 + 0.02 * sin(t)"
+      },
+      {
+        "var": "seaM",
+        "expr": "smoothstep(seaY + 0.05, seaY - 0.05, y)"
+      },
+      {
+        "var": "wave",
+        "expr": "0.5 + 0.5 * sin(18.0 * x + 3.0 * t + 2.0 * fbm(x * 4.0, y * 4.0))"
+      },
+      {
+        "var": "seaR",
+        "expr": "mix(0.02, 0.08, wave)"
+      },
+      {
+        "var": "seaG",
+        "expr": "mix(0.05, 0.15, wave)"
+      },
+      {
+        "var": "seaB",
+        "expr": "mix(0.12, 0.30, wave)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(skyR, seaR, seaM)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(skyG, seaG, seaM)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(skyB, seaB, seaM)"
+      },
+      {
+        "var": "cliffY",
+        "expr": "-0.42 + 0.26 * exp(-2.8 * x * x) + 0.07 * sin(9.0 * x) + 0.04 * fbm(x * 3.0, y * 3.0)"
+      },
+      {
+        "var": "cliff_d",
+        "expr": "y - cliffY"
+      },
+      {
+        "var": "cliff_mask",
+        "expr": "ee(220.0 * cliff_d)"
+      },
+      {
+        "var": "cliff_shade",
+        "expr": "0.5 + 0.5 * fbm(x * 6.0, y * 6.0)"
+      },
+      {
+        "var": "cliffR",
+        "expr": "mix(0.15, 0.35, cliff_shade)"
+      },
+      {
+        "var": "cliffG",
+        "expr": "mix(0.15, 0.35, cliff_shade)"
+      },
+      {
+        "var": "cliffB",
+        "expr": "mix(0.18, 0.40, cliff_shade)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, cliffR, cliff_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, cliffG, cliff_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, cliffB, cliff_mask)"
+      },
+      {
+        "var": "towerX",
+        "expr": "0.0"
+      },
+      {
+        "var": "towerY",
+        "expr": "-0.10"
+      },
+      {
+        "var": "towerW",
+        "expr": "0.12"
+      },
+      {
+        "var": "towerH",
+        "expr": "0.55"
+      },
+      {
+        "var": "tower_d",
+        "expr": "sdBox(x - towerX, y - towerY, towerW, towerH)"
+      },
+      {
+        "var": "tower_mask",
+        "expr": "ee(260.0 * tower_d)"
+      },
+      {
+        "var": "tower_shade",
+        "expr": "0.5 + 0.5 * sin(10.0 * y + 2.0 * t)"
+      },
+      {
+        "var": "towerR",
+        "expr": "mix(0.70, 0.90, tower_shade)"
+      },
+      {
+        "var": "towerG",
+        "expr": "mix(0.70, 0.90, tower_shade)"
+      },
+      {
+        "var": "towerB",
+        "expr": "mix(0.75, 0.95, tower_shade)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, towerR, tower_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, towerG, tower_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, towerB, tower_mask)"
+      },
+      {
+        "var": "lantern_d",
+        "expr": "sdCircle(x - towerX, y - (towerY + towerH + 0.08), 0.10)"
+      },
+      {
+        "var": "lantern_mask",
+        "expr": "ee(280.0 * lantern_d)"
+      },
+      {
+        "var": "lantern_glow",
+        "expr": "exp(-abs(lantern_d) * 8.0)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 1.0, lantern_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.95, lantern_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.60, lantern_mask)"
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.30 * lantern_glow"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.25 * lantern_glow"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.10 * lantern_glow"
+      },
+      {
+        "var": "beam_ang",
+        "expr": "0.3 * sin(t)"
+      },
+      {
+        "var": "beam_x",
+        "expr": "rotX(x - towerX, y - (towerY + towerH + 0.08), beam_ang)"
+      },
+      {
+        "var": "beam_y",
+        "expr": "rotY(x - towerX, y - (towerY + towerH + 0.08), beam_ang)"
+      },
+      {
+        "var": "beam_d",
+        "expr": "sdTriangle(beam_x, beam_y, 0.0, 0.0, 0.8, 0.3, 0.8, -0.3)"
+      },
+      {
+        "var": "beam_mask",
+        "expr": "ee(180.0 * beam_d) * (0.5 + 0.5 * sin(t * 2.0))"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 1.0, beam_mask * 0.6)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.9, beam_mask * 0.6)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.5, beam_mask * 0.6)"
+      }
+    ],
+    "H0": "clamp(bgR, 0.0, 1.0)",
+    "H1": "clamp(bgG, 0.0, 1.0)",
+    "H2": "clamp(bgB, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 6.5,
+    "motion_energy": 8.57
+  },
+  "an astronaut floating beside saturn golden rings in cosmic space": {
+    "title": "Orbital Reverie: The Golden Ring",
+    "subtitle": "Coupled Analytical SDF Astronaut & Saturnian Ring Field H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "bgR",
+        "expr": "0.02 + 0.06 * smoothstep(-1.0, 1.0, y) + 0.03 * fbmT(x * 2.0, y * 2.0, t)"
+      },
+      {
+        "var": "bgG",
+        "expr": "0.01 + 0.04 * smoothstep(-1.0, 1.0, y) + 0.02 * fbmT(x * 2.0 + 1.0, y * 2.0, t)"
+      },
+      {
+        "var": "bgB",
+        "expr": "0.08 + 0.12 * smoothstep(-1.0, 1.0, y) + 0.04 * fbmT(x * 2.0 + 2.0, y * 2.0, t)"
+      },
+      {
+        "loop": {
+          "var": "star_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 40,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "sx_star",
+              "expr": "hash21(s * 1.7, 2.3) * 3.2 - 1.6"
+            },
+            {
+              "var": "sy_star",
+              "expr": "hash21(s * 2.9, 4.1) * 2.0 - 1.0"
+            },
+            {
+              "var": "sr",
+              "expr": "0.002 + 0.004 * hash21(s * 3.1, 5.7)"
+            },
+            {
+              "var": "tw",
+              "expr": "0.6 + 0.4 * sin(t * 2.0 + s * 1.3)"
+            },
+            {
+              "var": "d_star",
+              "expr": "sdCircle(x - sx_star, y - sy_star, sr)"
+            }
+          ],
+          "update": "max(acc, tw * ee(300.0 * d_star))"
+        }
+      },
+      {
+        "var": "bgR2",
+        "expr": "mix(bgR, 1.0, clamp(star_mask, 0.0, 1.0) * 0.9)"
+      },
+      {
+        "var": "bgG2",
+        "expr": "mix(bgG, 1.0, clamp(star_mask, 0.0, 1.0) * 0.9)"
+      },
+      {
+        "var": "bgB2",
+        "expr": "mix(bgB, 1.0, clamp(star_mask, 0.0, 1.0) * 0.9)"
+      },
+      {
+        "var": "sat_cx",
+        "expr": "0.65"
+      },
+      {
+        "var": "sat_cy",
+        "expr": "0.35"
+      },
+      {
+        "var": "sat_r",
+        "expr": "0.35"
+      },
+      {
+        "var": "d_sat",
+        "expr": "sdCircle(x - sat_cx, y - sat_cy, sat_r)"
+      },
+      {
+        "var": "sat_mask",
+        "expr": "ee(220.0 * d_sat)"
+      },
+      {
+        "var": "sat_shade",
+        "expr": "0.7 + 0.3 * clamp((x - sat_cx) / sat_r, -1.0, 1.0)"
+      },
+      {
+        "var": "band1",
+        "expr": "ee(180.0 * (abs(sin(12.0 * (y - sat_cy) + 2.0 * cos(3.0 * (x - sat_cx)))) - 0.3))"
+      },
+      {
+        "var": "band2",
+        "expr": "ee(180.0 * (abs(sin(8.0 * (y - sat_cy) + 1.5 * sin(4.0 * (x - sat_cx)))) - 0.4))"
+      },
+      {
+        "var": "sat_colR",
+        "expr": "mix(0.85, 0.95, band1) * sat_shade"
+      },
+      {
+        "var": "sat_colG",
+        "expr": "mix(0.65, 0.75, band2) * sat_shade"
+      },
+      {
+        "var": "sat_colB",
+        "expr": "mix(0.35, 0.45, band1) * sat_shade"
+      },
+      {
+        "var": "ring_ang",
+        "expr": "0.4"
+      },
+      {
+        "var": "ring_cx",
+        "expr": "sat_cx"
+      },
+      {
+        "var": "ring_cy",
+        "expr": "sat_cy"
+      },
+      {
+        "var": "rx",
+        "expr": "x - ring_cx"
+      },
+      {
+        "var": "ry",
+        "expr": "y - ring_cy"
+      },
+      {
+        "var": "rot_x",
+        "expr": "rx * cos(ring_ang) - ry * sin(ring_ang)"
+      },
+      {
+        "var": "rot_y",
+        "expr": "rx * sin(ring_ang) + ry * cos(ring_ang)"
+      },
+      {
+        "var": "ring_rad",
+        "expr": "sqrt(rot_x * rot_x + (rot_y * 2.5) * (rot_y * 2.5))"
+      },
+      {
+        "var": "ring_d",
+        "expr": "abs(ring_rad - 0.55) - 0.08"
+      },
+      {
+        "var": "cassini",
+        "expr": "ee(260.0 * (abs(ring_rad - 0.55) - 0.015))"
+      },
+      {
+        "var": "ring_mask",
+        "expr": "ee(200.0 * ring_d) * (1.0 - cassini)"
+      },
+      {
+        "var": "ring_band",
+        "expr": "0.5 + 0.5 * sin(20.0 * ring_rad)"
+      },
+      {
+        "var": "ring_colR",
+        "expr": "mix(0.9, 1.0, ring_band)"
+      },
+      {
+        "var": "ring_colG",
+        "expr": "mix(0.7, 0.9, ring_band)"
+      },
+      {
+        "var": "ring_colB",
+        "expr": "mix(0.3, 0.5, ring_band)"
+      },
+      {
+        "var": "ring_front",
+        "expr": "step(0.0, rot_y)"
+      },
+      {
+        "var": "ring_back",
+        "expr": "step(rot_y, 0.0)"
+      },
+      {
+        "var": "ring_mask_front",
+        "expr": "ring_mask * ring_front"
+      },
+      {
+        "var": "ring_mask_back",
+        "expr": "ring_mask * ring_back"
+      },
+      {
+        "var": "colR1",
+        "expr": "mix(bgR2, ring_colR, ring_mask_back)"
+      },
+      {
+        "var": "colG1",
+        "expr": "mix(bgG2, ring_colG, ring_mask_back)"
+      },
+      {
+        "var": "colB1",
+        "expr": "mix(bgB2, ring_colB, ring_mask_back)"
+      },
+      {
+        "var": "ring_shadow",
+        "expr": "ring_mask_back * sat_mask * 0.45"
+      },
+      {
+        "var": "colR2",
+        "expr": "mix(colR1, sat_colR * (1.0 - ring_shadow), sat_mask)"
+      },
+      {
+        "var": "colG2",
+        "expr": "mix(colG1, sat_colG * (1.0 - ring_shadow), sat_mask)"
+      },
+      {
+        "var": "colB2",
+        "expr": "mix(colB1, sat_colB * (1.0 - ring_shadow), sat_mask)"
+      },
+      {
+        "var": "colR3",
+        "expr": "mix(colR2, ring_colR, ring_mask_front)"
+      },
+      {
+        "var": "colG3",
+        "expr": "mix(colG2, ring_colG, ring_mask_front)"
+      },
+      {
+        "var": "colB3",
+        "expr": "mix(colB2, ring_colB, ring_mask_front)"
+      },
+      {
+        "var": "ast_cx",
+        "expr": "-0.6 + 0.05 * sin(t)"
+      },
+      {
+        "var": "ast_cy",
+        "expr": "-0.2 + 0.05 * cos(t)"
+      },
+      {
+        "var": "ast_rot",
+        "expr": "0.2 * sin(t)"
+      },
+      {
+        "var": "ast_x",
+        "expr": "(x - ast_cx) * cos(ast_rot) - (y - ast_cy) * sin(ast_rot)"
+      },
+      {
+        "var": "ast_y",
+        "expr": "(x - ast_cx) * sin(ast_rot) + (y - ast_cy) * cos(ast_rot)"
+      },
+      {
+        "var": "d_tether",
+        "expr": "sdSegment(ast_x, ast_y, 0.0, -0.15, -0.5, -0.6) - 0.008"
+      },
+      {
+        "var": "tether_mask",
+        "expr": "ee(240.0 * d_tether)"
+      },
+      {
+        "var": "colR3b",
+        "expr": "mix(colR3, 0.75, tether_mask)"
+      },
+      {
+        "var": "colG3b",
+        "expr": "mix(colG3, 0.75, tether_mask)"
+      },
+      {
+        "var": "colB3b",
+        "expr": "mix(colB3, 0.78, tether_mask)"
+      },
+      {
+        "var": "d_helmet",
+        "expr": "sdCircle(ast_x, ast_y - 0.15, 0.12)"
+      },
+      {
+        "var": "d_visor",
+        "expr": "sdEllipse(ast_x, ast_y - 0.15, 0.09, 0.07)"
+      },
+      {
+        "var": "d_torso",
+        "expr": "sdBox(ast_x, ast_y + 0.05, 0.1, 0.15)"
+      },
+      {
+        "var": "d_backpack",
+        "expr": "sdBox(ast_x + 0.13, ast_y + 0.05, 0.04, 0.1)"
+      },
+      {
+        "var": "d_armL",
+        "expr": "sdCapsule(ast_x, ast_y, -0.1, 0.0, -0.2, -0.1, 0.03)"
+      },
+      {
+        "var": "d_armR",
+        "expr": "sdCapsule(ast_x, ast_y, 0.1, 0.0, 0.2, -0.1, 0.03)"
+      },
+      {
+        "var": "d_legL",
+        "expr": "sdCapsule(ast_x, ast_y, -0.05, -0.1, -0.1, -0.3, 0.04)"
+      },
+      {
+        "var": "d_legR",
+        "expr": "sdCapsule(ast_x, ast_y, 0.05, -0.1, 0.1, -0.3, 0.04)"
+      },
+      {
+        "var": "d_ast",
+        "expr": "min(min(min(min(d_helmet, d_torso), min(d_armL, d_armR)), min(d_legL, d_legR)), d_backpack)"
+      },
+      {
+        "var": "ast_mask",
+        "expr": "ee(220.0 * d_ast)"
+      },
+      {
+        "var": "visor_mask",
+        "expr": "ee(220.0 * d_visor)"
+      },
+      {
+        "var": "ast_colR",
+        "expr": "mix(0.9, 0.95, visor_mask)"
+      },
+      {
+        "var": "ast_colG",
+        "expr": "mix(0.9, 0.8, visor_mask)"
+      },
+      {
+        "var": "ast_colB",
+        "expr": "mix(0.9, 0.2, visor_mask)"
+      },
+      {
+        "var": "colR4",
+        "expr": "mix(colR3b, ast_colR, ast_mask)"
+      },
+      {
+        "var": "colG4",
+        "expr": "mix(colG3b, ast_colG, ast_mask)"
+      },
+      {
+        "var": "colB4",
+        "expr": "mix(colB3b, ast_colB, ast_mask)"
+      },
+      {
+        "var": "spec",
+        "expr": "ee(300.0 * sdCircle(ast_x + 0.05, ast_y - 0.2, 0.02))"
+      },
+      {
+        "var": "colR5",
+        "expr": "mix(colR4, 1.0, spec)"
+      },
+      {
+        "var": "colG5",
+        "expr": "mix(colG4, 1.0, spec)"
+      },
+      {
+        "var": "colB5",
+        "expr": "mix(colB4, 1.0, spec)"
+      }
+    ],
+    "H0": "clamp(colR5, 0.0, 1.0)",
+    "H1": "clamp(colG5, 0.0, 1.0)",
+    "H2": "clamp(colB5, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 4.753
+  },
+  "a glowing jellyfish in the deep ocean": {
+    "title": "Abyssal Lantern: Bioluminescent Crown",
+    "subtitle": "Coupled Analytical SDF Bell, Harmonic Tentacle Summation Field & Volumetric Caustic Depth H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "bellY",
+        "expr": "0.28 + 0.045*sin(t)"
+      },
+      {
+        "var": "bellSquash",
+        "expr": "0.48 + 0.05*cos(t)"
+      },
+      {
+        "var": "depth",
+        "expr": "clamp(0.5 - 0.5*y, 0.0, 1.0)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.005, 0.035, depth) + 0.015*fbmT(x*1.6, y*1.6, t)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.015, 0.10, depth) + 0.025*fbmT(x*1.9 + 3.1, y*1.7, t)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.045, 0.22, depth) + 0.035*fbmT(x*1.4 + 7.7, y*1.8, t)"
+      },
+      {
+        "var": "caustic",
+        "expr": "pow(max(0.0, sin(3.0*x + 2.0*sin(t + y*4.0)) * sin(2.6*y + 1.5*cos(t*2.0 + x*3.0))), 4.0)"
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.015*caustic"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.04*caustic"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.08*caustic"
+      },
+      {
+        "loop": {
+          "var": "star_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 28,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "hx",
+              "expr": "hash21(s*3.71, 1.31) * 3.2 - 1.6"
+            },
+            {
+              "var": "hy",
+              "expr": "hash21(s*1.97, 5.83) * 1.4 - 0.2"
+            },
+            {
+              "var": "tw",
+              "expr": "0.5 + 0.5*sin(t*2.0 + s*2.4)"
+            },
+            {
+              "var": "d_s",
+              "expr": "sdCircle(x - hx, y - hy, 0.006 + 0.004*tw)"
+            }
+          ],
+          "update": "acc + ee(180.0 * d_s) * tw"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.30*star_mask"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.40*star_mask"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.50*star_mask"
+      },
+      {
+        "var": "shaft",
+        "expr": "exp(-abs(x - 0.5*sin(t*0.5)) * 2.2) * exp(-abs(y - 0.55) * 1.6) * 0.5"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.04*shaft"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.08*shaft"
+      },
+      {
+        "loop": {
+          "var": "bubbles",
+          "iter": "s",
+          "start": 1,
+          "end": 14,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "bx",
+              "expr": "0.9*cos(s*2.4 + t*0.3) + 0.15*sin(t + s*3.0)"
+            },
+            {
+              "var": "by",
+              "expr": "fract(s*0.37 + t*0.06) * 2.0 - 1.0"
+            },
+            {
+              "var": "d_s",
+              "expr": "sdCircle(x - bx, y - by, 0.012 + 0.004*hash21(s*7.1, 2.2))"
+            }
+          ],
+          "update": "max(acc, ee(240.0 * d_s))"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.08*bubbles"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.18*bubbles"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.28*bubbles"
+      },
+      {
+        "loop": {
+          "var": "tentacles",
+          "iter": "s",
+          "start": 1,
+          "end": 18,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ax",
+              "expr": "0.42 * cos(s*0.3927 + 0.3*sin(t))"
+            },
+            {
+              "var": "tx",
+              "expr": "x + 0.06*sin(6.0*y + t + s*0.9) + 0.03*sin(11.0*y - t*2.0 + s)"
+            },
+            {
+              "var": "d_s",
+              "expr": "sdCapsule(tx, y, ax, bellY - 0.05, ax*0.55, bellY - 1.05, 0.011 + 0.004*sin(s))"
+            },
+            {
+              "var": "glow_s",
+              "expr": "ee(200.0 * d_s) * (0.55 + 0.45*sin(4.0*y + t*2.0 + s*1.3))"
+            }
+          ],
+          "update": "max(acc, glow_s)"
+        }
+      },
+      {
+        "var": "tenR",
+        "expr": "0.35 + 0.55*tentacles"
+      },
+      {
+        "var": "tenG",
+        "expr": "0.85 * tentacles + 0.05"
+      },
+      {
+        "var": "tenB",
+        "expr": "0.95 * tentacles + 0.05"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, tenR, clamp(tentacles*1.4, 0.0, 1.0))"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, tenG, clamp(tentacles*1.4, 0.0, 1.0))"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, tenB, clamp(tentacles*1.4, 0.0, 1.0))"
+      },
+      {
+        "var": "bellD",
+        "expr": "smax(sdEllipse(x, y - bellY, bellSquash, 0.34), (bellY - 0.05) - y, 0.05)"
+      },
+      {
+        "var": "bell",
+        "expr": "ee(260.0 * bellD)"
+      },
+      {
+        "var": "rimD",
+        "expr": "sdEllipse(x, y - bellY, bellSquash + 0.02, 0.36)"
+      },
+      {
+        "var": "rimGlow",
+        "expr": "ee(60.0 * rimD) * (1.0 - bell)"
+      },
+      {
+        "var": "ruffle",
+        "expr": "ee(220.0 * (abs(sin(9.0*atan2(x, y - bellY + 0.05) + 0.4*sin(t))) - 0.30)) * bell * exp(-abs(y - (bellY - 0.04)) * 14.0)"
+      },
+      {
+        "var": "bellShade",
+        "expr": "sqrt(max(0.0, 1.0 - (x*x)/(bellSquash*bellSquash) - ((y - bellY)*(y - bellY))/0.1156))"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(0.35, 0.95, bellShade) + 0.25*rimGlow"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(0.18, 0.85, bellShade) + 0.45*rimGlow"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(0.45, 1.0, bellShade) + 0.55*rimGlow"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.95, ruffle)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.45, ruffle)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.80, ruffle)"
+      },
+      {
+        "var": "organD",
+        "expr": "smin(sdEllipse(sx - 0.13, y - bellY + 0.02, 0.09, 0.16), sdEllipse(sx - 0.30, y - bellY - 0.02, 0.05, 0.11), 0.06)"
+      },
+      {
+        "var": "organ",
+        "expr": "ee(240.0 * organD) * bell"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.95 + 0.3*sin(3.0*t), organ)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.25, organ)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.85, organ)"
+      },
+      {
+        "var": "ribD",
+        "expr": "abs(sdEllipse(x, y - bellY, bellSquash*0.82, 0.30)) - 0.008"
+      },
+      {
+        "var": "rib",
+        "expr": "ee(200.0 * ribD) * bell * step(y, bellY - 0.02)"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.20, rib)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.55, rib)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.90, rib)"
+      },
+      {
+        "var": "specD",
+        "expr": "sdEllipse(x + 0.16, y - bellY - 0.14, 0.10, 0.05)"
+      },
+      {
+        "var": "spec",
+        "expr": "ee(180.0 * specD) * bell"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 1.0, spec)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 1.0, spec)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 1.0, spec)"
+      },
+      {
+        "var": "occlD",
+        "expr": "sdEllipse(x, y - bellY, bellSquash + 0.035, 0.375)"
+      },
+      {
+        "var": "occl",
+        "expr": "ee(300.0 * occlD) - ee(300.0 * (occlD - 0.02))"
+      },
+      {
+        "var": "bellR",
+        "expr": "mix(bellR, 0.02, occl)"
+      },
+      {
+        "var": "bellG",
+        "expr": "mix(bellG, 0.05, occl)"
+      },
+      {
+        "var": "bellB",
+        "expr": "mix(bellB, 0.12, occl)"
+      },
+      {
+        "var": "halo",
+        "expr": "exp(-abs(sdEllipse(x, y - bellY, bellSquash, 0.34)) * 9.0) * 0.6"
+      },
+      {
+        "var": "bgR",
+        "expr": "bgR + 0.20*halo*(1.0 - bell)"
+      },
+      {
+        "var": "bgG",
+        "expr": "bgG + 0.35*halo*(1.0 - bell)"
+      },
+      {
+        "var": "bgB",
+        "expr": "bgB + 0.50*halo*(1.0 - bell)"
+      },
+      {
+        "var": "r_final",
+        "expr": "mix(bgR, bellR, bell)"
+      },
+      {
+        "var": "g_final",
+        "expr": "mix(bgG, bellG, bell)"
+      },
+      {
+        "var": "b_final",
+        "expr": "mix(bgB, bellB, bell)"
+      }
+    ],
+    "H0": "clamp(r_final, 0.0, 1.0)",
+    "H1": "clamp(g_final, 0.0, 1.0)",
+    "H2": "clamp(b_final, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 6.5,
+    "motion_energy": 10.421
+  },
+  "an astronaut floating near saturn rings in space": {
+    "title": "Orbital Reverie: The Ringed Giant and the Spacewalker",
+    "subtitle": "Analytical SDF Sculpture of a Detailed Astronaut, Oblate Banded Saturn, and Depth-Split Ring System with Periodic Stellar and Nebular Fields",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "bgR",
+        "expr": "0.02 + 0.06 * smoothstep(-1.0, 1.0, y) + 0.03 * fbmT(x * 2.0, y * 2.0, t)"
+      },
+      {
+        "var": "bgG",
+        "expr": "0.01 + 0.04 * smoothstep(-1.0, 1.0, y) + 0.02 * fbmT(x * 2.5 + 1.0, y * 2.5, t)"
+      },
+      {
+        "var": "bgB",
+        "expr": "0.08 + 0.12 * smoothstep(-1.0, 1.0, y) + 0.04 * fbmT(x * 3.0 + 2.0, y * 3.0, t)"
+      },
+      {
+        "loop": {
+          "var": "star",
+          "iter": "s",
+          "start": 1,
+          "end": 40,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "h1",
+              "expr": "hash21(s * 1.37, s * 2.71)"
+            },
+            {
+              "var": "h2",
+              "expr": "hash21(s * 3.14, s * 0.59)"
+            },
+            {
+              "var": "sx_pos",
+              "expr": "-1.5 + 3.0 * h1"
+            },
+            {
+              "var": "sy_pos",
+              "expr": "-0.9 + 1.8 * h2"
+            },
+            {
+              "var": "tw",
+              "expr": "0.5 + 0.5 * sin(t * 2.0 + s * 1.7)"
+            },
+            {
+              "var": "d_star",
+              "expr": "sdCircle(x - sx_pos, y - sy_pos, 0.004 + 0.003 * tw)"
+            }
+          ],
+          "update": "max(acc, ee(300.0 * d_star) * tw)"
+        }
+      },
+      {
+        "var": "star_mask",
+        "expr": "clamp(star, 0.0, 1.0)"
+      },
+      {
+        "var": "bgR2",
+        "expr": "mix(bgR, 0.95, star_mask)"
+      },
+      {
+        "var": "bgG2",
+        "expr": "mix(bgG, 0.92, star_mask)"
+      },
+      {
+        "var": "bgB2",
+        "expr": "mix(bgB, 1.0, star_mask)"
+      },
+      {
+        "var": "neb",
+        "expr": "0.5 + 0.5 * fbmT(x * 1.8 + 0.5, y * 1.8 - 0.3, t)"
+      },
+      {
+        "var": "bgR3",
+        "expr": "mix(bgR2, 0.35, 0.15 * neb * smoothstep(-0.5, 0.8, y))"
+      },
+      {
+        "var": "bgG3",
+        "expr": "mix(bgG2, 0.08, 0.12 * neb * smoothstep(-0.5, 0.8, y))"
+      },
+      {
+        "var": "bgB3",
+        "expr": "mix(bgB2, 0.45, 0.18 * neb * smoothstep(-0.5, 0.8, y))"
+      },
+      {
+        "var": "planet_cx",
+        "expr": "0.55"
+      },
+      {
+        "var": "planet_cy",
+        "expr": "0.15"
+      },
+      {
+        "var": "planet_rx",
+        "expr": "0.42"
+      },
+      {
+        "var": "planet_ry",
+        "expr": "0.38"
+      },
+      {
+        "var": "d_planet",
+        "expr": "sdEllipse(x - planet_cx, y - planet_cy, planet_rx, planet_ry)"
+      },
+      {
+        "var": "planet_mask",
+        "expr": "ee(220.0 * d_planet)"
+      },
+      {
+        "var": "planet_shade",
+        "expr": "clamp(0.5 + 0.5 * (x - planet_cx) / planet_rx, 0.0, 1.0)"
+      },
+      {
+        "var": "band",
+        "expr": "0.5 + 0.5 * sin(18.0 * (y - planet_cy) + 2.0 * fbm(x * 4.0, y * 4.0))"
+      },
+      {
+        "var": "planet_colR",
+        "expr": "mix(0.85, 0.55, band) * (0.6 + 0.4 * planet_shade)"
+      },
+      {
+        "var": "planet_colG",
+        "expr": "mix(0.75, 0.40, band) * (0.6 + 0.4 * planet_shade)"
+      },
+      {
+        "var": "planet_colB",
+        "expr": "mix(0.55, 0.25, band) * (0.6 + 0.4 * planet_shade)"
+      },
+      {
+        "var": "ring_angle",
+        "expr": "0.35 + 0.05 * sin(t)"
+      },
+      {
+        "var": "ring_x",
+        "expr": "rotX(x - planet_cx, y - planet_cy, ring_angle)"
+      },
+      {
+        "var": "ring_y",
+        "expr": "rotY(x - planet_cx, y - planet_cy, ring_angle)"
+      },
+      {
+        "var": "ring_d",
+        "expr": "abs(ring_y) - 0.02"
+      },
+      {
+        "var": "ring_rad",
+        "expr": "sqrt(ring_x * ring_x + ring_y * ring_y)"
+      },
+      {
+        "var": "ring_band",
+        "expr": "0.5 + 0.5 * sin(40.0 * ring_rad + 3.0 * fbm(ring_x * 5.0, ring_y * 5.0))"
+      },
+      {
+        "var": "ring_mask",
+        "expr": "ee(250.0 * ring_d) * smoothstep(0.45, 0.55, ring_rad) * smoothstep(0.85, 0.75, ring_rad) * (0.6 + 0.4 * ring_band)"
+      },
+      {
+        "var": "ring_front",
+        "expr": "ring_mask * step(0.0, ring_y)"
+      },
+      {
+        "var": "ring_back",
+        "expr": "ring_mask * step(ring_y, 0.0)"
+      },
+      {
+        "var": "bgR4",
+        "expr": "mix(bgR3, 0.9, 0.7 * ring_back)"
+      },
+      {
+        "var": "bgG4",
+        "expr": "mix(bgG3, 0.8, 0.7 * ring_back)"
+      },
+      {
+        "var": "bgB4",
+        "expr": "mix(bgB3, 0.6, 0.7 * ring_back)"
+      },
+      {
+        "var": "bgR5",
+        "expr": "mix(bgR4, planet_colR, planet_mask)"
+      },
+      {
+        "var": "bgG5",
+        "expr": "mix(bgG4, planet_colG, planet_mask)"
+      },
+      {
+        "var": "bgB5",
+        "expr": "mix(bgB4, planet_colB, planet_mask)"
+      },
+      {
+        "var": "bgR6",
+        "expr": "mix(bgR5, 0.95, 0.8 * ring_front)"
+      },
+      {
+        "var": "bgG6",
+        "expr": "mix(bgG5, 0.85, 0.8 * ring_front)"
+      },
+      {
+        "var": "bgB6",
+        "expr": "mix(bgB5, 0.65, 0.8 * ring_front)"
+      },
+      {
+        "var": "astro_cx",
+        "expr": "-0.45 + 0.05 * sin(t)"
+      },
+      {
+        "var": "astro_cy",
+        "expr": "-0.15 + 0.05 * cos(t)"
+      },
+      {
+        "var": "astro_rot",
+        "expr": "0.2 * sin(t)"
+      },
+      {
+        "var": "ax",
+        "expr": "rotX(x - astro_cx, y - astro_cy, astro_rot)"
+      },
+      {
+        "var": "ay",
+        "expr": "rotY(x - astro_cx, y - astro_cy, astro_rot)"
+      },
+      {
+        "var": "d_helmet",
+        "expr": "sdCircle(ax, ay - 0.25, 0.12)"
+      },
+      {
+        "var": "d_visor",
+        "expr": "sdEllipse(ax, ay - 0.25, 0.09, 0.07)"
+      },
+      {
+        "var": "d_torso",
+        "expr": "sdBox(ax, ay + 0.05, 0.10, 0.15)"
+      },
+      {
+        "var": "d_backpack",
+        "expr": "sdBox(ax + 0.12, ay + 0.05, 0.06, 0.12)"
+      },
+      {
+        "var": "d_armL",
+        "expr": "sdCapsule(ax, ay, -0.15, 0.15, -0.25, 0.05, 0.04)"
+      },
+      {
+        "var": "d_armR",
+        "expr": "sdCapsule(ax, ay, 0.15, 0.15, 0.25, 0.05, 0.04)"
+      },
+      {
+        "var": "d_legL",
+        "expr": "sdCapsule(ax, ay, -0.06, -0.10, -0.10, -0.30, 0.05)"
+      },
+      {
+        "var": "d_legR",
+        "expr": "sdCapsule(ax, ay, 0.06, -0.10, 0.10, -0.30, 0.05)"
+      },
+      {
+        "var": "d_astro",
+        "expr": "min(min(min(d_helmet, d_torso), min(d_backpack, d_armL)), min(min(d_armR, d_legL), d_legR))"
+      },
+      {
+        "var": "astro_mask",
+        "expr": "ee(220.0 * d_astro)"
+      },
+      {
+        "var": "visor_mask",
+        "expr": "ee(300.0 * d_visor)"
+      },
+      {
+        "var": "astro_shade",
+        "expr": "clamp(0.5 + 0.5 * (ax + 0.1) / 0.3, 0.0, 1.0)"
+      },
+      {
+        "var": "astro_colR",
+        "expr": "mix(0.9, 0.7, astro_shade)"
+      },
+      {
+        "var": "astro_colG",
+        "expr": "mix(0.9, 0.7, astro_shade)"
+      },
+      {
+        "var": "astro_colB",
+        "expr": "mix(0.9, 0.7, astro_shade)"
+      },
+      {
+        "var": "visor_colR",
+        "expr": "mix(0.9, 0.6, astro_shade)"
+      },
+      {
+        "var": "visor_colG",
+        "expr": "mix(0.7, 0.4, astro_shade)"
+      },
+      {
+        "var": "visor_colB",
+        "expr": "mix(0.2, 0.1, astro_shade)"
+      },
+      {
+        "var": "spec",
+        "expr": "ee(400.0 * sdCircle(ax + 0.05, ay - 0.28, 0.02))"
+      },
+      {
+        "var": "finalR",
+        "expr": "mix(mix(bgR6, astro_colR, astro_mask), visor_colR, visor_mask) + spec"
+      },
+      {
+        "var": "finalG",
+        "expr": "mix(mix(bgG6, astro_colG, astro_mask), visor_colG, visor_mask) + spec"
+      },
+      {
+        "var": "finalB",
+        "expr": "mix(mix(bgB6, astro_colB, astro_mask), visor_colB, visor_mask) + spec"
+      }
+    ],
+    "H0": "clamp(finalR, 0.0, 1.0)",
+    "H1": "clamp(finalG, 0.0, 1.0)",
+    "H2": "clamp(finalB, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 4.5,
+    "motion_energy": 5.847
+  },
+  "snowy mountain peak at golden sunset with pine trees": {
+    "title": "Alpenglow Ascension: Analytical Summit at Golden Hour",
+    "subtitle": "Coupled SDF Mountain Ridge, Multi-Octave Sunset Sky, and Periodic Pine Silhouettes H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "sky_t",
+        "expr": "clamp((y + 1.0) * 0.5, 0.0, 1.0)"
+      },
+      {
+        "var": "sun_x",
+        "expr": "0.0"
+      },
+      {
+        "var": "sun_y",
+        "expr": "-0.10 + 0.03 * sin(t)"
+      },
+      {
+        "var": "sun_r",
+        "expr": "0.18"
+      },
+      {
+        "var": "sun_d",
+        "expr": "sdCircle(x - sun_x, y - sun_y, sun_r)"
+      },
+      {
+        "var": "sun_glow",
+        "expr": "ee(22.0 * sun_d)"
+      },
+      {
+        "var": "sun_core",
+        "expr": "ee(280.0 * sun_d)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.98, 0.12, smoothstep(0.0, 0.85, sky_t))"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.55, 0.18, smoothstep(0.0, 0.85, sky_t))"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.18, 0.42, smoothstep(0.0, 0.85, sky_t))"
+      },
+      {
+        "var": "cloud_n",
+        "expr": "fbmT(x * 2.2 + 0.3, y * 3.0 + 0.7, t)"
+      },
+      {
+        "var": "cloud_mask",
+        "expr": "ee(180.0 * (cloud_n - 0.25)) * smoothstep(0.15, 0.55, sky_t) * (1.0 - smoothstep(0.65, 0.95, sky_t))"
+      },
+      {
+        "var": "bgR2",
+        "expr": "mix(bgR, 0.95, cloud_mask * 0.55)"
+      },
+      {
+        "var": "bgG2",
+        "expr": "mix(bgG, 0.62, cloud_mask * 0.55)"
+      },
+      {
+        "var": "bgB2",
+        "expr": "mix(bgB, 0.38, cloud_mask * 0.55)"
+      },
+      {
+        "var": "bgR3",
+        "expr": "mix(bgR2, 1.0, sun_glow * 0.85)"
+      },
+      {
+        "var": "bgG3",
+        "expr": "mix(bgG2, 0.78, sun_glow * 0.85)"
+      },
+      {
+        "var": "bgB3",
+        "expr": "mix(bgB2, 0.32, sun_glow * 0.85)"
+      },
+      {
+        "var": "bgR4",
+        "expr": "mix(bgR3, 1.0, sun_core)"
+      },
+      {
+        "var": "bgG4",
+        "expr": "mix(bgG3, 0.92, sun_core)"
+      },
+      {
+        "var": "bgB4",
+        "expr": "mix(bgB3, 0.55, sun_core)"
+      },
+      {
+        "loop": {
+          "var": "star_acc",
+          "iter": "s",
+          "start": 1,
+          "end": 28,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ang",
+              "expr": "s * 2.399963 + 0.15 * sin(t + s * 0.7)"
+            },
+            {
+              "var": "rad",
+              "expr": "0.55 + 0.35 * fract(s * 0.6180339)"
+            },
+            {
+              "var": "px",
+              "expr": "rad * cos(ang)"
+            },
+            {
+              "var": "py",
+              "expr": "0.35 + 0.55 * fract(s * 0.381966)"
+            },
+            {
+              "var": "tw",
+              "expr": "0.5 + 0.5 * sin(2.0 * t + s * 1.3)"
+            },
+            {
+              "var": "d_star",
+              "expr": "sdCircle(x - px, y - py, 0.006 + 0.004 * tw)"
+            }
+          ],
+          "update": "max(acc, ee(300.0 * d_star) * tw)"
+        }
+      },
+      {
+        "var": "bgR5",
+        "expr": "mix(bgR4, 1.0, star_acc * 0.9)"
+      },
+      {
+        "var": "bgG5",
+        "expr": "mix(bgG4, 0.95, star_acc * 0.9)"
+      },
+      {
+        "var": "bgB5",
+        "expr": "mix(bgB4, 0.85, star_acc * 0.9)"
+      },
+      {
+        "var": "mountain_h",
+        "expr": "0.55 - 0.45 * sx + 0.08 * sin(sx * 12.0 + 0.5) + 0.04 * fbm(sx * 5.0, 0.3)"
+      },
+      {
+        "var": "mountain_d",
+        "expr": "y - mountain_h"
+      },
+      {
+        "var": "mountain_mask",
+        "expr": "ee(220.0 * mountain_d)"
+      },
+      {
+        "var": "snow_line",
+        "expr": "0.15 + 0.06 * sin(sx * 8.0 + 1.2) + 0.03 * fbm(sx * 6.0, 0.7)"
+      },
+      {
+        "var": "snow_mask",
+        "expr": "mountain_mask * ee(200.0 * (y - snow_line))"
+      },
+      {
+        "var": "rock_mask",
+        "expr": "mountain_mask * (1.0 - snow_mask)"
+      },
+      {
+        "var": "rock_shade",
+        "expr": "0.35 + 0.25 * fbm(sx * 9.0, y * 9.0) + 0.15 * (1.0 - smoothstep(-0.2, 0.6, y))"
+      },
+      {
+        "var": "snow_shade",
+        "expr": "0.85 + 0.15 * smoothstep(-0.1, 0.7, y) + 0.1 * sin(sx * 20.0 + t)"
+      },
+      {
+        "var": "mR",
+        "expr": "mix(bgR5, mix(0.32, 0.95, snow_mask), mountain_mask)"
+      },
+      {
+        "var": "mG",
+        "expr": "mix(bgG5, mix(0.28, 0.97, snow_mask), mountain_mask)"
+      },
+      {
+        "var": "mB",
+        "expr": "mix(bgB5, mix(0.30, 1.0, snow_mask), mountain_mask)"
+      },
+      {
+        "var": "mR2",
+        "expr": "mR * mix(0.7, 1.0, rock_shade) * mix(0.9, 1.0, snow_shade)"
+      },
+      {
+        "var": "mG2",
+        "expr": "mG * mix(0.7, 1.0, rock_shade) * mix(0.9, 1.0, snow_shade)"
+      },
+      {
+        "var": "mB2",
+        "expr": "mB * mix(0.7, 1.0, rock_shade) * mix(0.9, 1.0, snow_shade)"
+      },
+      {
+        "var": "rim_light",
+        "expr": "ee(180.0 * (mountain_d + 0.015)) * (1.0 - ee(180.0 * mountain_d)) * smoothstep(-0.5, 0.5, x)"
+      },
+      {
+        "var": "mR3",
+        "expr": "mix(mR2, 1.0, rim_light * 0.8)"
+      },
+      {
+        "var": "mG3",
+        "expr": "mix(mG2, 0.85, rim_light * 0.8)"
+      },
+      {
+        "var": "mB3",
+        "expr": "mix(mB2, 0.45, rim_light * 0.8)"
+      },
+      {
+        "loop": {
+          "var": "pine_acc",
+          "iter": "s",
+          "start": 1,
+          "end": 14,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "px",
+              "expr": "-1.45 + 2.9 * fract(s * 0.6180339)"
+            },
+            {
+              "var": "py",
+              "expr": "-0.85 + 0.25 * fract(s * 0.381966)"
+            },
+            {
+              "var": "h",
+              "expr": "0.18 + 0.12 * fract(s * 0.754877)"
+            },
+            {
+              "var": "w",
+              "expr": "0.06 + 0.04 * fract(s * 0.569840)"
+            },
+            {
+              "var": "sway",
+              "expr": "0.02 * sin(t + s * 0.9)"
+            },
+            {
+              "var": "d_pine",
+              "expr": "sdTriangle(x - px - sway, y - py, 0.0, h, -w, 0.0, w, 0.0)"
+            }
+          ],
+          "update": "max(acc, ee(240.0 * d_pine))"
+        }
+      },
+      {
+        "var": "pine_mask",
+        "expr": "pine_acc"
+      },
+      {
+        "var": "pine_shade",
+        "expr": "0.25 + 0.15 * smoothstep(-0.8, -0.2, y) + 0.1 * sin(x * 30.0 + t)"
+      },
+      {
+        "var": "fR",
+        "expr": "mix(mR3, 0.08, pine_mask)"
+      },
+      {
+        "var": "fG",
+        "expr": "mix(mG3, 0.22, pine_mask)"
+      },
+      {
+        "var": "fB",
+        "expr": "mix(mB3, 0.10, pine_mask)"
+      },
+      {
+        "var": "fR2",
+        "expr": "fR * mix(0.8, 1.0, pine_shade)"
+      },
+      {
+        "var": "fG2",
+        "expr": "fG * mix(0.8, 1.0, pine_shade)"
+      },
+      {
+        "var": "fB2",
+        "expr": "fB * mix(0.8, 1.0, pine_shade)"
+      },
+      {
+        "var": "vignette",
+        "expr": "1.0 - 0.35 * smoothstep(0.6, 1.4, sqrt(x * x + y * y))"
+      },
+      {
+        "var": "finalR",
+        "expr": "clamp(fR2 * vignette, 0.0, 1.0)"
+      },
+      {
+        "var": "finalG",
+        "expr": "clamp(fG2 * vignette, 0.0, 1.0)"
+      },
+      {
+        "var": "finalB",
+        "expr": "clamp(fB2 * vignette, 0.0, 1.0)"
+      }
+    ],
+    "H0": "clamp(finalR, 0.0, 1.0)",
+    "H1": "clamp(finalG, 0.0, 1.0)",
+    "H2": "clamp(finalB, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 5.949
+  },
+  "a roaring bengal tiger in jungle": {
+    "title": "Bengal Tiger Roaring in Jungle",
+    "subtitle": "Analytical SDF Sculpture with Harmonic Fur Summation and 4D Periodic Animation",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.08, 0.35, smoothstep(-1.0, 1.0, y))"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.12, 0.55, smoothstep(-1.0, 1.0, y))"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.05, 0.25, smoothstep(-1.0, 1.0, y))"
+      },
+      {
+        "var": "fog",
+        "expr": "fbmT(x * 2.5, y * 2.5, t) * 0.15"
+      },
+      {
+        "var": "bgR2",
+        "expr": "bgR + fog * 0.8"
+      },
+      {
+        "var": "bgG2",
+        "expr": "bgG + fog * 0.6"
+      },
+      {
+        "var": "bgB2",
+        "expr": "bgB + fog * 0.4"
+      },
+      {
+        "loop": {
+          "var": "leaf",
+          "iter": "s",
+          "start": 1,
+          "end": 24,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ang",
+              "expr": "s * 0.2618 + 0.1 * sin(t + s * 0.5)"
+            },
+            {
+              "var": "lx",
+              "expr": "0.9 * cos(ang) + 0.2 * sin(s * 1.7)"
+            },
+            {
+              "var": "ly",
+              "expr": "0.7 * sin(ang) + 0.1 * cos(s * 2.3)"
+            },
+            {
+              "var": "d_leaf",
+              "expr": "sdEllipse(x - lx, y - ly, 0.08, 0.03) - 0.01"
+            }
+          ],
+          "update": "max(acc, ee(220.0 * d_leaf))"
+        }
+      },
+      {
+        "var": "leaf_mask",
+        "expr": "clamp(leaf, 0.0, 1.0)"
+      },
+      {
+        "var": "bgR3",
+        "expr": "mix(bgR2, 0.1, leaf_mask * 0.7)"
+      },
+      {
+        "var": "bgG3",
+        "expr": "mix(bgG2, 0.3, leaf_mask * 0.7)"
+      },
+      {
+        "var": "bgB3",
+        "expr": "mix(bgB2, 0.1, leaf_mask * 0.7)"
+      },
+      {
+        "var": "head_d",
+        "expr": "sdEllipse(x, y - 0.05, 0.55, 0.48)"
+      },
+      {
+        "var": "ear_d",
+        "expr": "sdCircle(sx - 0.45, y - 0.45, 0.12)"
+      },
+      {
+        "var": "body_d",
+        "expr": "sdEllipse(x, y + 0.55, 0.65, 0.35)"
+      },
+      {
+        "var": "tiger_d",
+        "expr": "min(head_d, min(ear_d, body_d))"
+      },
+      {
+        "var": "tiger_mask",
+        "expr": "ee(220.0 * tiger_d)"
+      },
+      {
+        "var": "fur_base",
+        "expr": "mix(0.85, 0.95, fbm(x * 8.0, y * 8.0) * 0.5 + 0.5)"
+      },
+      {
+        "var": "stripe_field",
+        "expr": "abs(sin(16.0 * y + 4.0 * cos(4.5 * sx) + 2.0 * fbm(sx * 3.5, y * 3.5)))"
+      },
+      {
+        "var": "stripe_mask",
+        "expr": "ee(180.0 * (stripe_field - 0.28)) * tiger_mask"
+      },
+      {
+        "var": "eye_d",
+        "expr": "sdEllipse(sx - 0.25, y - 0.15, 0.08, 0.05)"
+      },
+      {
+        "var": "eye_mask",
+        "expr": "ee(300.0 * eye_d)"
+      },
+      {
+        "var": "pupil_d",
+        "expr": "sdEllipse(sx - 0.25, y - 0.15, 0.02, 0.04)"
+      },
+      {
+        "var": "pupil_mask",
+        "expr": "ee(340.0 * pupil_d)"
+      },
+      {
+        "var": "nose_d",
+        "expr": "sdTriangle(x, y + 0.05, -0.06, 0.0, 0.06, 0.0, 0.0, -0.08)"
+      },
+      {
+        "var": "nose_mask",
+        "expr": "ee(300.0 * nose_d)"
+      },
+      {
+        "var": "mouth_d",
+        "expr": "sdEllipse(x, y + 0.18, 0.15, 0.08)"
+      },
+      {
+        "var": "mouth_mask",
+        "expr": "ee(280.0 * mouth_d)"
+      },
+      {
+        "var": "fang_d",
+        "expr": "sdTriangle(sx - 0.08, y + 0.12, 0.0, 0.0, 0.04, 0.0, 0.02, -0.06)"
+      },
+      {
+        "var": "fang_mask",
+        "expr": "ee(320.0 * fang_d)"
+      },
+      {
+        "loop": {
+          "var": "whisker",
+          "iter": "s",
+          "start": 1,
+          "end": 6,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ang",
+              "expr": "s * 0.3 - 0.5"
+            },
+            {
+              "var": "wx",
+              "expr": "0.18 + 0.12 * cos(ang)"
+            },
+            {
+              "var": "wy",
+              "expr": "-0.12 + 0.08 * sin(ang)"
+            },
+            {
+              "var": "d_w",
+              "expr": "sdSegment(x, y, wx, wy, wx + 0.3 * cos(ang), wy + 0.3 * sin(ang)) - 0.005"
+            }
+          ],
+          "update": "max(acc, ee(300.0 * d_w))"
+        }
+      },
+      {
+        "var": "whisker_mask",
+        "expr": "clamp(whisker, 0.0, 1.0) * tiger_mask"
+      },
+      {
+        "var": "shade",
+        "expr": "clamp(0.55 + 0.45 * (x * 0.5 + y * 0.85) * (1.0 + 0.1 * sin(t)), 0.0, 1.0)"
+      },
+      {
+        "var": "spec",
+        "expr": "pow(clamp(1.0 - abs(tiger_d) * 10.0, 0.0, 1.0), 8.0)"
+      },
+      {
+        "var": "r_final",
+        "expr": "mix(bgR3, mix(0.9 * fur_base * shade, 0.1, stripe_mask), tiger_mask)"
+      },
+      {
+        "var": "g_final",
+        "expr": "mix(bgG3, mix(0.6 * fur_base * shade, 0.1, stripe_mask), tiger_mask)"
+      },
+      {
+        "var": "b_final",
+        "expr": "mix(bgB3, mix(0.2 * fur_base * shade, 0.1, stripe_mask), tiger_mask)"
+      },
+      {
+        "var": "r_eye",
+        "expr": "mix(r_final, 0.9, eye_mask)"
+      },
+      {
+        "var": "g_eye",
+        "expr": "mix(g_final, 0.8, eye_mask)"
+      },
+      {
+        "var": "b_eye",
+        "expr": "mix(b_final, 0.1, eye_mask)"
+      },
+      {
+        "var": "r_pupil",
+        "expr": "mix(r_eye, 0.0, pupil_mask)"
+      },
+      {
+        "var": "g_pupil",
+        "expr": "mix(g_eye, 0.0, pupil_mask)"
+      },
+      {
+        "var": "b_pupil",
+        "expr": "mix(b_eye, 0.0, pupil_mask)"
+      },
+      {
+        "var": "r_nose",
+        "expr": "mix(r_pupil, 0.8, nose_mask)"
+      },
+      {
+        "var": "g_nose",
+        "expr": "mix(g_pupil, 0.2, nose_mask)"
+      },
+      {
+        "var": "b_nose",
+        "expr": "mix(b_pupil, 0.2, nose_mask)"
+      },
+      {
+        "var": "r_mouth",
+        "expr": "mix(r_nose, 0.6, mouth_mask)"
+      },
+      {
+        "var": "g_mouth",
+        "expr": "mix(g_nose, 0.0, mouth_mask)"
+      },
+      {
+        "var": "b_mouth",
+        "expr": "mix(b_nose, 0.0, mouth_mask)"
+      },
+      {
+        "var": "r_fang",
+        "expr": "mix(r_mouth, 1.0, fang_mask)"
+      },
+      {
+        "var": "g_fang",
+        "expr": "mix(g_mouth, 1.0, fang_mask)"
+      },
+      {
+        "var": "b_fang",
+        "expr": "mix(b_mouth, 1.0, fang_mask)"
+      },
+      {
+        "var": "r_whisker",
+        "expr": "mix(r_fang, 0.9, whisker_mask)"
+      },
+      {
+        "var": "g_whisker",
+        "expr": "mix(g_fang, 0.9, whisker_mask)"
+      },
+      {
+        "var": "b_whisker",
+        "expr": "mix(b_fang, 0.9, whisker_mask)"
+      },
+      {
+        "var": "r_spec",
+        "expr": "r_whisker + spec * 0.5"
+      },
+      {
+        "var": "g_spec",
+        "expr": "g_whisker + spec * 0.5"
+      },
+      {
+        "var": "b_spec",
+        "expr": "b_whisker + spec * 0.5"
+      }
+    ],
+    "H0": "clamp(r_spec, 0.0, 1.0)",
+    "H1": "clamp(g_spec, 0.0, 1.0)",
+    "H2": "clamp(b_spec, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 5.746
+  },
+  "shaheen eagle in flight": {
+    "title": "Shaheen Ascendant: A Falcon's Flight in Pure Mathematics",
+    "subtitle": "Coupled Analytical SDF & Harmonic Summation Field H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "sky_grad",
+        "expr": "clamp(0.5 + 0.5 * (y + 0.2), 0.0, 1.0)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.05, 0.55, sky_grad) + 0.15 * fbmT(x * 1.8, y * 1.8, t)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.10, 0.65, sky_grad) + 0.12 * fbmT(x * 2.2 + 1.0, y * 2.2, t)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.30, 0.85, sky_grad) + 0.10 * fbmT(x * 2.6 + 2.0, y * 2.6, t)"
+      },
+      {
+        "loop": {
+          "var": "star_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 40,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ang",
+              "expr": "s * 2.399963 + 0.1 * sin(t + s)"
+            },
+            {
+              "var": "rad",
+              "expr": "0.3 + 0.7 * fract(s * 0.618033)"
+            },
+            {
+              "var": "px",
+              "expr": "rad * cos(ang)"
+            },
+            {
+              "var": "py",
+              "expr": "rad * sin(ang) * 0.8 + 0.3"
+            },
+            {
+              "var": "d_star",
+              "expr": "sdCircle(x - px, y - py, 0.008 + 0.004 * sin(t * 2.0 + s))"
+            }
+          ],
+          "update": "max(acc, ee(280.0 * d_star))"
+        }
+      },
+      {
+        "var": "bgR2",
+        "expr": "mix(bgR, 1.0, star_mask * 0.9)"
+      },
+      {
+        "var": "bgG2",
+        "expr": "mix(bgG, 1.0, star_mask * 0.9)"
+      },
+      {
+        "var": "bgB2",
+        "expr": "mix(bgB, 1.0, star_mask * 0.9)"
+      },
+      {
+        "var": "sun_glow",
+        "expr": "exp(-sdCircle(x - 0.9, y - 0.7, 0.0) * 3.0)"
+      },
+      {
+        "var": "bgR3",
+        "expr": "bgR2 + 0.3 * sun_glow"
+      },
+      {
+        "var": "bgG3",
+        "expr": "bgG2 + 0.2 * sun_glow"
+      },
+      {
+        "var": "bgB3",
+        "expr": "bgB2 + 0.1 * sun_glow"
+      },
+      {
+        "var": "body_d",
+        "expr": "sdEllipse(x, y - 0.05, 0.28, 0.18)"
+      },
+      {
+        "var": "head_d",
+        "expr": "sdCircle(x - 0.0, y - 0.28, 0.12)"
+      },
+      {
+        "var": "beak_d",
+        "expr": "sdTriangle(x, y, 0.0, 0.32, 0.08, 0.22, -0.08, 0.22)"
+      },
+      {
+        "var": "eye_d",
+        "expr": "sdCircle(sx - 0.06, y - 0.30, 0.025)"
+      },
+      {
+        "var": "pupil_d",
+        "expr": "sdCircle(sx - 0.06, y - 0.30, 0.012)"
+      },
+      {
+        "var": "wing_base_d",
+        "expr": "sdEllipse(sx - 0.35, y - 0.05, 0.25, 0.12)"
+      },
+      {
+        "var": "tail_d",
+        "expr": "sdTriangle(x, y, 0.0, -0.15, 0.12, -0.35, -0.12, -0.35)"
+      },
+      {
+        "loop": {
+          "var": "feather_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 12,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ang",
+              "expr": "s * 0.5236 + 0.1 * sin(t + s * 0.5)"
+            },
+            {
+              "var": "fx",
+              "expr": "0.35 + 0.15 * cos(ang)"
+            },
+            {
+              "var": "fy",
+              "expr": "0.05 + 0.15 * sin(ang)"
+            },
+            {
+              "var": "d_f",
+              "expr": "sdCapsule(sx, y, 0.35, 0.05, fx, fy, 0.015)"
+            }
+          ],
+          "update": "max(acc, ee(250.0 * d_f))"
+        }
+      },
+      {
+        "var": "body_mask",
+        "expr": "ee(220.0 * body_d)"
+      },
+      {
+        "var": "head_mask",
+        "expr": "ee(220.0 * head_d)"
+      },
+      {
+        "var": "beak_mask",
+        "expr": "ee(220.0 * beak_d)"
+      },
+      {
+        "var": "eye_mask",
+        "expr": "ee(220.0 * eye_d)"
+      },
+      {
+        "var": "pupil_mask",
+        "expr": "ee(220.0 * pupil_d)"
+      },
+      {
+        "var": "wing_mask",
+        "expr": "ee(220.0 * wing_base_d)"
+      },
+      {
+        "var": "tail_mask",
+        "expr": "ee(220.0 * tail_d)"
+      },
+      {
+        "var": "feather",
+        "expr": "feather_mask"
+      },
+      {
+        "var": "body_col",
+        "expr": "mix(0.2, 0.6, 0.5 + 0.5 * sin(y * 10.0 + t))"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(bgR3, 0.4, body_mask)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(bgG3, 0.3, body_mask)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(bgB3, 0.2, body_mask)"
+      },
+      {
+        "var": "hR2",
+        "expr": "mix(hR, 0.5, head_mask)"
+      },
+      {
+        "var": "hG2",
+        "expr": "mix(hG, 0.4, head_mask)"
+      },
+      {
+        "var": "hB2",
+        "expr": "mix(hB, 0.3, head_mask)"
+      },
+      {
+        "var": "hR3",
+        "expr": "mix(hR2, 0.9, beak_mask)"
+      },
+      {
+        "var": "hG3",
+        "expr": "mix(hG2, 0.7, beak_mask)"
+      },
+      {
+        "var": "hB3",
+        "expr": "mix(hB2, 0.1, beak_mask)"
+      },
+      {
+        "var": "hR4",
+        "expr": "mix(hR3, 1.0, eye_mask)"
+      },
+      {
+        "var": "hG4",
+        "expr": "mix(hG3, 0.9, eye_mask)"
+      },
+      {
+        "var": "hB4",
+        "expr": "mix(hB3, 0.0, eye_mask)"
+      },
+      {
+        "var": "hR5",
+        "expr": "mix(hR4, 0.0, pupil_mask)"
+      },
+      {
+        "var": "hG5",
+        "expr": "mix(hG4, 0.0, pupil_mask)"
+      },
+      {
+        "var": "hB5",
+        "expr": "mix(hB4, 0.0, pupil_mask)"
+      },
+      {
+        "var": "hR6",
+        "expr": "mix(hR5, 0.3, wing_mask)"
+      },
+      {
+        "var": "hG6",
+        "expr": "mix(hG5, 0.2, wing_mask)"
+      },
+      {
+        "var": "hB6",
+        "expr": "mix(hB5, 0.1, wing_mask)"
+      },
+      {
+        "var": "hR7",
+        "expr": "mix(hR6, 0.4, tail_mask)"
+      },
+      {
+        "var": "hG7",
+        "expr": "mix(hG6, 0.3, tail_mask)"
+      },
+      {
+        "var": "hB7",
+        "expr": "mix(hB6, 0.2, tail_mask)"
+      },
+      {
+        "var": "hR8",
+        "expr": "mix(hR7, 0.6, feather)"
+      },
+      {
+        "var": "hG8",
+        "expr": "mix(hG7, 0.5, feather)"
+      },
+      {
+        "var": "hB8",
+        "expr": "mix(hB7, 0.4, feather)"
+      },
+      {
+        "var": "rim_light",
+        "expr": "exp(-sdEllipse(x, y - 0.05, 0.3, 0.2) * 8.0) * 0.5"
+      },
+      {
+        "var": "hR9",
+        "expr": "hR8 + rim_light"
+      },
+      {
+        "var": "hG9",
+        "expr": "hG8 + rim_light * 0.8"
+      },
+      {
+        "var": "hB9",
+        "expr": "hB8 + rim_light * 0.6"
+      },
+      {
+        "var": "vignette",
+        "expr": "smoothstep(0.8, 1.2, sqrt(x * x + y * y))"
+      },
+      {
+        "var": "H0",
+        "expr": "clamp(hR9 * (1.0 - 0.3 * vignette), 0.0, 1.0)"
+      },
+      {
+        "var": "H1",
+        "expr": "clamp(hG9 * (1.0 - 0.3 * vignette), 0.0, 1.0)"
+      },
+      {
+        "var": "H2",
+        "expr": "clamp(hB9 * (1.0 - 0.3 * vignette), 0.0, 1.0)"
+      }
+    ],
+    "H0": "clamp(hR9 * (1.0 - 0.3 * vignette), 0.0, 1.0)",
+    "H1": "clamp(hG9 * (1.0 - 0.3 * vignette), 0.0, 1.0)",
+    "H2": "clamp(hB9 * (1.0 - 0.3 * vignette), 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 4.5,
+    "motion_energy": 7.552
+  },
+  "a hyperbolic bronze cathedral with glowing gyroid pillars and god rays": {
+    "title": "Hyperbolic Bronze Cathedral with Gyroid Pillars and God Rays",
+    "subtitle": "Analytical SDF Architecture & Harmonic Light Field H_v(x, y, t)",
+    "aspect": [
+      16,
+      10
+    ],
+    "domain": {
+      "x_min": -1.6,
+      "x_max": 1.6,
+      "y_min": -1.0,
+      "y_max": 1.0
+    },
+    "steps": [
+      {
+        "var": "sx",
+        "expr": "abs(x)"
+      },
+      {
+        "var": "sky_grad",
+        "expr": "clamp(0.5 + 0.5 * sin(3.0 * y + 0.5 * t), 0.0, 1.0)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(0.04, 0.18, sky_grad) + 0.06 * fbmT(x * 1.5, y * 1.5, t)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(0.02, 0.10, sky_grad) + 0.04 * fbmT(x * 1.5 + 1.0, y * 1.5, t)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(0.08, 0.28, sky_grad) + 0.08 * fbmT(x * 1.5 + 2.0, y * 1.5, t)"
+      },
+      {
+        "loop": {
+          "var": "star_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 40,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "sx_star",
+              "expr": "0.9 * sin(s * 2.399 + 0.3 * t)"
+            },
+            {
+              "var": "sy_star",
+              "expr": "0.8 * cos(s * 1.847 + 0.2 * t)"
+            },
+            {
+              "var": "d_star",
+              "expr": "sdCircle(x - sx_star, y - sy_star, 0.008 + 0.004 * sin(s * 3.0 + t))"
+            }
+          ],
+          "update": "max(acc, ee(280.0 * d_star))"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 1.0, star_mask * 0.9)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.95, star_mask * 0.9)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.85, star_mask * 0.9)"
+      },
+      {
+        "loop": {
+          "var": "aurora_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 5,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "ay",
+              "expr": "0.45 + 0.12 * s + 0.08 * sin(2.2 * x + t + s * 0.7) + 0.05 * fbmT(x * 2.0, y * 1.5, t)"
+            },
+            {
+              "var": "d_aur",
+              "expr": "abs(y - ay) - 0.03"
+            }
+          ],
+          "update": "max(acc, exp(-abs(d_aur) * 18.0))"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 0.2, aurora_mask * 0.4)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.9, aurora_mask * 0.4)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.7, aurora_mask * 0.4)"
+      },
+      {
+        "var": "cliff_y",
+        "expr": "-0.42 + 0.26 * exp(-2.8 * x * x) + 0.07 * sin(9.0 * x)"
+      },
+      {
+        "var": "cliff_d",
+        "expr": "y - cliff_y"
+      },
+      {
+        "var": "cliff_mask",
+        "expr": "ee(220.0 * cliff_d)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 0.12, cliff_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.08, cliff_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.06, cliff_mask)"
+      },
+      {
+        "var": "cathedral_d",
+        "expr": "sdBox(x, y - 0.1, 0.55, 0.45) - 0.02"
+      },
+      {
+        "var": "cathedral_mask",
+        "expr": "ee(240.0 * cathedral_d)"
+      },
+      {
+        "var": "bronze_shade",
+        "expr": "0.6 + 0.4 * sin(3.0 * x + 2.0 * y + t)"
+      },
+      {
+        "var": "catR",
+        "expr": "mix(0.55, 0.85, bronze_shade)"
+      },
+      {
+        "var": "catG",
+        "expr": "mix(0.35, 0.65, bronze_shade)"
+      },
+      {
+        "var": "catB",
+        "expr": "mix(0.15, 0.35, bronze_shade)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, catR, cathedral_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, catG, cathedral_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, catB, cathedral_mask)"
+      },
+      {
+        "var": "dome_d",
+        "expr": "sdEllipse(x, y - 0.55, 0.35, 0.25)"
+      },
+      {
+        "var": "dome_mask",
+        "expr": "ee(260.0 * dome_d)"
+      },
+      {
+        "var": "dome_shade",
+        "expr": "0.7 + 0.3 * sin(4.0 * x + 3.0 * y + t)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, mix(0.6, 0.9, dome_shade), dome_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, mix(0.4, 0.7, dome_shade), dome_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, mix(0.2, 0.4, dome_shade), dome_mask)"
+      },
+      {
+        "loop": {
+          "var": "gyroid_mask",
+          "iter": "s",
+          "start": 1,
+          "end": 6,
+          "init": "0.0",
+          "body": [
+            {
+              "var": "px",
+              "expr": "-0.4 + 0.16 * s"
+            },
+            {
+              "var": "py",
+              "expr": "-0.3 + 0.1 * sin(2.0 * s + t)"
+            },
+            {
+              "var": "d_pillar",
+              "expr": "sdCapsule(x, y, px, -0.4, px, 0.4, 0.03)"
+            },
+            {
+              "var": "gyroid_wave",
+              "expr": "0.5 + 0.5 * sin(8.0 * x + 6.0 * y + t + s)"
+            }
+          ],
+          "update": "max(acc, ee(280.0 * d_pillar) * gyroid_wave)"
+        }
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 0.9, gyroid_mask * 0.8)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.7, gyroid_mask * 0.8)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.3, gyroid_mask * 0.8)"
+      },
+      {
+        "var": "window_d",
+        "expr": "sdCircle(sx - 0.25, y - 0.2, 0.08)"
+      },
+      {
+        "var": "window_mask",
+        "expr": "ee(300.0 * window_d)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 1.0, window_mask)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.9, window_mask)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.5, window_mask)"
+      },
+      {
+        "var": "ray_angle",
+        "expr": "0.3 * sin(t)"
+      },
+      {
+        "var": "ray_d",
+        "expr": "abs(rotX(x, y, ray_angle)) - 0.02"
+      },
+      {
+        "var": "ray_mask",
+        "expr": "ee(200.0 * ray_d) * smoothstep(0.0, 0.5, y)"
+      },
+      {
+        "var": "bgR",
+        "expr": "mix(bgR, 1.0, ray_mask * 0.6)"
+      },
+      {
+        "var": "bgG",
+        "expr": "mix(bgG, 0.95, ray_mask * 0.6)"
+      },
+      {
+        "var": "bgB",
+        "expr": "mix(bgB, 0.7, ray_mask * 0.6)"
+      },
+      {
+        "var": "hR",
+        "expr": "bgR"
+      },
+      {
+        "var": "hG",
+        "expr": "bgG"
+      },
+      {
+        "var": "hB",
+        "expr": "bgB"
+      },
+      {
+        "var": "vignette",
+        "expr": "smoothstep(0.8, 1.6, sqrt(x * x + y * y))"
+      },
+      {
+        "var": "hR",
+        "expr": "mix(hR, 0.0, vignette * 0.5)"
+      },
+      {
+        "var": "hG",
+        "expr": "mix(hG, 0.0, vignette * 0.5)"
+      },
+      {
+        "var": "hB",
+        "expr": "mix(hB, 0.0, vignette * 0.5)"
+      }
+    ],
+    "H0": "clamp(hR, 0.0, 1.0)",
+    "H1": "clamp(hG, 0.0, 1.0)",
+    "H2": "clamp(hB, 0.0, 1.0)",
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 9.476
+  }
+}

@@ -1,0 +1,3008 @@
+{
+  "an antique maritime ship anchor": {
+    "title": "Antique Maritime Ship Anchor",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 5 Coupled Parametric Manifolds (Main Shaft, Left Fluke, Right Fluke, Ring, Stock)",
+    "recommended_mode": "lines",
+    "components": [
+      {
+        "name": "Main Shaft",
+        "type": "ribbon_spine",
+        "weight": 0.25,
+        "mirror_x": false,
+        "points": [
+          [
+            0.0,
+            -0.8
+          ],
+          [
+            0.0,
+            0.2
+          ]
+        ],
+        "w_start": 0.08,
+        "w_end": 0.05,
+        "w_bulge": 0.02,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 4,
+        "z_order": 1,
+        "color_rgb": [
+          0.25,
+          0.68,
+          0.88
+        ],
+        "accent_rgb": [
+          0.88,
+          0.94,
+          0.98
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 118.0,
+        "anim_role": "static",
+        "z_offset": 0.11,
+        "z_bulge": 0.11
+      },
+      {
+        "name": "Left Fluke",
+        "type": "crescent_lobe",
+        "weight": 0.2,
+        "mirror_x": true,
+        "center": [
+          -0.4,
+          -0.4
+        ],
+        "outer_radius": 0.35,
+        "thickness": 0.3,
+        "arc_deg": 220,
+        "rotation_deg": 45,
+        "z_order": 2,
+        "color_rgb": [
+          0.25,
+          0.68,
+          0.88
+        ],
+        "accent_rgb": [
+          0.88,
+          0.94,
+          0.98
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 118.0,
+        "anim_role": "flap",
+        "z_offset": 0.055,
+        "z_bulge": 0.14
+      },
+      {
+        "name": "Right Fluke",
+        "type": "crescent_lobe",
+        "weight": 0.2,
+        "mirror_x": true,
+        "center": [
+          0.4,
+          -0.4
+        ],
+        "outer_radius": 0.35,
+        "thickness": 0.3,
+        "arc_deg": 220,
+        "rotation_deg": -45,
+        "z_order": 3,
+        "color_rgb": [
+          0.25,
+          0.68,
+          0.88
+        ],
+        "accent_rgb": [
+          0.88,
+          0.94,
+          0.98
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 118.0,
+        "anim_role": "flap",
+        "z_offset": 0.0,
+        "z_bulge": 0.14
+      },
+      {
+        "name": "Ring",
+        "type": "wheel_rosette",
+        "weight": 0.15,
+        "mirror_x": false,
+        "center": [
+          0.0,
+          0.6
+        ],
+        "outer_radius": 0.2,
+        "hub_radius": 0.05,
+        "spokes": 8,
+        "z_order": 4,
+        "color_rgb": [
+          0.25,
+          0.68,
+          0.88
+        ],
+        "accent_rgb": [
+          0.88,
+          0.94,
+          0.98
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 118.0,
+        "anim_role": "orbit",
+        "z_offset": -0.055,
+        "z_bulge": 0.07
+      },
+      {
+        "name": "Stock",
+        "type": "ribbon_spine",
+        "weight": 0.1,
+        "mirror_x": false,
+        "points": [
+          [
+            -0.2,
+            0.2
+          ],
+          [
+            0.2,
+            0.2
+          ]
+        ],
+        "w_start": 0.05,
+        "w_end": 0.05,
+        "w_bulge": 0.01,
+        "w_mod_amp": 0.0,
+        "w_mod_freq": 2,
+        "z_order": 5,
+        "color_rgb": [
+          0.25,
+          0.68,
+          0.88
+        ],
+        "accent_rgb": [
+          0.88,
+          0.94,
+          0.98
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 118.0,
+        "anim_role": "static",
+        "z_offset": -0.11,
+        "z_bulge": 0.11
+      }
+    ],
+    "bg_style": "deep_ocean"
+  },
+  "a vintage hourglass sand timer": {
+    "title": "Vintage Hourglass Sand Timer",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 5 Coupled Parametric Manifolds (Upper Bulb, Lower Bulb, Neck, Upper Sand, Lower Sand)",
+    "recommended_mode": "lines",
+    "components": [
+      {
+        "name": "upper_bulb",
+        "type": "polar_harmonic",
+        "weight": 0.25,
+        "mirror_x": false,
+        "center": [
+          0,
+          0.5
+        ],
+        "scale": [
+          0.4,
+          0.4
+        ],
+        "r0": 1.0,
+        "theta_range_deg": [
+          0,
+          360
+        ],
+        "harmonics": [
+          {
+            "m": 2,
+            "cos_amp": 0.1,
+            "sin_amp": 0.1,
+            "power": 1
+          }
+        ],
+        "inner_scale": 0.6,
+        "rotation_deg": 0,
+        "z_order": 1,
+        "color_rgb": [
+          0.88,
+          0.72,
+          0.28
+        ],
+        "accent_rgb": [
+          0.96,
+          0.9,
+          0.65
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 118.0,
+        "anim_role": "pulse",
+        "z_offset": 0.11,
+        "z_bulge": 0.16
+      },
+      {
+        "name": "lower_bulb",
+        "type": "polar_harmonic",
+        "weight": 0.25,
+        "mirror_x": false,
+        "center": [
+          0,
+          -0.5
+        ],
+        "scale": [
+          0.4,
+          0.4
+        ],
+        "r0": 1.0,
+        "theta_range_deg": [
+          0,
+          360
+        ],
+        "harmonics": [
+          {
+            "m": 2,
+            "cos_amp": 0.1,
+            "sin_amp": 0.1,
+            "power": 1
+          }
+        ],
+        "inner_scale": 0.6,
+        "rotation_deg": 0,
+        "z_order": 2,
+        "color_rgb": [
+          0.16,
+          0.62,
+          0.85
+        ],
+        "accent_rgb": [
+          0.42,
+          0.88,
+          0.95
+        ],
+        "texture_type": "feathers",
+        "edge_sharpness": 118.0,
+        "anim_role": "pulse",
+        "z_offset": 0.055,
+        "z_bulge": 0.16
+      },
+      {
+        "name": "neck",
+        "type": "ribbon_spine",
+        "weight": 0.15,
+        "mirror_x": false,
+        "points": [
+          [
+            -0.05,
+            0.1
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.05,
+            -0.1
+          ],
+          [
+            -0.05,
+            -0.1
+          ]
+        ],
+        "w_start": 0.05,
+        "w_end": 0.05,
+        "w_bulge": 0,
+        "w_mod_amp": 0,
+        "w_mod_freq": 2,
+        "z_order": 3,
+        "color_rgb": [
+          0.68,
+          0.42,
+          0.18
+        ],
+        "accent_rgb": [
+          0.92,
+          0.74,
+          0.38
+        ],
+        "texture_type": "fur",
+        "edge_sharpness": 118.0,
+        "anim_role": "sway",
+        "z_offset": 0.0,
+        "z_bulge": 0.11
+      },
+      {
+        "name": "upper_sand",
+        "type": "parametric_equation",
+        "weight": 0.15,
+        "mirror_x": true,
+        "center": [
+          0,
+          0.3
+        ],
+        "scale": [
+          0.3,
+          0.3
+        ],
+        "x1_expr": "sin(t)",
+        "y1_expr": "cos(t)",
+        "x2_expr": "0.7*sin(t+0.2)",
+        "y2_expr": "0.7*cos(t+0.2)",
+        "z_order": 4,
+        "color_rgb": [
+          0.12,
+          0.48,
+          0.75
+        ],
+        "accent_rgb": [
+          0.55,
+          0.88,
+          0.96
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 118.0,
+        "anim_role": "wave",
+        "z_offset": -0.055,
+        "z_bulge": 0.12
+      },
+      {
+        "name": "lower_sand",
+        "type": "parametric_equation",
+        "weight": 0.15,
+        "mirror_x": true,
+        "center": [
+          0,
+          -0.3
+        ],
+        "scale": [
+          0.3,
+          0.3
+        ],
+        "x1_expr": "sin(t)",
+        "y1_expr": "cos(t)",
+        "x2_expr": "0.7*sin(t+0.2)",
+        "y2_expr": "0.7*cos(t+0.2)",
+        "z_order": 5,
+        "color_rgb": [
+          0.12,
+          0.48,
+          0.75
+        ],
+        "accent_rgb": [
+          0.55,
+          0.88,
+          0.96
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 118.0,
+        "anim_role": "wave",
+        "z_offset": -0.11,
+        "z_bulge": 0.12
+      }
+    ],
+    "bg_style": "golden_bokeh"
+  },
+  "shaheen eagle in flight": {
+    "title": "Aerodynamic Avian Form in Ascension",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 7 Coupled Parametric Manifolds",
+    "recommended_mode": "lines",
+    "bg_style": "sunset_sky",
+    "components": [
+      {
+        "name": "Left Wing",
+        "type": "ribbon_spine",
+        "weight": 0.25,
+        "mirror_x": true,
+        "z_order": 2,
+        "color_rgb": [
+          0.55,
+          0.35,
+          0.15
+        ],
+        "accent_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "texture_type": "feathers",
+        "edge_sharpness": 120.0,
+        "anim_role": "flap",
+        "z_offset": 0.1,
+        "z_bulge": 0.1,
+        "points": [
+          [
+            -0.8,
+            0.2
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.2,
+            0.7
+          ]
+        ],
+        "w_start": 0.08,
+        "w_end": 0.02,
+        "w_bulge": 0.05,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 4
+      },
+      {
+        "name": "Right Wing",
+        "type": "ribbon_spine",
+        "weight": 0.25,
+        "mirror_x": true,
+        "z_order": 2,
+        "color_rgb": [
+          0.55,
+          0.35,
+          0.15
+        ],
+        "accent_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "texture_type": "feathers",
+        "edge_sharpness": 120.0,
+        "anim_role": "flap",
+        "z_offset": 0.1,
+        "z_bulge": 0.1,
+        "points": [
+          [
+            0.2,
+            0.7
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.8,
+            0.2
+          ]
+        ],
+        "w_start": 0.08,
+        "w_end": 0.02,
+        "w_bulge": 0.05,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 4
+      },
+      {
+        "name": "Body",
+        "type": "polar_harmonic",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          0.4,
+          0.25,
+          0.1
+        ],
+        "accent_rgb": [
+          0.7,
+          0.5,
+          0.3
+        ],
+        "texture_type": "feathers",
+        "edge_sharpness": 100.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.05,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.3,
+          0.2
+        ],
+        "r0": 1.0,
+        "theta_range_deg": [
+          0,
+          360
+        ],
+        "harmonics": [
+          {
+            "m": 3,
+            "cos_amp": 0.5,
+            "sin_amp": 0.2,
+            "power": 1
+          }
+        ],
+        "inner_scale": 0.6,
+        "rotation_deg": 0
+      },
+      {
+        "name": "Tail",
+        "type": "crescent_lobe",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.5,
+          0.3,
+          0.15
+        ],
+        "accent_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "texture_type": "feathers",
+        "edge_sharpness": 110.0,
+        "anim_role": "sway",
+        "z_offset": -0.1,
+        "z_bulge": 0.05,
+        "center": [
+          0.0,
+          -0.5
+        ],
+        "outer_radius": 0.2,
+        "thickness": 0.3,
+        "arc_deg": 200,
+        "rotation_deg": 10
+      },
+      {
+        "name": "Left Eye",
+        "type": "wheel_rosette",
+        "weight": 0.05,
+        "mirror_x": true,
+        "z_order": 4,
+        "color_rgb": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "accent_rgb": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 140.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "center": [
+          -0.3,
+          0.3
+        ],
+        "outer_radius": 0.05,
+        "hub_radius": 0.01,
+        "spokes": 10
+      },
+      {
+        "name": "Right Eye",
+        "type": "wheel_rosette",
+        "weight": 0.05,
+        "mirror_x": true,
+        "z_order": 4,
+        "color_rgb": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "accent_rgb": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 140.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "center": [
+          0.3,
+          0.3
+        ],
+        "outer_radius": 0.05,
+        "hub_radius": 0.01,
+        "spokes": 10
+      },
+      {
+        "name": "Beak",
+        "type": "parametric_equation",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.6,
+          0.4,
+          0.2
+        ],
+        "accent_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 130.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "center": [
+          0.0,
+          0.5
+        ],
+        "scale": [
+          0.1,
+          0.1
+        ],
+        "x1_expr": "0.5*sin(t)",
+        "y1_expr": "0.5*cos(t)",
+        "x2_expr": "0.3*sin(t+0.1)",
+        "y2_expr": "0.3*cos(t+0.1)"
+      }
+    ]
+  },
+  "gulaab rose": {
+    "title": "Gulaab Rose Decomposition",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 5 Coupled Parametric Manifolds",
+    "recommended_mode": "circles",
+    "bg_style": "golden_bokeh",
+    "components": [
+      {
+        "name": "Petals",
+        "type": "polar_harmonic",
+        "weight": 0.25,
+        "mirror_x": true,
+        "z_order": 5,
+        "color_rgb": [
+          0.8,
+          0.4,
+          0.2
+        ],
+        "accent_rgb": [
+          0.9,
+          0.5,
+          0.3
+        ],
+        "texture_type": "petals",
+        "edge_sharpness": 120.0,
+        "anim_role": "sway",
+        "z_offset": 0.1,
+        "z_bulge": 0.15,
+        "center": [
+          0,
+          0
+        ],
+        "scale": [
+          0.4,
+          0.4
+        ],
+        "r0": 1,
+        "theta_range_deg": [
+          0,
+          360
+        ],
+        "harmonics": [
+          {
+            "m": 1,
+            "cos_amp": 0.5,
+            "sin_amp": 0.5,
+            "power": 1
+          },
+          {
+            "m": 2,
+            "cos_amp": 0.2,
+            "sin_amp": 0.2,
+            "power": 1
+          }
+        ],
+        "inner_scale": 0.7,
+        "rotation_deg": 0
+      },
+      {
+        "name": "Center",
+        "type": "wheel_rosette",
+        "weight": 0.15,
+        "mirror_x": true,
+        "z_order": 6,
+        "color_rgb": [
+          0.6,
+          0.3,
+          0.1
+        ],
+        "accent_rgb": [
+          0.7,
+          0.4,
+          0.2
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 100.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.05,
+        "center": [
+          0,
+          0
+        ],
+        "outer_radius": 0.2,
+        "hub_radius": 0.05,
+        "spokes": 12
+      },
+      {
+        "name": "Sepals",
+        "type": "ribbon_spine",
+        "weight": 0.1,
+        "mirror_x": true,
+        "z_order": 7,
+        "color_rgb": [
+          0.4,
+          0.2,
+          0.1
+        ],
+        "accent_rgb": [
+          0.5,
+          0.3,
+          0.2
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 130.0,
+        "anim_role": "wave",
+        "z_offset": 0.0,
+        "z_bulge": 0.05,
+        "points": [
+          [
+            -0.7,
+            -0.7
+          ],
+          [
+            -0.7,
+            0.7
+          ],
+          [
+            0.7,
+            0.7
+          ],
+          [
+            0.7,
+            -0.7
+          ]
+        ],
+        "w_start": 0.08,
+        "w_end": 0.04,
+        "w_bulge": -0.02,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 4
+      },
+      {
+        "name": "Stem",
+        "type": "ribbon_spine",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.3,
+          0.2,
+          0.1
+        ],
+        "accent_rgb": [
+          0.4,
+          0.3,
+          0.2
+        ],
+        "texture_type": "fur",
+        "edge_sharpness": 110.0,
+        "anim_role": "pulse",
+        "z_offset": 0.0,
+        "z_bulge": 0.05,
+        "points": [
+          [
+            0,
+            -0.8
+          ],
+          [
+            0,
+            0.8
+          ]
+        ],
+        "w_start": 0.06,
+        "w_end": 0.03,
+        "w_bulge": -0.01,
+        "w_mod_amp": 0.005,
+        "w_mod_freq": 3
+      },
+      {
+        "name": "Leaves",
+        "type": "parametric_equation",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 9,
+        "color_rgb": [
+          0.2,
+          0.1,
+          0.0
+        ],
+        "accent_rgb": [
+          0.3,
+          0.2,
+          0.1
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 90.0,
+        "anim_role": "sway",
+        "z_offset": 0.2,
+        "z_bulge": 0.15,
+        "center": [
+          0,
+          0
+        ],
+        "scale": [
+          0.3,
+          0.3
+        ],
+        "x1_expr": "sin(t)",
+        "y1_expr": "cos(t)",
+        "x2_expr": "0.7*sin(t+0.2)",
+        "y2_expr": "0.7*cos(t+0.2)"
+      }
+    ]
+  },
+  "a glowing jellyfish in the deep ocean": {
+    "title": "Luminous Cnidarian in Abyssal Depths",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 8 Coupled Parametric Manifolds",
+    "recommended_mode": "lines",
+    "bg_style": "deep_ocean",
+    "components": [
+      {
+        "name": "Jellyfish Bell",
+        "type": "implicit_sdf_expr",
+        "weight": 0.25,
+        "mirror_x": false,
+        "z_order": 2,
+        "color_rgb": [
+          0.1,
+          0.88,
+          1.0
+        ],
+        "accent_rgb": [
+          0.78,
+          0.22,
+          0.98
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 120.0,
+        "anim_role": "pulse",
+        "z_offset": 0.1,
+        "z_bulge": 0.15,
+        "sdf_expr": "sqrt((x-0.0)**2 + (y-0.2)**2) - 0.35",
+        "bounds": [
+          -1.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Tentacles",
+        "type": "repeated_field",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          0.05,
+          0.55,
+          0.85
+        ],
+        "accent_rgb": [
+          0.45,
+          0.75,
+          0.95
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 100.0,
+        "anim_role": "wave",
+        "z_offset": 0.05,
+        "z_bulge": 0.05,
+        "layout": "radial_fan",
+        "count": 12,
+        "base_shape": "tentacle",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.6,
+          0.6
+        ],
+        "scale_range": [
+          0.05,
+          0.2
+        ],
+        "seed": 2
+      },
+      {
+        "name": "Ocean Floor",
+        "type": "implicit_sdf_expr",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.05,
+          0.1,
+          0.15
+        ],
+        "accent_rgb": [
+          0.2,
+          0.3,
+          0.4
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 80.0,
+        "anim_role": "static",
+        "z_offset": -0.4,
+        "z_bulge": 0.1,
+        "sdf_expr": "y - (-0.2 + 0.1*exp(-4.0*x**2) + 0.05*exp(-5.0*(x-0.55)**2) - 0.05 + 0.02*E)",
+        "bounds": [
+          -1.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Glowing Spots",
+        "type": "repeated_field",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.95,
+          0.85,
+          0.75
+        ],
+        "accent_rgb": [
+          1.0,
+          0.95,
+          0.9
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 140.0,
+        "anim_role": "pulse",
+        "z_offset": 0.05,
+        "z_bulge": 0.05,
+        "layout": "scattered_cluster",
+        "count": 20,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.6,
+          0.6,
+          -0.4,
+          0.4
+        ],
+        "scale_range": [
+          0.02,
+          0.05
+        ],
+        "seed": 4
+      },
+      {
+        "name": "Seaweed",
+        "type": "repeated_field",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.1,
+          0.4,
+          0.2
+        ],
+        "accent_rgb": [
+          0.3,
+          0.6,
+          0.4
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": -0.2,
+        "z_bulge": 0.05,
+        "layout": "perspective_corridor",
+        "count": 15,
+        "base_shape": "tree",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.6,
+          0.6
+        ],
+        "scale_range": [
+          0.05,
+          0.2
+        ],
+        "seed": 5
+      },
+      {
+        "name": "Bioluminescent Trails",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.5,
+          0.7,
+          0.9
+        ],
+        "accent_rgb": [
+          0.8,
+          0.95,
+          1.0
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 120.0,
+        "anim_role": "wave",
+        "z_offset": 0.05,
+        "z_bulge": 0.05,
+        "layout": "wave_array",
+        "count": 10,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.6,
+          0.6,
+          -0.4,
+          0.4
+        ],
+        "scale_range": [
+          0.02,
+          0.05
+        ],
+        "seed": 6
+      },
+      {
+        "name": "Deep Sea Creatures",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 7,
+        "color_rgb": [
+          0.2,
+          0.4,
+          0.6
+        ],
+        "accent_rgb": [
+          0.4,
+          0.6,
+          0.8
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": -0.3,
+        "z_bulge": 0.05,
+        "layout": "scattered_cluster",
+        "count": 10,
+        "base_shape": "sphere",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.6,
+          0.6
+        ],
+        "scale_range": [
+          0.02,
+          0.05
+        ],
+        "seed": 7
+      }
+    ]
+  },
+  "snowy mountain peak at golden sunset with pine trees": {
+    "title": "Differential-Geometric Mountainous Landscape",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 8 Coupled Parametric Manifolds",
+    "recommended_mode": "lines",
+    "bg_style": "sunset_sky",
+    "components": [
+      {
+        "name": "Snowy Mountain Peak",
+        "type": "implicit_sdf_expr",
+        "weight": 0.25,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.95,
+          0.97,
+          1.0
+        ],
+        "accent_rgb": [
+          1.0,
+          0.68,
+          0.18
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": 0.2,
+        "z_bulge": 0.15,
+        "sdf_expr": "y - (0.45*exp(-4.0*x**2) + 0.25*exp(-5.0*(x-0.55)**2) - 0.18 + 0.06*E)",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.5,
+          0.5
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Pine Tree Forest",
+        "type": "repeated_field",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.15,
+          0.35,
+          0.05
+        ],
+        "accent_rgb": [
+          0.25,
+          0.55,
+          0.15
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": 0.1,
+        "z_bulge": 0.05,
+        "layout": "scattered_cluster",
+        "count": 20,
+        "base_shape": "tree",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.4,
+          0.4
+        ],
+        "scale_range": [
+          0.05,
+          0.2
+        ],
+        "seed": 2
+      },
+      {
+        "name": "Mountain Ridge",
+        "type": "implicit_sdf_expr",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 7,
+        "color_rgb": [
+          0.45,
+          0.35,
+          0.25
+        ],
+        "accent_rgb": [
+          0.65,
+          0.55,
+          0.45
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 140.0,
+        "anim_role": "static",
+        "z_offset": 0.3,
+        "z_bulge": 0.1,
+        "sdf_expr": "y - (0.3*exp(-3.0*x**2) + 0.2*exp(-4.0*(x-0.4)**2) - 0.1 + 0.04*E)",
+        "bounds": [
+          -0.9,
+          0.9,
+          -0.3,
+          0.3
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Snowy Slope",
+        "type": "implicit_sdf_expr",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.9,
+          0.95,
+          1.0
+        ],
+        "accent_rgb": [
+          0.7,
+          0.85,
+          0.95
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 110.0,
+        "anim_role": "static",
+        "z_offset": 0.05,
+        "z_bulge": 0.05,
+        "sdf_expr": "y - (0.2*exp(-2.0*x**2) + 0.1*exp(-3.0*(x-0.3)**2) - 0.05 + 0.02*E)",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.2,
+          0.2
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Golden Sunset Glow",
+        "type": "parametric_equation",
+        "weight": 0.05,
+        "mirror_x": true,
+        "z_order": 2,
+        "color_rgb": [
+          1.0,
+          0.68,
+          0.18
+        ],
+        "accent_rgb": [
+          0.9,
+          0.55,
+          0.15
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 90.0,
+        "anim_role": "pulse",
+        "z_offset": 0.01,
+        "z_bulge": 0.02,
+        "center": [
+          0.0,
+          0.5
+        ],
+        "scale": [
+          0.5,
+          0.5
+        ],
+        "x1_expr": "0.5*sin(t)",
+        "y1_expr": "0.5*cos(t)",
+        "x2_expr": "0.3*sin(t+0.2)",
+        "y2_expr": "0.3*cos(t+0.2)"
+      },
+      {
+        "name": "Distant Mountain Range",
+        "type": "implicit_sdf_expr",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.35,
+          0.25,
+          0.15
+        ],
+        "accent_rgb": [
+          0.55,
+          0.45,
+          0.35
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 130.0,
+        "anim_role": "static",
+        "z_offset": 0.4,
+        "z_bulge": 0.05,
+        "sdf_expr": "y - (0.2*exp(-2.0*x**2) + 0.1*exp(-3.0*(x-0.6)**2) - 0.05 + 0.02*E)",
+        "bounds": [
+          -0.9,
+          0.9,
+          -0.2,
+          0.2
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Foreground Pine Trees",
+        "type": "repeated_field",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          0.15,
+          0.35,
+          0.05
+        ],
+        "accent_rgb": [
+          0.25,
+          0.55,
+          0.15
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": 0.01,
+        "z_bulge": 0.02,
+        "layout": "scattered_cluster",
+        "count": 10,
+        "base_shape": "tree",
+        "bounds": [
+          -0.4,
+          0.4,
+          -0.2,
+          0.2
+        ],
+        "scale_range": [
+          0.1,
+          0.3
+        ],
+        "seed": 7
+      },
+      {
+        "name": "Snowflakes",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.9,
+          0.95,
+          1.0
+        ],
+        "accent_rgb": [
+          0.7,
+          0.85,
+          0.95
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 90.0,
+        "anim_role": "wave",
+        "z_offset": 0.01,
+        "z_bulge": 0.02,
+        "layout": "scattered_cluster",
+        "count": 50,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.4,
+          0.4
+        ],
+        "scale_range": [
+          0.02,
+          0.05
+        ],
+        "seed": 8
+      }
+    ]
+  },
+  "an astronaut floating near saturn rings in space": {
+    "title": "Saturnian Orbital Drift \u2014 Differential Manifold of a Weightless Explorer",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 8 Coupled Parametric Manifolds with Tilted Ring SDF and Stellar Repeated Fields",
+    "recommended_mode": "circles",
+    "bg_style": "cosmic_nebula",
+    "components": [
+      {
+        "name": "Astronaut Visor Reflection",
+        "type": "implicit_sdf_expr",
+        "weight": 0.28,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          0.1,
+          0.88,
+          1.0
+        ],
+        "accent_rgb": [
+          0.95,
+          0.97,
+          1.0
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 145.0,
+        "anim_role": "pulse",
+        "z_offset": 0.12,
+        "z_bulge": 0.18,
+        "sdf_expr": "sqrt((x-0.02)**2 + (y-0.18)**2) - 0.09",
+        "bounds": [
+          -0.25,
+          0.25,
+          -0.05,
+          0.35
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Astronaut Helmet Shell",
+        "type": "implicit_sdf_expr",
+        "weight": 0.3,
+        "mirror_x": false,
+        "z_order": 2,
+        "color_rgb": [
+          0.95,
+          0.97,
+          1.0
+        ],
+        "accent_rgb": [
+          0.55,
+          0.65,
+          0.85
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": 0.1,
+        "z_bulge": 0.22,
+        "sdf_expr": "sqrt((x-0.02)**2 + (y-0.18)**2) - 0.16",
+        "bounds": [
+          -0.3,
+          0.3,
+          -0.1,
+          0.4
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Astronaut Torso and Life Support Pack",
+        "type": "implicit_sdf_expr",
+        "weight": 0.25,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "accent_rgb": [
+          0.3,
+          0.35,
+          0.45
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 110.0,
+        "anim_role": "static",
+        "z_offset": 0.05,
+        "z_bulge": 0.2,
+        "sdf_expr": "sqrt((x-0.02)**2 + (y+0.05)**2) - 0.22",
+        "bounds": [
+          -0.35,
+          0.35,
+          -0.3,
+          0.3
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Saturn Planetary Disc",
+        "type": "implicit_sdf_expr",
+        "weight": 0.32,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.95,
+          0.72,
+          0.35
+        ],
+        "accent_rgb": [
+          0.85,
+          0.5,
+          0.2
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 95.0,
+        "anim_role": "static",
+        "z_offset": -0.3,
+        "z_bulge": 0.15,
+        "sdf_expr": "sqrt((x+0.55)**2 + (y-0.45)**2) - 0.28",
+        "bounds": [
+          -0.95,
+          0.1,
+          -0.95,
+          0.1
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Saturn Tilted Ring System",
+        "type": "implicit_sdf_expr",
+        "weight": 0.3,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.9,
+          0.8,
+          0.55
+        ],
+        "accent_rgb": [
+          0.7,
+          0.55,
+          0.3
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 100.0,
+        "anim_role": "orbit",
+        "z_offset": -0.25,
+        "z_bulge": 0.08,
+        "sdf_expr": "abs(sqrt((x*cos(0.45)+y*sin(0.45)+0.55*cos(0.45)-0.45*sin(0.45))**2 + (3.2*(-x*sin(0.45)+y*cos(0.45)+0.55*sin(0.45)+0.45*cos(0.45)))**2) - 0.52) - 0.06",
+        "bounds": [
+          -0.95,
+          0.3,
+          -0.95,
+          0.3
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Distant Star Cluster Field",
+        "type": "repeated_field",
+        "weight": 0.18,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.85,
+          0.9,
+          1.0
+        ],
+        "accent_rgb": [
+          0.6,
+          0.7,
+          0.95
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 85.0,
+        "anim_role": "pulse",
+        "z_offset": -0.45,
+        "z_bulge": 0.04,
+        "layout": "scattered_cluster",
+        "count": 45,
+        "base_shape": "star",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.95,
+          0.95
+        ],
+        "scale_range": [
+          0.02,
+          0.04
+        ],
+        "seed": 6
+      },
+      {
+        "name": "Foreground Asteroid Debris Field",
+        "type": "repeated_field",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.55,
+          0.5,
+          0.45
+        ],
+        "accent_rgb": [
+          0.75,
+          0.7,
+          0.6
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 105.0,
+        "anim_role": "orbit",
+        "z_offset": 0.15,
+        "z_bulge": 0.1,
+        "layout": "scattered_cluster",
+        "count": 18,
+        "base_shape": "sphere",
+        "bounds": [
+          -0.85,
+          0.85,
+          -0.85,
+          0.85
+        ],
+        "scale_range": [
+          0.02,
+          0.07
+        ],
+        "seed": 7
+      },
+      {
+        "name": "Nebular Dust Swirl",
+        "type": "parametric_equation",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 7,
+        "color_rgb": [
+          0.45,
+          0.25,
+          0.65
+        ],
+        "accent_rgb": [
+          0.7,
+          0.45,
+          0.85
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 70.0,
+        "anim_role": "sway",
+        "z_offset": -0.35,
+        "z_bulge": 0.06,
+        "center": [
+          0.3,
+          0.55
+        ],
+        "scale": [
+          0.55,
+          0.35
+        ],
+        "x1_expr": "0.8*sin(t)",
+        "y1_expr": "0.5*cos(t+0.4)",
+        "x2_expr": "0.6*sin(t+0.8)",
+        "y2_expr": "0.4*cos(t+1.2)"
+      },
+      {
+        "name": "Astronaut Tether Umbilical",
+        "type": "ribbon_spine",
+        "weight": 0.12,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.8,
+          0.85,
+          0.9
+        ],
+        "accent_rgb": [
+          0.5,
+          0.55,
+          0.65
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 90.0,
+        "anim_role": "wave",
+        "z_offset": 0.08,
+        "z_bulge": 0.05,
+        "points": [
+          [
+            0.02,
+            -0.15
+          ],
+          [
+            0.15,
+            -0.3
+          ],
+          [
+            0.35,
+            -0.45
+          ],
+          [
+            0.6,
+            -0.55
+          ],
+          [
+            0.8,
+            -0.6
+          ]
+        ],
+        "w_start": 0.03,
+        "w_end": 0.015,
+        "w_bulge": 0.02,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 3.0
+      }
+    ]
+  },
+  "a roaring bengal tiger in jungle": {
+    "title": "Differential-Geometric Bengal Tiger",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 8 Coupled Parametric Manifolds",
+    "recommended_mode": "lines",
+    "bg_style": "bokeh_forest",
+    "components": [
+      {
+        "name": "Tiger Eyes",
+        "type": "implicit_sdf_expr",
+        "weight": 0.25,
+        "mirror_x": true,
+        "z_order": 1,
+        "color_rgb": [
+          0.95,
+          0.68,
+          0.18
+        ],
+        "accent_rgb": [
+          1.0,
+          0.78,
+          0.0
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": 0.1,
+        "z_bulge": 0.05,
+        "sdf_expr": "sqrt((x-0.2)**2 + (y-0.1)**2) - 0.05",
+        "bounds": [
+          -1.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Tiger Stripes",
+        "type": "repeated_field",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 2,
+        "color_rgb": [
+          0.07,
+          0.06,
+          0.05
+        ],
+        "accent_rgb": [
+          0.95,
+          0.45,
+          0.08
+        ],
+        "texture_type": "fur",
+        "edge_sharpness": 100.0,
+        "anim_role": "static",
+        "z_offset": 0.05,
+        "z_bulge": 0.03,
+        "layout": "scattered_cluster",
+        "count": 20,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.6,
+          0.6
+        ],
+        "scale_range": [
+          0.05,
+          0.2
+        ],
+        "seed": 2
+      },
+      {
+        "name": "Jungle Trees",
+        "type": "repeated_field",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.1,
+          0.5,
+          0.1
+        ],
+        "accent_rgb": [
+          0.5,
+          0.8,
+          0.5
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 80.0,
+        "anim_role": "sway",
+        "z_offset": -0.2,
+        "z_bulge": 0.1,
+        "layout": "perspective_corridor",
+        "count": 30,
+        "base_shape": "tree",
+        "bounds": [
+          -0.9,
+          0.9,
+          -0.8,
+          0.8
+        ],
+        "scale_range": [
+          0.1,
+          0.5
+        ],
+        "seed": 3
+      },
+      {
+        "name": "Tiger Body",
+        "type": "implicit_sdf_expr",
+        "weight": 0.3,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.95,
+          0.45,
+          0.08
+        ],
+        "accent_rgb": [
+          1.0,
+          0.68,
+          0.18
+        ],
+        "texture_type": "fur",
+        "edge_sharpness": 110.0,
+        "anim_role": "static",
+        "z_offset": 0.05,
+        "z_bulge": 0.1,
+        "sdf_expr": "y - (0.45*exp(-4.0*x**2) + 0.25*exp(-5.0*(x-0.55)**2) - 0.18 + 0.06*E)",
+        "bounds": [
+          -1.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Jungle Floor",
+        "type": "implicit_sdf_expr",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.3,
+          0.2,
+          0.1
+        ],
+        "accent_rgb": [
+          0.6,
+          0.4,
+          0.2
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 70.0,
+        "anim_role": "static",
+        "z_offset": -0.4,
+        "z_bulge": 0.05,
+        "sdf_expr": "y + 0.5",
+        "bounds": [
+          -1.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Tiger Tail",
+        "type": "parametric_equation",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.95,
+          0.45,
+          0.08
+        ],
+        "accent_rgb": [
+          1.0,
+          0.68,
+          0.18
+        ],
+        "texture_type": "fur",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": 0.05,
+        "z_bulge": 0.05,
+        "center": [
+          0.0,
+          -0.5
+        ],
+        "scale": [
+          0.5,
+          0.5
+        ],
+        "x1_expr": "sin(t)",
+        "y1_expr": "cos(t)",
+        "x2_expr": "0.7*sin(t+0.2)",
+        "y2_expr": "0.7*cos(t+0.2)"
+      },
+      {
+        "name": "Jungle Leaves",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.1,
+          0.5,
+          0.1
+        ],
+        "accent_rgb": [
+          0.5,
+          0.8,
+          0.5
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 90.0,
+        "anim_role": "sway",
+        "z_offset": -0.1,
+        "z_bulge": 0.05,
+        "layout": "scattered_cluster",
+        "count": 40,
+        "base_shape": "petal",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.6,
+          0.6
+        ],
+        "scale_range": [
+          0.02,
+          0.1
+        ],
+        "seed": 7
+      },
+      {
+        "name": "Jungle Vines",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 7,
+        "color_rgb": [
+          0.2,
+          0.4,
+          0.2
+        ],
+        "accent_rgb": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 80.0,
+        "anim_role": "sway",
+        "z_offset": -0.2,
+        "z_bulge": 0.05,
+        "layout": "wave_array",
+        "count": 20,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.9,
+          0.9,
+          -0.8,
+          0.8
+        ],
+        "scale_range": [
+          0.05,
+          0.2
+        ],
+        "seed": 8
+      }
+    ]
+  },
+  "star": {
+    "title": "Celestial Lattice of Stellar Harmonics",
+    "subtitle": "7 Coupled Parametric Manifolds with Cosmic Repeated Fields",
+    "recommended_mode": "lines",
+    "bg_style": "cosmic_nebula",
+    "components": [
+      {
+        "name": "Central Stellar Core",
+        "type": "implicit_sdf_expr",
+        "weight": 0.25,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          1.0,
+          0.84,
+          0.0
+        ],
+        "accent_rgb": [
+          1.0,
+          1.0,
+          0.9
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.1,
+        "sdf_expr": "sqrt((x-0.0)**2 + (y-0.0)**2) - 0.2",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.95,
+          0.95
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Stellar Ray Network",
+        "type": "ribbon_spine",
+        "weight": 0.18,
+        "mirror_x": true,
+        "z_order": 2,
+        "color_rgb": [
+          1.0,
+          0.95,
+          0.75
+        ],
+        "accent_rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "texture_type": "feathers",
+        "edge_sharpness": 95.0,
+        "anim_role": "wave",
+        "z_offset": 0.05,
+        "z_bulge": 0.08,
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.3,
+            0.1
+          ],
+          [
+            0.2,
+            0.3
+          ],
+          [
+            0.0,
+            0.4
+          ],
+          [
+            -0.2,
+            0.3
+          ],
+          [
+            -0.3,
+            0.1
+          ]
+        ],
+        "w_start": 0.02,
+        "w_end": 0.01,
+        "w_bulge": 0.02,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 4
+      },
+      {
+        "name": "Star Cluster Field",
+        "type": "repeated_field",
+        "weight": 0.12,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.95,
+          0.95,
+          1.0
+        ],
+        "accent_rgb": [
+          0.8,
+          0.8,
+          1.0
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 70.0,
+        "anim_role": "static",
+        "z_offset": -0.1,
+        "z_bulge": 0.05,
+        "layout": "scattered_cluster",
+        "count": 20,
+        "base_shape": "star",
+        "bounds": [
+          -0.9,
+          0.9,
+          -0.9,
+          0.9
+        ],
+        "scale_range": [
+          0.02,
+          0.05
+        ],
+        "seed": 3
+      },
+      {
+        "name": "Orbital Ring System",
+        "type": "implicit_sdf_expr",
+        "weight": 0.22,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.6,
+          0.7,
+          1.0
+        ],
+        "accent_rgb": [
+          0.4,
+          0.5,
+          1.0
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 110.0,
+        "anim_role": "orbit",
+        "z_offset": 0.0,
+        "z_bulge": 0.07,
+        "sdf_expr": "abs(sqrt((x*cos(0.35)+y*sin(0.35))**2 + (3.4*(-x*sin(0.35)+y*cos(0.35)))**2) - 0.62) - 0.07",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.95,
+          0.95
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Nebular Halo",
+        "type": "implicit_sdf_expr",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.1,
+          0.2,
+          0.5
+        ],
+        "accent_rgb": [
+          0.05,
+          0.1,
+          0.3
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 60.0,
+        "anim_role": "pulse",
+        "z_offset": -0.2,
+        "z_bulge": 0.12,
+        "sdf_expr": "sqrt((x-0.0)**2 + (y-0.0)**2) - 0.8",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.95,
+          0.95
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Stellar Flare",
+        "type": "parametric_equation",
+        "weight": 0.1,
+        "mirror_x": true,
+        "z_order": 4,
+        "color_rgb": [
+          1.0,
+          0.7,
+          0.0
+        ],
+        "accent_rgb": [
+          1.0,
+          0.9,
+          0.6
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 85.0,
+        "anim_role": "sway",
+        "z_offset": 0.0,
+        "z_bulge": 0.06,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.5,
+          0.5
+        ],
+        "x1_expr": "0.3*sin(t)",
+        "y1_expr": "0.3*cos(t)",
+        "x2_expr": "0.1*sin(t+0.5)",
+        "y2_expr": "0.1*cos(t+0.5)"
+      }
+    ]
+  },
+  "faisal mosque islamabad with crescent moon": {
+    "title": "Geometric Harmony of Faisal Mosque",
+    "subtitle": "Differential-Geometric Decomposition \u2014 8 Coupled Parametric Manifolds",
+    "recommended_mode": "lines",
+    "bg_style": "sunset_sky",
+    "components": [
+      {
+        "name": "Crescent Moon",
+        "type": "crescent_lobe",
+        "weight": 0.15,
+        "mirror_x": true,
+        "z_order": 2,
+        "color_rgb": [
+          0.95,
+          0.85,
+          0.7
+        ],
+        "accent_rgb": [
+          1.0,
+          0.95,
+          0.8
+        ],
+        "texture_type": "smooth",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": 0.1,
+        "z_bulge": 0.05,
+        "center": [
+          0.4,
+          0.7
+        ],
+        "outer_radius": 0.25,
+        "thickness": 0.35,
+        "arc_deg": 180,
+        "rotation_deg": 45
+      },
+      {
+        "name": "Minaret",
+        "type": "parametric_equation",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.6,
+          0.4,
+          0.2
+        ],
+        "accent_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 100.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.1,
+        "center": [
+          -0.5,
+          -0.5
+        ],
+        "scale": [
+          0.5,
+          1.0
+        ],
+        "x1_expr": "t",
+        "y1_expr": "0.5*t",
+        "x2_expr": "0.8*t",
+        "y2_expr": "0.5*0.8*t"
+      },
+      {
+        "name": "Main Dome",
+        "type": "implicit_sdf_expr",
+        "weight": 0.25,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "accent_rgb": [
+          1.0,
+          0.8,
+          0.6
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 140.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.15,
+        "sdf_expr": "sqrt((x-0.0)**2 + (y-0.2)**2) - 0.45",
+        "bounds": [
+          -0.5,
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Pine Trees",
+        "type": "repeated_field",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.2,
+          0.5,
+          0.2
+        ],
+        "accent_rgb": [
+          0.4,
+          0.7,
+          0.4
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 80.0,
+        "anim_role": "sway",
+        "z_offset": -0.2,
+        "z_bulge": 0.05,
+        "layout": "scattered_cluster",
+        "count": 20,
+        "base_shape": "tree",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.8,
+          -0.2
+        ],
+        "scale_range": [
+          0.05,
+          0.2
+        ],
+        "seed": 4
+      },
+      {
+        "name": "Hills",
+        "type": "implicit_sdf_expr",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 7,
+        "color_rgb": [
+          0.6,
+          0.4,
+          0.2
+        ],
+        "accent_rgb": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": -0.3,
+        "z_bulge": 0.1,
+        "sdf_expr": "y - (0.2*exp(-4.0*x**2) + 0.1*exp(-5.0*(x-0.4)**2) - 0.1 + 0.05*E)",
+        "bounds": [
+          -0.9,
+          0.9,
+          -0.9,
+          0.0
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Stars",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.9,
+          0.95,
+          1.0
+        ],
+        "accent_rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 160.0,
+        "anim_role": "spin",
+        "z_offset": 0.4,
+        "z_bulge": 0.02,
+        "layout": "scattered_cluster",
+        "count": 50,
+        "base_shape": "star",
+        "bounds": [
+          -0.9,
+          0.9,
+          0.5,
+          0.9
+        ],
+        "scale_range": [
+          0.02,
+          0.05
+        ],
+        "seed": 6
+      },
+      {
+        "name": "Foreground Trees",
+        "type": "repeated_field",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          0.2,
+          0.5,
+          0.2
+        ],
+        "accent_rgb": [
+          0.4,
+          0.7,
+          0.4
+        ],
+        "texture_type": "foliage",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": 0.2,
+        "z_bulge": 0.1,
+        "layout": "perspective_corridor",
+        "count": 15,
+        "base_shape": "tree",
+        "bounds": [
+          -0.8,
+          0.8,
+          -0.5,
+          0.0
+        ],
+        "scale_range": [
+          0.1,
+          0.3
+        ],
+        "seed": 7
+      }
+    ]
+  },
+  "a detailed mechanical bicycle": {
+    "title": "Differential-Geometric Bicycle",
+    "subtitle": "Parametric Decomposition \u2014 8 Coupled Manifolds",
+    "recommended_mode": "lines",
+    "bg_style": "sunset_sky",
+    "components": [
+      {
+        "name": "Front Wheel",
+        "type": "wheel_rosette",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 2,
+        "color_rgb": [
+          0.45,
+          0.25,
+          0.08
+        ],
+        "accent_rgb": [
+          0.95,
+          0.68,
+          0.18
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 120.0,
+        "anim_role": "spin",
+        "z_offset": 0.1,
+        "z_bulge": 0.05,
+        "center": [
+          0.4,
+          -0.6
+        ],
+        "outer_radius": 0.25,
+        "hub_radius": 0.05,
+        "spokes": 12
+      },
+      {
+        "name": "Rear Wheel",
+        "type": "wheel_rosette",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 2,
+        "color_rgb": [
+          0.45,
+          0.25,
+          0.08
+        ],
+        "accent_rgb": [
+          0.95,
+          0.68,
+          0.18
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 120.0,
+        "anim_role": "spin",
+        "z_offset": 0.1,
+        "z_bulge": 0.05,
+        "center": [
+          -0.4,
+          -0.6
+        ],
+        "outer_radius": 0.25,
+        "hub_radius": 0.05,
+        "spokes": 12
+      },
+      {
+        "name": "Frame",
+        "type": "ribbon_spine",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.25,
+          0.45,
+          0.65
+        ],
+        "accent_rgb": [
+          0.85,
+          0.95,
+          1.0
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 100.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.03,
+        "points": [
+          [
+            -0.4,
+            -0.6
+          ],
+          [
+            0.0,
+            -0.2
+          ],
+          [
+            0.4,
+            -0.6
+          ]
+        ],
+        "w_start": 0.05,
+        "w_end": 0.05,
+        "w_bulge": 0.01,
+        "w_mod_amp": 0.01,
+        "w_mod_freq": 4
+      },
+      {
+        "name": "Seat",
+        "type": "implicit_sdf_expr",
+        "weight": 0.08,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.65,
+          0.45,
+          0.25
+        ],
+        "accent_rgb": [
+          0.95,
+          0.85,
+          0.75
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 90.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "sdf_expr": "y - (0.2 + 0.1*exp(-4.0*(x-0.1)**2))",
+        "bounds": [
+          -0.2,
+          0.2,
+          -0.1,
+          0.1
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Handlebars",
+        "type": "ribbon_spine",
+        "weight": 0.08,
+        "mirror_x": true,
+        "z_order": 1,
+        "color_rgb": [
+          0.45,
+          0.25,
+          0.08
+        ],
+        "accent_rgb": [
+          0.95,
+          0.68,
+          0.18
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 110.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "points": [
+          [
+            0.3,
+            0.4
+          ],
+          [
+            0.1,
+            0.6
+          ],
+          [
+            0.0,
+            0.7
+          ]
+        ],
+        "w_start": 0.03,
+        "w_end": 0.01,
+        "w_bulge": 0.005,
+        "w_mod_amp": 0.005,
+        "w_mod_freq": 3
+      },
+      {
+        "name": "Pedals",
+        "type": "repeated_field",
+        "weight": 0.05,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.25,
+          0.45,
+          0.65
+        ],
+        "accent_rgb": [
+          0.85,
+          0.95,
+          1.0
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 100.0,
+        "anim_role": "spin",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "layout": "perspective_corridor",
+        "count": 8,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.2,
+          0.2,
+          -0.6,
+          -0.4
+        ],
+        "scale_range": [
+          0.05,
+          0.1
+        ],
+        "seed": 6
+      },
+      {
+        "name": "Chain",
+        "type": "repeated_field",
+        "weight": 0.03,
+        "mirror_x": false,
+        "z_order": 6,
+        "color_rgb": [
+          0.45,
+          0.25,
+          0.08
+        ],
+        "accent_rgb": [
+          0.95,
+          0.68,
+          0.18
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 90.0,
+        "anim_role": "wave",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "layout": "wave_array",
+        "count": 10,
+        "base_shape": "lobe",
+        "bounds": [
+          -0.4,
+          0.4,
+          -0.6,
+          -0.2
+        ],
+        "scale_range": [
+          0.02,
+          0.03
+        ],
+        "seed": 7
+      },
+      {
+        "name": "Ground",
+        "type": "implicit_sdf_expr",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.65,
+          0.45,
+          0.25
+        ],
+        "accent_rgb": [
+          0.95,
+          0.85,
+          0.75
+        ],
+        "texture_type": "petals",
+        "edge_sharpness": 80.0,
+        "anim_role": "static",
+        "z_offset": 0.0,
+        "z_bulge": 0.02,
+        "sdf_expr": "y + 0.8",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.9,
+          -0.7
+        ],
+        "relief_shadow": true
+      }
+    ]
+  },
+  "ornate brass lantern": {
+    "title": "Ornate Brass Lantern \u2014 Differential Geometric Decomposition",
+    "subtitle": "Harmonic Differential-Geometric Decomposition \u2014 8 Coupled Parametric Manifolds",
+    "recommended_mode": "circles",
+    "bg_style": "night_sky",
+    "components": [
+      {
+        "name": "Lantern Flame Core",
+        "type": "implicit_sdf_expr",
+        "weight": 0.3,
+        "mirror_x": false,
+        "z_order": 1,
+        "color_rgb": [
+          1.0,
+          0.85,
+          0.35
+        ],
+        "accent_rgb": [
+          1.0,
+          0.45,
+          0.1
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 95.0,
+        "anim_role": "pulse",
+        "z_offset": 0.05,
+        "z_bulge": 0.18,
+        "sdf_expr": "sqrt(x**2 + (y-0.05)**2) - (0.12 + 0.03*sin(5.0*atan2(y-0.05, x) + 2.0*E))",
+        "bounds": [
+          -0.3,
+          0.3,
+          -0.25,
+          0.35
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Inner Glass Dome",
+        "type": "implicit_sdf_expr",
+        "weight": 0.22,
+        "mirror_x": false,
+        "z_order": 2,
+        "color_rgb": [
+          0.95,
+          0.75,
+          0.3
+        ],
+        "accent_rgb": [
+          1.0,
+          0.95,
+          0.7
+        ],
+        "texture_type": "marble",
+        "edge_sharpness": 110.0,
+        "anim_role": "static",
+        "z_offset": 0.02,
+        "z_bulge": 0.12,
+        "sdf_expr": "sqrt(x**2 + (y-0.05)**2) - 0.22",
+        "bounds": [
+          -0.35,
+          0.35,
+          -0.3,
+          0.4
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Brass Filigree Ring",
+        "type": "polar_harmonic",
+        "weight": 0.18,
+        "mirror_x": false,
+        "z_order": 3,
+        "color_rgb": [
+          0.85,
+          0.6,
+          0.2
+        ],
+        "accent_rgb": [
+          1.0,
+          0.85,
+          0.4
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 130.0,
+        "anim_role": "spin",
+        "z_offset": 0.0,
+        "z_bulge": 0.08,
+        "center": [
+          0.0,
+          0.05
+        ],
+        "scale": [
+          0.3,
+          0.3
+        ],
+        "r0": 1.0,
+        "theta_range_deg": [
+          0,
+          360
+        ],
+        "harmonics": [
+          {
+            "m": 8,
+            "cos_amp": 0.12,
+            "sin_amp": 0.08,
+            "power": 1
+          },
+          {
+            "m": 16,
+            "cos_amp": 0.05,
+            "sin_amp": 0.04,
+            "power": 1
+          }
+        ],
+        "inner_scale": 0.72,
+        "rotation_deg": 15
+      },
+      {
+        "name": "Upper Lantern Cap",
+        "type": "implicit_sdf_expr",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.75,
+          0.5,
+          0.15
+        ],
+        "accent_rgb": [
+          0.95,
+          0.75,
+          0.3
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 120.0,
+        "anim_role": "static",
+        "z_offset": -0.05,
+        "z_bulge": 0.1,
+        "sdf_expr": "y - (0.35 + 0.1*exp(-6.0*x**2) - 0.05*cos(3.0*x + E))",
+        "bounds": [
+          -0.4,
+          0.4,
+          0.2,
+          0.55
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Lower Lantern Base",
+        "type": "implicit_sdf_expr",
+        "weight": 0.2,
+        "mirror_x": false,
+        "z_order": 4,
+        "color_rgb": [
+          0.7,
+          0.45,
+          0.12
+        ],
+        "accent_rgb": [
+          0.9,
+          0.7,
+          0.25
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 115.0,
+        "anim_role": "static",
+        "z_offset": -0.05,
+        "z_bulge": 0.1,
+        "sdf_expr": "-(y - (-0.35 - 0.08*exp(-5.0*x**2) + 0.04*cos(2.5*x + 0.5*E)))",
+        "bounds": [
+          -0.4,
+          0.4,
+          -0.55,
+          -0.15
+        ],
+        "relief_shadow": true
+      },
+      {
+        "name": "Hanging Chain Links",
+        "type": "repeated_field",
+        "weight": 0.15,
+        "mirror_x": false,
+        "z_order": 5,
+        "color_rgb": [
+          0.8,
+          0.55,
+          0.18
+        ],
+        "accent_rgb": [
+          1.0,
+          0.8,
+          0.35
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 100.0,
+        "anim_role": "sway",
+        "z_offset": -0.1,
+        "z_bulge": 0.06,
+        "layout": "wave_array",
+        "count": 12,
+        "base_shape": "sphere",
+        "bounds": [
+          -0.08,
+          0.08,
+          0.55,
+          0.9
+        ],
+        "scale_range": [
+          0.02,
+          0.04
+        ],
+        "seed": 6
+      },
+      {
+        "name": "Ornate Side Scrolls",
+        "type": "parametric_equation",
+        "weight": 0.16,
+        "mirror_x": true,
+        "z_order": 3,
+        "color_rgb": [
+          0.82,
+          0.58,
+          0.2
+        ],
+        "accent_rgb": [
+          1.0,
+          0.82,
+          0.4
+        ],
+        "texture_type": "metallic",
+        "edge_sharpness": 125.0,
+        "anim_role": "static",
+        "z_offset": 0.03,
+        "z_bulge": 0.07,
+        "center": [
+          0.35,
+          0.05
+        ],
+        "scale": [
+          0.12,
+          0.2
+        ],
+        "x1_expr": "0.35 + 0.1*cos(t)",
+        "y1_expr": "0.05 + 0.18*sin(t)",
+        "x2_expr": "0.35 + 0.07*cos(t+0.5)",
+        "y2_expr": "0.05 + 0.14*sin(t+0.5)"
+      },
+      {
+        "name": "Distant Star Clusters",
+        "type": "repeated_field",
+        "weight": 0.1,
+        "mirror_x": false,
+        "z_order": 8,
+        "color_rgb": [
+          0.9,
+          0.9,
+          1.0
+        ],
+        "accent_rgb": [
+          0.7,
+          0.8,
+          1.0
+        ],
+        "texture_type": "cosmic",
+        "edge_sharpness": 70.0,
+        "anim_role": "pulse",
+        "z_offset": -0.4,
+        "z_bulge": 0.02,
+        "layout": "scattered_cluster",
+        "count": 45,
+        "base_shape": "star",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.95,
+          0.95
+        ],
+        "scale_range": [
+          0.02,
+          0.03
+        ],
+        "seed": 8
+      },
+      {
+        "name": "Ground Mist Ripples",
+        "type": "implicit_sdf_expr",
+        "weight": 0.12,
+        "mirror_x": false,
+        "z_order": 7,
+        "color_rgb": [
+          0.4,
+          0.5,
+          0.6
+        ],
+        "accent_rgb": [
+          0.6,
+          0.7,
+          0.8
+        ],
+        "texture_type": "water",
+        "edge_sharpness": 60.0,
+        "anim_role": "wave",
+        "z_offset": -0.3,
+        "z_bulge": 0.04,
+        "sdf_expr": "y - (-0.6 + 0.08*sin(4.0*x + 1.5*E)*exp(-2.0*x**2))",
+        "bounds": [
+          -0.95,
+          0.95,
+          -0.9,
+          -0.4
+        ],
+        "relief_shadow": true
+      }
+    ]
+  }
+}

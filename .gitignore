@@ -1,0 +1,48 @@
+# Environment & Secrets (NEVER commit credentials)
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*creds*.txt
+*secret*.json
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated Runtime Renders & Test Outputs (Curated showcase assets live in /assets/)
+backend/out_of_box_videos/
+backend/sheet_*.png
+backend/hdges_text_phoenix.png
+backend/hdges_benchmark_summary.json
+backend/*.gif
+backend/*.mp4
+backend/*.png
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log

@@ -1,0 +1,6610 @@
+{
+  "a golden phoenix rising over turbulent sapphire ocean waves": {
+    "title": "Aurelian Phoenix Ascending Over the Sapphire Tempest",
+    "subtitle": "Coupled 3D Implicit SDF & Minimal-Surface Raymarched Manifold d(p, t) = 0",
+    "aspect": [
+      16,
+      10
+    ],
+    "camera_dist": 3.05,
+    "camera_height": 0.42,
+    "camera_orbit_speed": 0.38,
+    "fov": 1.72,
+    "sky_top_rgb": [
+      0.04,
+      0.08,
+      0.24
+    ],
+    "sky_horizon_rgb": [
+      0.45,
+      0.58,
+      0.82
+    ],
+    "fog_density": 0.045,
+    "sun_dir": [
+      0.5802,
+      0.7203,
+      0.3802
+    ],
+    "floor_type": "ocean_waves",
+    "floor_height": -0.78,
+    "floor_rgb": [
+      0.04,
+      0.24,
+      0.58
+    ],
+    "nodes": [
+      {
+        "id": "phoenix_torso",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          0.12,
+          0.0
+        ],
+        "size": [
+          0.32,
+          0.44,
+          0.28
+        ],
+        "rotation": [
+          0.12,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.2,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.4,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.03,
+        "fbm_freq": 4.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.96,
+            0.66,
+            0.16
+          ],
+          "metallic": 0.88,
+          "roughness": 0.18,
+          "subsurface": 0.35,
+          "emission": 0.3,
+          "fresnel": 0.9,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            1.0,
+            0.86,
+            0.38
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.06,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "phoenix_neck",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "capsule",
+        "center": [
+          0.0,
+          0.42,
+          0.05
+        ],
+        "size": [
+          0.11,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.25
+        ],
+        "endpoint_a": [
+          0.0,
+          0.28,
+          0.02
+        ],
+        "endpoint_b": [
+          0.06,
+          0.62,
+          0.12
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.2,
+        "fbm_amp": 0.02,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.98,
+            0.72,
+            0.2
+          ],
+          "metallic": 0.9,
+          "roughness": 0.16,
+          "subsurface": 0.32,
+          "emission": 0.35,
+          "fresnel": 0.92,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.45
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.02,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.06,
+            0.0,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 0.4
+        }
+      },
+      {
+        "id": "phoenix_head",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "ellipsoid",
+        "center": [
+          0.1,
+          0.72,
+          0.14
+        ],
+        "size": [
+          0.13,
+          0.11,
+          0.15
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.2
+        ],
+        "endpoint_a": [
+          0.0,
+          0.6,
+          0.1
+        ],
+        "endpoint_b": [
+          0.0,
+          0.8,
+          0.16
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.015,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.99,
+            0.78,
+            0.24
+          ],
+          "metallic": 0.92,
+          "roughness": 0.14,
+          "subsurface": 0.28,
+          "emission": 0.4,
+          "fresnel": 0.94,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            1.0,
+            0.92,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.02,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.0,
+            0.06
+          ],
+          "freq": 1.0,
+          "phase": 0.6
+        }
+      },
+      {
+        "id": "phoenix_beak",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cone",
+        "center": [
+          0.2,
+          0.72,
+          0.16
+        ],
+        "size": [
+          0.24,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -1.35
+        ],
+        "endpoint_a": [
+          0.12,
+          0.72,
+          0.16
+        ],
+        "endpoint_b": [
+          0.3,
+          0.74,
+          0.16
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.8,
+            0.42,
+            0.1
+          ],
+          "metallic": 0.75,
+          "roughness": 0.28,
+          "subsurface": 0.15,
+          "emission": 0.15,
+          "fresnel": 0.75,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            0.95,
+            0.6,
+            0.2
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.02,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.04,
+            0.0,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 0.6
+        }
+      },
+      {
+        "id": "phoenix_eye_left",
+        "op": "union",
+        "blend_k": 0.05,
+        "primitive": "sphere",
+        "center": [
+          0.16,
+          0.76,
+          0.24
+        ],
+        "size": [
+          0.035,
+          0.035,
+          0.035
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.32,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            1.0,
+            0.85,
+            0.3
+          ],
+          "metallic": 0.1,
+          "roughness": 0.1,
+          "subsurface": 0.2,
+          "emission": 1.8,
+          "fresnel": 0.6,
+          "stripe_freq": 3.0,
+          "stripe_rgb": [
+            1.0,
+            0.95,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.01,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 2.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "phoenix_crown_crest",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.08,
+          0.9,
+          0.1
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.3
+        ],
+        "endpoint_a": [
+          0.08,
+          0.82,
+          0.1
+        ],
+        "endpoint_b": [
+          0.08,
+          1.05,
+          0.06
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 7,
+        "repeat_period": null,
+        "twist": 0.3,
+        "bend": 0.15,
+        "fbm_amp": 0.02,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            1.0,
+            0.8,
+            0.3
+          ],
+          "metallic": 0.92,
+          "roughness": 0.12,
+          "subsurface": 0.25,
+          "emission": 0.9,
+          "fresnel": 0.94,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            1.0,
+            0.94,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.08,
+            0.0,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 0.3
+        }
+      },
+      {
+        "id": "wing_primary_left",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.62,
+          0.42,
+          0.0
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "endpoint_a": [
+          0.22,
+          0.35,
+          0.02
+        ],
+        "endpoint_b": [
+          1.15,
+          0.62,
+          -0.1
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.25,
+        "bend": 0.3,
+        "fbm_amp": 0.04,
+        "fbm_freq": 5.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.97,
+            0.7,
+            0.18
+          ],
+          "metallic": 0.88,
+          "roughness": 0.18,
+          "subsurface": 0.4,
+          "emission": 0.55,
+          "fresnel": 0.92,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.88,
+            0.42
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.22
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "wing_secondary_left",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "ruled_paraboloid",
+        "center": [
+          0.55,
+          0.28,
+          -0.08
+        ],
+        "size": [
+          0.55,
+          0.18,
+          0.3
+        ],
+        "rotation": [
+          0.1,
+          0.0,
+          0.2
+        ],
+        "endpoint_a": [
+          0.2,
+          0.25,
+          -0.05
+        ],
+        "endpoint_b": [
+          1.0,
+          0.4,
+          -0.2
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.15,
+        "bend": 0.25,
+        "fbm_amp": 0.03,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.95,
+            0.6,
+            0.14
+          ],
+          "metallic": 0.85,
+          "roughness": 0.22,
+          "subsurface": 0.45,
+          "emission": 0.45,
+          "fresnel": 0.9,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            1.0,
+            0.82,
+            0.35
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.18
+          ],
+          "freq": 1.0,
+          "phase": 0.25
+        }
+      },
+      {
+        "id": "wing_covert_left",
+        "op": "smin",
+        "blend_k": 0.1,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.42,
+          0.2,
+          0.05
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "endpoint_a": [
+          0.18,
+          0.18,
+          0.06
+        ],
+        "endpoint_b": [
+          0.72,
+          0.3,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.1,
+        "bend": 0.2,
+        "fbm_amp": 0.03,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.98,
+            0.75,
+            0.22
+          ],
+          "metallic": 0.9,
+          "roughness": 0.16,
+          "subsurface": 0.35,
+          "emission": 0.5,
+          "fresnel": 0.92,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.48
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.15
+          ],
+          "freq": 1.0,
+          "phase": 0.5
+        }
+      },
+      {
+        "id": "primary_feather_left",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "capsule",
+        "center": [
+          0.95,
+          0.55,
+          -0.15
+        ],
+        "size": [
+          0.025,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "endpoint_a": [
+          0.85,
+          0.5,
+          -0.12
+        ],
+        "endpoint_b": [
+          1.3,
+          0.72,
+          -0.25
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.1,
+        "fbm_amp": 0.01,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.99,
+            0.82,
+            0.3
+          ],
+          "metallic": 0.94,
+          "roughness": 0.12,
+          "subsurface": 0.3,
+          "emission": 0.7,
+          "fresnel": 0.95,
+          "stripe_freq": 11.0,
+          "stripe_rgb": [
+            1.0,
+            0.93,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.2
+          ],
+          "freq": 1.0,
+          "phase": 0.15
+        }
+      },
+      {
+        "id": "tail_plume_center",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.0,
+          -0.25,
+          -0.15
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.3,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.1,
+          -0.05
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.75,
+          -0.45
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.35,
+        "bend": 0.4,
+        "fbm_amp": 0.04,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.96,
+            0.55,
+            0.12
+          ],
+          "metallic": 0.88,
+          "roughness": 0.18,
+          "subsurface": 0.5,
+          "emission": 0.75,
+          "fresnel": 0.92,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.7,
+            0.25
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.1,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.8
+        }
+      },
+      {
+        "id": "tail_plume_side_left",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.22,
+          -0.22,
+          -0.12
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.25,
+          0.0,
+          0.2
+        ],
+        "endpoint_a": [
+          0.12,
+          -0.08,
+          -0.04
+        ],
+        "endpoint_b": [
+          0.55,
+          -0.6,
+          -0.4
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.3,
+        "bend": 0.35,
+        "fbm_amp": 0.035,
+        "fbm_freq": 5.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.94,
+            0.45,
+            0.1
+          ],
+          "metallic": 0.85,
+          "roughness": 0.2,
+          "subsurface": 0.5,
+          "emission": 0.7,
+          "fresnel": 0.9,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.6,
+            0.2
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.09,
+            0.0,
+            0.06
+          ],
+          "freq": 1.0,
+          "phase": 1.0
+        }
+      },
+      {
+        "id": "tail_plume_outer_left",
+        "op": "smin",
+        "blend_k": 0.1,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.42,
+          -0.15,
+          -0.08
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.2,
+          0.0,
+          0.4
+        ],
+        "endpoint_a": [
+          0.25,
+          -0.05,
+          -0.03
+        ],
+        "endpoint_b": [
+          0.85,
+          -0.4,
+          -0.3
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.25,
+        "bend": 0.3,
+        "fbm_amp": 0.03,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.9,
+            0.35,
+            0.08
+          ],
+          "metallic": 0.82,
+          "roughness": 0.22,
+          "subsurface": 0.55,
+          "emission": 0.65,
+          "fresnel": 0.88,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            1.0,
+            0.5,
+            0.15
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.08,
+            0.0,
+            0.08
+          ],
+          "freq": 1.0,
+          "phase": 1.2
+        }
+      },
+      {
+        "id": "solar_heart_core",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "mandelbulb_core",
+        "center": [
+          0.0,
+          0.15,
+          0.05
+        ],
+        "size": [
+          0.14,
+          0.14,
+          0.14
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.32,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            1.0,
+            0.9,
+            0.5
+          ],
+          "metallic": 0.3,
+          "roughness": 0.1,
+          "subsurface": 0.4,
+          "emission": 1.6,
+          "fresnel": 0.7,
+          "stripe_freq": 5.0,
+          "stripe_rgb": [
+            1.0,
+            0.97,
+            0.7
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.1,
+            0.15,
+            0.05
+          ],
+          "freq": 2.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "halo_ring",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "torus",
+        "center": [
+          0.1,
+          0.85,
+          0.1
+        ],
+        "size": [
+          0.28,
+          0.0448,
+          0.28
+        ],
+        "rotation": [
+          1.2,
+          0.2,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.32,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            1.0,
+            0.85,
+            0.35
+          ],
+          "metallic": 0.95,
+          "roughness": 0.1,
+          "subsurface": 0.1,
+          "emission": 1.1,
+          "fresnel": 0.95,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            1.0,
+            0.95,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.12,
+            0.2,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.5
+        }
+      },
+      {
+        "id": "ember_spark_radial",
+        "op": "union",
+        "blend_k": 0.06,
+        "primitive": "sphere",
+        "center": [
+          0.0,
+          0.05,
+          0.35
+        ],
+        "size": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.32,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 9,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            1.0,
+            0.75,
+            0.25
+          ],
+          "metallic": 0.2,
+          "roughness": 0.1,
+          "subsurface": 0.3,
+          "emission": 2.0,
+          "fresnel": 0.6,
+          "stripe_freq": 3.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.06,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.3,
+            0.0
+          ],
+          "freq": 2.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "wave_crest_gyroid_left",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.85,
+          -0.68,
+          0.3
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.32,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.02,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 7.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.15,
+            0.55,
+            0.85
+          ],
+          "metallic": 0.3,
+          "roughness": 0.15,
+          "subsurface": 0.6,
+          "emission": 0.35,
+          "fresnel": 0.85,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            0.5,
+            0.85,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.08,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.1,
+            0.0
+          ],
+          "freq": 2.0,
+          "phase": 0.9
+        }
+      },
+      {
+        "id": "spray_ribbon_left",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "floraform_ribbon",
+        "center": [
+          1.05,
+          -0.55,
+          -0.2
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.3
+        ],
+        "endpoint_a": [
+          0.9,
+          -0.72,
+          -0.2
+        ],
+        "endpoint_b": [
+          1.25,
+          -0.3,
+          -0.25
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.2,
+        "bend": 0.3,
+        "fbm_amp": 0.03,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.3,
+            0.7,
+            0.95
+          ],
+          "metallic": 0.2,
+          "roughness": 0.12,
+          "subsurface": 0.85,
+          "emission": 0.3,
+          "fresnel": 0.9,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            0.7,
+            0.92,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.1,
+            0.0
+          ],
+          "amp_rot": [
+            0.08,
+            0.0,
+            0.1
+          ],
+          "freq": 2.0,
+          "phase": 1.4
+        }
+      }
+    ],
+    "refinement_passes": 2,
+    "visual_score": 6.5,
+    "motion_energy": 9.165
+  },
+  "a hyperbolic bronze cathedral with glowing gyroid pillars and god rays": {
+    "title": "Hyperbolic Bronze Cathedral of Gyroid Pillars and Divine Light",
+    "subtitle": "Coupled 3D Implicit SDF & Minimal-Surface Raymarched Manifold d(p, t) = 0",
+    "aspect": [
+      16,
+      10
+    ],
+    "camera_dist": 3.05,
+    "camera_height": 0.48,
+    "camera_orbit_speed": 0.32,
+    "fov": 1.72,
+    "sky_top_rgb": [
+      0.04,
+      0.07,
+      0.18
+    ],
+    "sky_horizon_rgb": [
+      0.72,
+      0.55,
+      0.32
+    ],
+    "fog_density": 0.055,
+    "sun_dir": [
+      0.4803,
+      0.7805,
+      0.4002
+    ],
+    "floor_type": "marble_reflection",
+    "floor_height": -0.82,
+    "floor_rgb": [
+      0.58,
+      0.52,
+      0.44
+    ],
+    "nodes": [
+      {
+        "id": "sanctuary_vault",
+        "op": "smin",
+        "blend_k": 0.2,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.0,
+          0.42,
+          0.0
+        ],
+        "size": [
+          0.72,
+          0.82,
+          0.72
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.8,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.012,
+        "fbm_freq": 3.5,
+        "gyroid_scale": 6.8,
+        "gyroid_thickness": 0.07,
+        "material": {
+          "rgb": [
+            0.72,
+            0.52,
+            0.24
+          ],
+          "metallic": 0.9,
+          "roughness": 0.26,
+          "subsurface": 0.15,
+          "emission": 0.15,
+          "fresnel": 0.75,
+          "stripe_freq": 4.5,
+          "stripe_rgb": [
+            0.95,
+            0.75,
+            0.38
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.06,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "altar_plinth",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "box",
+        "center": [
+          0.0,
+          -0.62,
+          0.0
+        ],
+        "size": [
+          0.58,
+          0.14,
+          0.58
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.7,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.5,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.008,
+        "fbm_freq": 2.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.68,
+            0.62,
+            0.52
+          ],
+          "metallic": 0.1,
+          "roughness": 0.35,
+          "subsurface": 0.2,
+          "emission": 0.0,
+          "fresnel": 0.4,
+          "stripe_freq": 3.0,
+          "stripe_rgb": [
+            0.85,
+            0.8,
+            0.7
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "pillar_left_front",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "kleinian_fold",
+        "center": [
+          0.82,
+          -0.1,
+          0.38
+        ],
+        "size": [
+          0.18,
+          0.75,
+          0.18
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.82,
+          -0.7,
+          0.38
+        ],
+        "endpoint_b": [
+          0.82,
+          0.5,
+          0.38
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.15,
+        "bend": 0.0,
+        "fbm_amp": 0.015,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.7,
+            0.5,
+            0.22
+          ],
+          "metallic": 0.85,
+          "roughness": 0.3,
+          "subsurface": 0.12,
+          "emission": 0.1,
+          "fresnel": 0.65,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            0.95,
+            0.75,
+            0.4
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "pillar_left_back",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.82,
+          -0.05,
+          -0.38
+        ],
+        "size": [
+          0.2,
+          0.7,
+          0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.82,
+          -0.7,
+          -0.38
+        ],
+        "endpoint_b": [
+          0.82,
+          0.45,
+          -0.38
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.01,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 8.2,
+        "gyroid_thickness": 0.055,
+        "material": {
+          "rgb": [
+            0.75,
+            0.55,
+            0.25
+          ],
+          "metallic": 0.9,
+          "roughness": 0.22,
+          "subsurface": 0.1,
+          "emission": 0.18,
+          "fresnel": 0.75,
+          "stripe_freq": 5.0,
+          "stripe_rgb": [
+            1.0,
+            0.82,
+            0.45
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            -0.05,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 1.57
+        }
+      },
+      {
+        "id": "arch_rib_crown",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.55,
+          0.0
+        ],
+        "size": [
+          0.55,
+          0.045,
+          0.55
+        ],
+        "rotation": [
+          1.5708,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.55,
+          -0.85
+        ],
+        "endpoint_b": [
+          0.0,
+          0.55,
+          0.85
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 6,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.008,
+        "fbm_freq": 3.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.8,
+            0.6,
+            0.28
+          ],
+          "metallic": 0.92,
+          "roughness": 0.18,
+          "subsurface": 0.08,
+          "emission": 0.15,
+          "fresnel": 0.8,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.85,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.03,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "gothic_saddle_vault",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "ruled_paraboloid",
+        "center": [
+          0.0,
+          0.85,
+          0.0
+        ],
+        "size": [
+          0.95,
+          0.3,
+          0.75
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          -0.95,
+          0.85,
+          0.0
+        ],
+        "endpoint_b": [
+          0.95,
+          0.85,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.012,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.65,
+            0.48,
+            0.22
+          ],
+          "metallic": 0.82,
+          "roughness": 0.3,
+          "subsurface": 0.15,
+          "emission": 0.1,
+          "fresnel": 0.7,
+          "stripe_freq": 5.0,
+          "stripe_rgb": [
+            0.95,
+            0.78,
+            0.42
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 3.14
+        }
+      },
+      {
+        "id": "rose_window_relic",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "mandelbulb_core",
+        "center": [
+          0.0,
+          0.45,
+          0.0
+        ],
+        "size": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.45,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.77,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.4,
+            0.9,
+            0.95
+          ],
+          "metallic": 0.3,
+          "roughness": 0.15,
+          "subsurface": 0.4,
+          "emission": 1.8,
+          "fresnel": 0.9,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.5,
+            1.0,
+            0.9
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "amp_rot": [
+            0.08,
+            0.12,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "spire_apex",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "cone",
+        "center": [
+          0.0,
+          1.05,
+          0.0
+        ],
+        "size": [
+          0.09,
+          0.2,
+          0.09
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.85,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          1.25,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.2,
+        "bend": 0.0,
+        "fbm_amp": 0.01,
+        "fbm_freq": 4.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.9,
+            0.72,
+            0.3
+          ],
+          "metallic": 0.95,
+          "roughness": 0.15,
+          "subsurface": 0.05,
+          "emission": 0.35,
+          "fresnel": 0.85,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.02,
+            0.0,
+            0.02
+          ],
+          "freq": 2.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "buttress_left",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "capsule",
+        "center": [
+          1.1,
+          0.2,
+          0.0
+        ],
+        "size": [
+          0.07,
+          0.7,
+          0.07
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          1.1,
+          -0.55,
+          0.0
+        ],
+        "endpoint_b": [
+          0.6,
+          0.75,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.1,
+        "fbm_amp": 0.01,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.68,
+            0.5,
+            0.24
+          ],
+          "metallic": 0.85,
+          "roughness": 0.32,
+          "subsurface": 0.1,
+          "emission": 0.08,
+          "fresnel": 0.6,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            0.9,
+            0.72,
+            0.4
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.02,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.02
+          ],
+          "freq": 1.0,
+          "phase": 1.57
+        }
+      },
+      {
+        "id": "colonnade_cylinder_left",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "cylinder",
+        "center": [
+          1.2,
+          -0.15,
+          0.0
+        ],
+        "size": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          1.2,
+          -0.7,
+          0.0
+        ],
+        "endpoint_b": [
+          1.2,
+          0.4,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.012,
+        "fbm_freq": 5.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.72,
+            0.55,
+            0.28
+          ],
+          "metallic": 0.88,
+          "roughness": 0.25,
+          "subsurface": 0.1,
+          "emission": 0.1,
+          "fresnel": 0.7,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            0.95,
+            0.8,
+            0.48
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "god_ray_beam_left",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cylinder",
+        "center": [
+          0.5,
+          0.3,
+          0.6
+        ],
+        "size": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "rotation": [
+          0.35,
+          0.0,
+          -0.25
+        ],
+        "endpoint_a": [
+          0.5,
+          -0.5,
+          0.6
+        ],
+        "endpoint_b": [
+          0.5,
+          1.1,
+          0.6
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.9,
+            0.6
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6,
+          "subsurface": 0.9,
+          "emission": 1.4,
+          "fresnel": 0.95,
+          "stripe_freq": 2.0,
+          "stripe_rgb": [
+            1.0,
+            0.95,
+            0.7
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.0,
+            0.04
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "god_ray_beam_center",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cylinder",
+        "center": [
+          0.0,
+          0.35,
+          0.35
+        ],
+        "size": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "rotation": [
+          0.3,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.55,
+          0.35
+        ],
+        "endpoint_b": [
+          0.0,
+          1.15,
+          0.35
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.92,
+            0.65
+          ],
+          "metallic": 0.0,
+          "roughness": 0.55,
+          "subsurface": 0.95,
+          "emission": 1.6,
+          "fresnel": 0.95,
+          "stripe_freq": 2.0,
+          "stripe_rgb": [
+            1.0,
+            0.96,
+            0.75
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.04,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 1.57
+        }
+      },
+      {
+        "id": "censer_orb_left",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "sphere",
+        "center": [
+          0.55,
+          -0.35,
+          0.8
+        ],
+        "size": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.55,
+          -0.35,
+          0.8
+        ],
+        "endpoint_b": [
+          0.55,
+          -0.03,
+          0.8
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.7,
+            0.25
+          ],
+          "metallic": 0.2,
+          "roughness": 0.2,
+          "subsurface": 0.5,
+          "emission": 1.8,
+          "fresnel": 0.9,
+          "stripe_freq": 3.0,
+          "stripe_rgb": [
+            1.0,
+            0.85,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.12,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "hanging_gyroid_lintel",
+        "op": "smin",
+        "blend_k": 0.15,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.0,
+          0.12,
+          -0.9
+        ],
+        "size": [
+          0.55,
+          0.22,
+          0.22
+        ],
+        "rotation": [
+          0.2,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.12,
+          -0.9
+        ],
+        "endpoint_b": [
+          0.0,
+          0.3,
+          -0.9
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.01,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 7.8,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.7,
+            0.52,
+            0.26
+          ],
+          "metallic": 0.86,
+          "roughness": 0.26,
+          "subsurface": 0.12,
+          "emission": 0.14,
+          "fresnel": 0.72,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            0.95,
+            0.78,
+            0.42
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.03,
+            0.0,
+            0.0
+          ],
+          "freq": 2.0,
+          "phase": 0.78
+        }
+      },
+      {
+        "id": "floraform_bronze_filigree",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.0,
+          -0.45,
+          0.65
+        ],
+        "size": [
+          0.6,
+          0.2,
+          0.45
+        ],
+        "rotation": [
+          0.4,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          -0.6,
+          -0.55,
+          0.65
+        ],
+        "endpoint_b": [
+          0.6,
+          -0.35,
+          0.65
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.15,
+        "fbm_amp": 0.015,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.78,
+            0.58,
+            0.28
+          ],
+          "metallic": 0.9,
+          "roughness": 0.2,
+          "subsurface": 0.2,
+          "emission": 0.2,
+          "fresnel": 0.8,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.85,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.0,
+            0.03
+          ],
+          "freq": 1.0,
+          "phase": 2.35
+        }
+      },
+      {
+        "id": "meridian_ring_halo",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.45,
+          0.0
+        ],
+        "size": [
+          0.55,
+          0.045,
+          0.55
+        ],
+        "rotation": [
+          1.2,
+          0.4,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.45,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.77,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.005,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.95,
+            0.8,
+            0.4
+          ],
+          "metallic": 0.95,
+          "roughness": 0.12,
+          "subsurface": 0.05,
+          "emission": 0.5,
+          "fresnel": 0.9,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.1,
+            0.14,
+            0.06
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "chapel_dome_ellipsoid",
+        "op": "smin",
+        "blend_k": 0.18,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          0.78,
+          0.0
+        ],
+        "size": [
+          0.58,
+          0.32,
+          0.52
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.6,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.012,
+        "fbm_freq": 4.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.66,
+            0.5,
+            0.26
+          ],
+          "metallic": 0.8,
+          "roughness": 0.3,
+          "subsurface": 0.18,
+          "emission": 0.1,
+          "fresnel": 0.68,
+          "stripe_freq": 5.0,
+          "stripe_rgb": [
+            0.92,
+            0.75,
+            0.42
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "radial_vault_keystones",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "box",
+        "center": [
+          0.65,
+          0.55,
+          0.0
+        ],
+        "size": [
+          0.08,
+          0.08,
+          0.08
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "endpoint_a": [
+          0.65,
+          0.55,
+          0.0
+        ],
+        "endpoint_b": [
+          0.65,
+          0.87,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 8,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.008,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.9,
+            0.75,
+            0.35
+          ],
+          "metallic": 0.92,
+          "roughness": 0.18,
+          "subsurface": 0.08,
+          "emission": 0.4,
+          "fresnel": 0.85,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            1.0,
+            0.88,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.06,
+            0.0
+          ],
+          "freq": 2.0,
+          "phase": 0.0
+        }
+      }
+    ],
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 14.243
+  },
+  "a bioluminescent deep-sea dragonfish surrounded by differential-growth coral": {
+    "title": "Abyssal Dragonfish Among Differential-Growth Coral Cathedrals",
+    "subtitle": "Coupled 3D Implicit SDF & Minimal-Surface Raymarched Manifold d(p, t) = 0",
+    "aspect": [
+      16,
+      10
+    ],
+    "camera_dist": 2.95,
+    "camera_height": 0.48,
+    "camera_orbit_speed": 0.38,
+    "fov": 1.72,
+    "sky_top_rgb": [
+      0.01,
+      0.04,
+      0.11
+    ],
+    "sky_horizon_rgb": [
+      0.03,
+      0.15,
+      0.28
+    ],
+    "fog_density": 0.055,
+    "sun_dir": [
+      0.4418,
+      0.6943,
+      0.5681
+    ],
+    "floor_type": "terrain_fbm",
+    "floor_height": -0.82,
+    "floor_rgb": [
+      0.02,
+      0.09,
+      0.16
+    ],
+    "nodes": [
+      {
+        "id": "dragonfish_body",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          0.1,
+          0.05
+        ],
+        "size": [
+          0.62,
+          0.2,
+          0.18
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.06
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.1,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.3,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.35,
+        "fbm_amp": 0.03,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.05,
+            0.14,
+            0.22
+          ],
+          "metallic": 0.55,
+          "roughness": 0.3,
+          "subsurface": 0.4,
+          "emission": 0.1,
+          "fresnel": 0.9,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            0.1,
+            0.96,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.05,
+            0.03
+          ],
+          "amp_rot": [
+            0.02,
+            0.0,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "dragonfish_head",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "ellipsoid",
+        "center": [
+          0.52,
+          0.16,
+          0.05
+        ],
+        "size": [
+          0.24,
+          0.15,
+          0.14
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.1
+        ],
+        "endpoint_a": [
+          0.4,
+          0.16,
+          0.05
+        ],
+        "endpoint_b": [
+          0.7,
+          0.16,
+          0.05
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.02,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.06,
+            0.16,
+            0.24
+          ],
+          "metallic": 0.6,
+          "roughness": 0.28,
+          "subsurface": 0.45,
+          "emission": 0.12,
+          "fresnel": 0.88,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.15,
+            0.9,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.03,
+            0.04,
+            0.02
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.04
+          ],
+          "freq": 1.0,
+          "phase": 0.3
+        }
+      },
+      {
+        "id": "dragonfish_jaw",
+        "op": "smin",
+        "blend_k": 0.1,
+        "primitive": "capsule",
+        "center": [
+          0.62,
+          0.1,
+          0.05
+        ],
+        "size": [
+          0.05,
+          0.018,
+          0.018
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.35
+        ],
+        "endpoint_a": [
+          0.55,
+          0.14,
+          0.05
+        ],
+        "endpoint_b": [
+          0.82,
+          0.02,
+          0.05
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.015,
+        "fbm_freq": 3.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.08,
+            0.18,
+            0.26
+          ],
+          "metallic": 0.5,
+          "roughness": 0.35,
+          "subsurface": 0.5,
+          "emission": 0.08,
+          "fresnel": 0.85,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            0.2,
+            0.85,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.02,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.06
+          ],
+          "freq": 2.0,
+          "phase": 0.5
+        }
+      },
+      {
+        "id": "fang_left",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cone",
+        "center": [
+          0.68,
+          0.06,
+          0.12
+        ],
+        "size": [
+          0.08,
+          0.18,
+          0.08
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.5
+        ],
+        "endpoint_a": [
+          0.68,
+          0.06,
+          0.12
+        ],
+        "endpoint_b": [
+          0.78,
+          -0.08,
+          0.12
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "metallic": 0.2,
+          "roughness": 0.2,
+          "subsurface": 0.7,
+          "emission": 0.3,
+          "fresnel": 0.8,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.05
+          ],
+          "freq": 2.0,
+          "phase": 0.8
+        }
+      },
+      {
+        "id": "eye_left",
+        "op": "union",
+        "blend_k": 0.06,
+        "primitive": "sphere",
+        "center": [
+          0.58,
+          0.22,
+          0.16
+        ],
+        "size": [
+          0.045,
+          0.018,
+          0.018
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.58,
+          0.22,
+          0.16
+        ],
+        "endpoint_b": [
+          0.58,
+          0.54,
+          0.16
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.1,
+            1.0,
+            0.55
+          ],
+          "metallic": 0.1,
+          "roughness": 0.1,
+          "subsurface": 0.3,
+          "emission": 1.8,
+          "fresnel": 0.6,
+          "stripe_freq": 0.0,
+          "stripe_rgb": [
+            0.2,
+            1.0,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.01,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "esca_stalk",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "capsule",
+        "center": [
+          0.6,
+          0.42,
+          0.05
+        ],
+        "size": [
+          0.02,
+          0.018,
+          0.018
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "endpoint_a": [
+          0.6,
+          0.28,
+          0.05
+        ],
+        "endpoint_b": [
+          0.62,
+          0.55,
+          0.1
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.3,
+        "fbm_amp": 0.01,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.3,
+            0.5,
+            0.6
+          ],
+          "metallic": 0.3,
+          "roughness": 0.4,
+          "subsurface": 0.8,
+          "emission": 0.4,
+          "fresnel": 0.9,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.3,
+            0.9,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.03,
+            0.06,
+            0.02
+          ],
+          "amp_rot": [
+            0.05,
+            0.0,
+            0.1
+          ],
+          "freq": 1.0,
+          "phase": 1.2
+        }
+      },
+      {
+        "id": "lure_orb",
+        "op": "union",
+        "blend_k": 0.06,
+        "primitive": "sphere",
+        "center": [
+          0.63,
+          0.6,
+          0.12
+        ],
+        "size": [
+          0.07,
+          0.018,
+          0.018
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.63,
+          0.6,
+          0.12
+        ],
+        "endpoint_b": [
+          0.63,
+          0.92,
+          0.12
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.2,
+            0.9
+          ],
+          "metallic": 0.0,
+          "roughness": 0.15,
+          "subsurface": 0.5,
+          "emission": 2.2,
+          "fresnel": 0.5,
+          "stripe_freq": 0.0,
+          "stripe_rgb": [
+            0.4,
+            0.9,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.02,
+            0.05,
+            0.03
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 1.5
+        }
+      },
+      {
+        "id": "pectoral_fin_left",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.3,
+          -0.05,
+          0.2
+        ],
+        "size": [
+          0.2574,
+          0.18,
+          0.193
+        ],
+        "rotation": [
+          0.4,
+          0.2,
+          0.2
+        ],
+        "endpoint_a": [
+          0.3,
+          0.05,
+          0.15
+        ],
+        "endpoint_b": [
+          0.15,
+          -0.35,
+          0.4
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.2,
+        "fbm_amp": 0.02,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.4,
+            0.1,
+            0.5
+          ],
+          "metallic": 0.2,
+          "roughness": 0.4,
+          "subsurface": 0.88,
+          "emission": 0.5,
+          "fresnel": 0.95,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            0.5,
+            0.2,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.15,
+            0.1,
+            0.1
+          ],
+          "freq": 1.0,
+          "phase": 0.6
+        }
+      },
+      {
+        "id": "dorsal_fin",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "floraform_ribbon",
+        "center": [
+          -0.05,
+          0.35,
+          0.05
+        ],
+        "size": [
+          0.3568,
+          0.18,
+          0.2676
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.1
+        ],
+        "endpoint_a": [
+          0.25,
+          0.28,
+          0.05
+        ],
+        "endpoint_b": [
+          -0.4,
+          0.5,
+          0.05
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.15,
+        "fbm_amp": 0.02,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.5,
+            0.15,
+            0.6
+          ],
+          "metallic": 0.2,
+          "roughness": 0.4,
+          "subsurface": 0.85,
+          "emission": 0.55,
+          "fresnel": 0.95,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "amp_rot": [
+            0.1,
+            0.0,
+            0.08
+          ],
+          "freq": 1.0,
+          "phase": 0.9
+        }
+      },
+      {
+        "id": "tail_fin",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "floraform_ribbon",
+        "center": [
+          -0.75,
+          0.12,
+          0.05
+        ],
+        "size": [
+          0.2763,
+          0.18,
+          0.2073
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.3
+        ],
+        "endpoint_a": [
+          -0.55,
+          0.12,
+          0.05
+        ],
+        "endpoint_b": [
+          -1.05,
+          0.3,
+          0.05
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.25,
+        "fbm_amp": 0.025,
+        "fbm_freq": 5.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.45,
+            0.12,
+            0.55
+          ],
+          "metallic": 0.2,
+          "roughness": 0.4,
+          "subsurface": 0.88,
+          "emission": 0.6,
+          "fresnel": 0.95,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.3,
+            0.95,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.04,
+            0.05,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.18
+          ],
+          "freq": 1.0,
+          "phase": 1.8
+        }
+      },
+      {
+        "id": "coral_cluster_left",
+        "op": "smin",
+        "blend_k": 0.18,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.85,
+          -0.35,
+          0.45
+        ],
+        "size": [
+          0.4518,
+          0.18,
+          0.3389
+        ],
+        "rotation": [
+          0.2,
+          0.3,
+          0.15
+        ],
+        "endpoint_a": [
+          0.85,
+          -0.7,
+          0.45
+        ],
+        "endpoint_b": [
+          0.7,
+          0.15,
+          0.55
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.2,
+        "bend": 0.3,
+        "fbm_amp": 0.04,
+        "fbm_freq": 6.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.25,
+            0.5
+          ],
+          "metallic": 0.15,
+          "roughness": 0.45,
+          "subsurface": 0.7,
+          "emission": 0.7,
+          "fresnel": 0.9,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            1.0,
+            0.4,
+            0.7
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.05,
+            0.04
+          ],
+          "freq": 1.0,
+          "phase": 0.2
+        }
+      },
+      {
+        "id": "coral_gyroid_left",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.95,
+          -0.35,
+          -0.35
+        ],
+        "size": [
+          0.35,
+          0.018,
+          0.018
+        ],
+        "rotation": [
+          0.0,
+          0.2,
+          0.0
+        ],
+        "endpoint_a": [
+          0.95,
+          -0.35,
+          -0.35
+        ],
+        "endpoint_b": [
+          0.95,
+          -0.03,
+          -0.35
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.02,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 7.0,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.1,
+            0.9,
+            0.9
+          ],
+          "metallic": 0.3,
+          "roughness": 0.35,
+          "subsurface": 0.6,
+          "emission": 0.65,
+          "fresnel": 0.9,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.2,
+            1.0,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.1,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.4
+        }
+      },
+      {
+        "id": "coral_polyp_crown",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "floraform_ribbon",
+        "center": [
+          -0.3,
+          -0.45,
+          -0.6
+        ],
+        "size": [
+          0.338,
+          0.18,
+          0.2535
+        ],
+        "rotation": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "endpoint_a": [
+          -0.3,
+          -0.75,
+          -0.6
+        ],
+        "endpoint_b": [
+          -0.3,
+          -0.1,
+          -0.6
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 8,
+        "repeat_period": null,
+        "twist": 0.15,
+        "bend": 0.25,
+        "fbm_amp": 0.03,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.55,
+            0.15
+          ],
+          "metallic": 0.15,
+          "roughness": 0.4,
+          "subsurface": 0.75,
+          "emission": 0.7,
+          "fresnel": 0.9,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            1.0,
+            0.7,
+            0.3
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.04,
+            0.06,
+            0.04
+          ],
+          "freq": 1.0,
+          "phase": 0.7
+        }
+      },
+      {
+        "id": "coral_ridge_right",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.55,
+          -0.5,
+          0.75
+        ],
+        "size": [
+          0.4636,
+          0.18,
+          0.3477
+        ],
+        "rotation": [
+          0.0,
+          0.4,
+          0.1
+        ],
+        "endpoint_a": [
+          0.2,
+          -0.75,
+          0.75
+        ],
+        "endpoint_b": [
+          0.9,
+          -0.2,
+          0.8
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.1,
+        "bend": 0.3,
+        "fbm_amp": 0.035,
+        "fbm_freq": 5.5,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.8,
+            0.2,
+            1.0
+          ],
+          "metallic": 0.15,
+          "roughness": 0.45,
+          "subsurface": 0.8,
+          "emission": 0.6,
+          "fresnel": 0.92,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            0.9,
+            0.4,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.05,
+            0.0,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 1.1
+        }
+      },
+      {
+        "id": "coral_spine_rear",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.0,
+          -0.4,
+          -0.95
+        ],
+        "size": [
+          0.364,
+          0.18,
+          0.273
+        ],
+        "rotation": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.75,
+          -0.95
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.05,
+          -0.95
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 6,
+        "repeat_period": null,
+        "twist": 0.12,
+        "bend": 0.28,
+        "fbm_amp": 0.03,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.15,
+            0.95,
+            0.6
+          ],
+          "metallic": 0.2,
+          "roughness": 0.4,
+          "subsurface": 0.75,
+          "emission": 0.65,
+          "fresnel": 0.9,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.3,
+            1.0,
+            0.7
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.04,
+            0.05,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 1.4
+        }
+      },
+      {
+        "id": "glowing_spore_halo",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "sphere",
+        "center": [
+          0.0,
+          0.45,
+          -0.3
+        ],
+        "size": [
+          0.05,
+          0.018,
+          0.018
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.45,
+          -0.3
+        ],
+        "endpoint_b": [
+          0.0,
+          0.77,
+          -0.3
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 10,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.3,
+            0.9,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.2,
+          "subsurface": 0.6,
+          "emission": 1.4,
+          "fresnel": 0.7,
+          "stripe_freq": 0.0,
+          "stripe_rgb": [
+            0.4,
+            1.0,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.08,
+            0.1,
+            0.05
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 2.0
+        }
+      },
+      {
+        "id": "seafloor_rock",
+        "op": "smin",
+        "blend_k": 0.2,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          -0.78,
+          0.0
+        ],
+        "size": [
+          1.3,
+          0.18,
+          0.9
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.78,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.46,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.045,
+        "fbm_freq": 3.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.05,
+            0.1,
+            0.15
+          ],
+          "metallic": 0.2,
+          "roughness": 0.6,
+          "subsurface": 0.3,
+          "emission": 0.05,
+          "fresnel": 0.7,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            0.1,
+            0.4,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "abyssal_relic_crystal",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "kleinian_fold",
+        "center": [
+          -1.0,
+          0.3,
+          -0.7
+        ],
+        "size": [
+          0.18,
+          0.28,
+          0.18
+        ],
+        "rotation": [
+          0.1,
+          0.3,
+          0.05
+        ],
+        "endpoint_a": [
+          -1.0,
+          0.3,
+          -0.7
+        ],
+        "endpoint_b": [
+          -1.0,
+          0.62,
+          -0.7
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.1,
+        "bend": 0.0,
+        "fbm_amp": 0.02,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.2,
+            0.8,
+            1.0
+          ],
+          "metallic": 0.4,
+          "roughness": 0.2,
+          "subsurface": 0.6,
+          "emission": 1.0,
+          "fresnel": 0.9,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            0.3,
+            0.9,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.06,
+            0.0
+          ],
+          "amp_rot": [
+            0.06,
+            0.1,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 2.4
+        }
+      }
+    ],
+    "refinement_passes": 2,
+    "visual_score": 6.5,
+    "motion_energy": 21.93
+  },
+  "a non-euclidean celestial astrolabe with orbiting saturn rings": {
+    "title": "Saturnine Astrolabe: Non-Euclidean Celestial Gimbal",
+    "subtitle": "Coupled 3D Implicit SDF & Minimal-Surface Raymarched Manifold d(p, t) = 0",
+    "aspect": [
+      16,
+      10
+    ],
+    "camera_dist": 3.05,
+    "camera_height": 0.42,
+    "camera_orbit_speed": 0.38,
+    "fov": 1.72,
+    "sky_top_rgb": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "sky_horizon_rgb": [
+      0.12,
+      0.06,
+      0.24
+    ],
+    "fog_density": 0.045,
+    "sun_dir": [
+      0.4529,
+      0.785,
+      0.4227
+    ],
+    "floor_type": "cosmic_void",
+    "floor_height": -1.05,
+    "floor_rgb": [
+      0.03,
+      0.04,
+      0.1
+    ],
+    "nodes": [
+      {
+        "id": "fractal_star_core",
+        "op": "union",
+        "blend_k": 0.12,
+        "primitive": "mandelbulb_core",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          0.32,
+          0.32,
+          0.32
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.45,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.01,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.85,
+            0.55
+          ],
+          "metallic": 0.45,
+          "roughness": 0.25,
+          "subsurface": 0.25,
+          "emission": 1.6,
+          "fresnel": 0.7,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.95,
+            0.8
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.04,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.15,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "inner_gimbal_ring",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          0.54,
+          0.045,
+          0.54
+        ],
+        "rotation": [
+          1.57,
+          0.0,
+          0.3
+        ],
+        "endpoint_a": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.47,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.92,
+            0.72,
+            0.28
+          ],
+          "metallic": 0.92,
+          "roughness": 0.15,
+          "subsurface": 0.0,
+          "emission": 0.15,
+          "fresnel": 0.9,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.5,
+            0.1
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "middle_gimbal_ring",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          0.76,
+          0.05,
+          0.76
+        ],
+        "rotation": [
+          0.0,
+          1.57,
+          0.5
+        ],
+        "endpoint_a": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.47,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.85,
+            0.65,
+            0.22
+          ],
+          "metallic": 0.92,
+          "roughness": 0.15,
+          "subsurface": 0.0,
+          "emission": 0.12,
+          "fresnel": 0.9,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            0.9,
+            0.8,
+            0.5
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            -0.35,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 1.57
+        }
+      },
+      {
+        "id": "outer_gimbal_ring",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          0.98,
+          0.055,
+          0.98
+        ],
+        "rotation": [
+          0.6,
+          0.0,
+          1.57
+        ],
+        "endpoint_a": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.47,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.88,
+            0.68,
+            0.25
+          ],
+          "metallic": 0.92,
+          "roughness": 0.15,
+          "subsurface": 0.0,
+          "emission": 0.12,
+          "fresnel": 0.9,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            1.0,
+            0.85,
+            0.45
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.25,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 3.14
+        }
+      },
+      {
+        "id": "astrolabe_spokes",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "capsule",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          0.065,
+          0.21,
+          0.065
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.1,
+          0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.54,
+          0.15,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 12,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.95,
+            0.78,
+            0.35
+          ],
+          "metallic": 0.9,
+          "roughness": 0.2,
+          "subsurface": 0.0,
+          "emission": 0.1,
+          "fresnel": 0.85,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.4,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "saturn_body",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "sphere",
+        "center": [
+          1.05,
+          0.55,
+          -0.35
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          1.05,
+          0.55,
+          -0.35
+        ],
+        "endpoint_b": [
+          1.05,
+          0.87,
+          -0.35
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.85,
+            0.72,
+            0.5
+          ],
+          "metallic": 0.1,
+          "roughness": 0.45,
+          "subsurface": 0.3,
+          "emission": 0.08,
+          "fresnel": 0.5,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.95,
+            0.85,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.08,
+            0.05,
+            0.06
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "saturn_ring_tilted",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "torus",
+        "center": [
+          1.05,
+          0.55,
+          -0.35
+        ],
+        "size": [
+          0.52,
+          0.042,
+          0.52
+        ],
+        "rotation": [
+          0.45,
+          0.2,
+          0.0
+        ],
+        "endpoint_a": [
+          1.05,
+          0.55,
+          -0.35
+        ],
+        "endpoint_b": [
+          1.05,
+          0.87,
+          -0.35
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.95,
+            0.85,
+            0.6
+          ],
+          "metallic": 0.6,
+          "roughness": 0.3,
+          "subsurface": 0.1,
+          "emission": 0.2,
+          "fresnel": 0.8,
+          "stripe_freq": 14.0,
+          "stripe_rgb": [
+            1.0,
+            0.95,
+            0.75
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.08,
+            0.05,
+            0.06
+          ],
+          "amp_rot": [
+            0.0,
+            0.2,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "meridian_cradle_gyroid",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          1.25,
+          1.25,
+          1.25
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.47,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 6.5,
+        "gyroid_thickness": 0.06,
+        "material": {
+          "rgb": [
+            0.45,
+            0.5,
+            0.62
+          ],
+          "metallic": 0.85,
+          "roughness": 0.25,
+          "subsurface": 0.1,
+          "emission": 0.05,
+          "fresnel": 0.9,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            0.7,
+            0.75,
+            0.9
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.1,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "kleinian_vault_column_left",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "kleinian_fold",
+        "center": [
+          0.95,
+          -0.35,
+          0.0
+        ],
+        "size": [
+          0.18,
+          0.55,
+          0.18
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.95,
+          -0.9,
+          0.0
+        ],
+        "endpoint_b": [
+          0.95,
+          0.2,
+          0.0
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.3,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.6,
+            0.55,
+            0.45
+          ],
+          "metallic": 0.8,
+          "roughness": 0.3,
+          "subsurface": 0.05,
+          "emission": 0.05,
+          "fresnel": 0.85,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.85,
+            0.75,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "orbit_moon_gem",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "sphere",
+        "center": [
+          -0.85,
+          0.75,
+          0.3
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          -0.85,
+          0.75,
+          0.3
+        ],
+        "endpoint_b": [
+          -0.85,
+          1.07,
+          0.3
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.4,
+            0.9,
+            0.95
+          ],
+          "metallic": 0.2,
+          "roughness": 0.1,
+          "subsurface": 0.6,
+          "emission": 1.2,
+          "fresnel": 0.9,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.12,
+            0.08,
+            0.1
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 1.57
+        }
+      },
+      {
+        "id": "comet_ribbon_trail",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "floraform_ribbon",
+        "center": [
+          -0.6,
+          0.4,
+          0.55
+        ],
+        "size": [
+          0.4885,
+          0.18,
+          0.3664
+        ],
+        "rotation": [
+          0.3,
+          -0.4,
+          0.2
+        ],
+        "endpoint_a": [
+          -0.95,
+          0.2,
+          0.75
+        ],
+        "endpoint_b": [
+          -0.2,
+          0.6,
+          0.35
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.2,
+        "bend": 0.15,
+        "fbm_amp": 0.01,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.9,
+            0.5,
+            0.95
+          ],
+          "metallic": 0.3,
+          "roughness": 0.35,
+          "subsurface": 0.7,
+          "emission": 0.9,
+          "fresnel": 0.95,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            1.0,
+            0.7,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.06,
+            0.05,
+            0.05
+          ],
+          "amp_rot": [
+            0.1,
+            0.15,
+            0.05
+          ],
+          "freq": 1.0,
+          "phase": 2.1
+        }
+      },
+      {
+        "id": "saddle_vault_arch",
+        "op": "smin",
+        "blend_k": 0.14,
+        "primitive": "ruled_paraboloid",
+        "center": [
+          0.0,
+          -0.55,
+          0.0
+        ],
+        "size": [
+          0.9,
+          0.35,
+          0.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          -0.9,
+          -0.55,
+          0.0
+        ],
+        "endpoint_b": [
+          0.9,
+          -0.55,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.55,
+            0.5,
+            0.4
+          ],
+          "metallic": 0.82,
+          "roughness": 0.28,
+          "subsurface": 0.05,
+          "emission": 0.06,
+          "fresnel": 0.85,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.9,
+            0.8,
+            0.6
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "altar_plinth",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "box",
+        "center": [
+          0.0,
+          -0.85,
+          0.0
+        ],
+        "size": [
+          0.55,
+          0.12,
+          0.4
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.97,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.73,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.4,
+            0.42,
+            0.5
+          ],
+          "metallic": 0.7,
+          "roughness": 0.35,
+          "subsurface": 0.05,
+          "emission": 0.04,
+          "fresnel": 0.8,
+          "stripe_freq": 5.0,
+          "stripe_rgb": [
+            0.7,
+            0.72,
+            0.85
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "plinth_column_left",
+        "op": "smin",
+        "blend_k": 0.12,
+        "primitive": "cylinder",
+        "center": [
+          0.45,
+          -0.6,
+          0.25
+        ],
+        "size": [
+          0.28,
+          0.28,
+          0.28
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.45,
+          -0.88,
+          0.25
+        ],
+        "endpoint_b": [
+          0.45,
+          -0.32,
+          0.25
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.85,
+            0.7,
+            0.3
+          ],
+          "metallic": 0.9,
+          "roughness": 0.2,
+          "subsurface": 0.0,
+          "emission": 0.08,
+          "fresnel": 0.88,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.55
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "radial_crown_spikes",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cone",
+        "center": [
+          0.0,
+          0.55,
+          0.0
+        ],
+        "size": [
+          0.08,
+          0.18,
+          0.08
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.45,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.73,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 8,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.9,
+            0.6
+          ],
+          "metallic": 0.85,
+          "roughness": 0.15,
+          "subsurface": 0.0,
+          "emission": 0.6,
+          "fresnel": 0.9,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            1.0,
+            0.95,
+            0.7
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.2,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "orbiting_ellipsoid_probe",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "ellipsoid",
+        "center": [
+          0.7,
+          -0.15,
+          0.7
+        ],
+        "size": [
+          0.08,
+          0.12,
+          0.08
+        ],
+        "rotation": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "endpoint_a": [
+          0.7,
+          -0.15,
+          0.7
+        ],
+        "endpoint_b": [
+          0.7,
+          0.17,
+          0.7
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.9,
+            0.45,
+            0.2
+          ],
+          "metallic": 0.75,
+          "roughness": 0.25,
+          "subsurface": 0.2,
+          "emission": 0.7,
+          "fresnel": 0.85,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            1.0,
+            0.6,
+            0.3
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.1,
+            0.07,
+            0.08
+          ],
+          "amp_rot": [
+            0.2,
+            0.3,
+            0.1
+          ],
+          "freq": 2.0,
+          "phase": 0.8
+        }
+      },
+      {
+        "id": "zodiacal_great_circle",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "size": [
+          0.52,
+          0.042,
+          0.52
+        ],
+        "rotation": [
+          0.9,
+          0.3,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.47,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.3,
+            0.85,
+            0.9
+          ],
+          "metallic": 0.7,
+          "roughness": 0.2,
+          "subsurface": 0.1,
+          "emission": 0.8,
+          "fresnel": 0.95,
+          "stripe_freq": 16.0,
+          "stripe_rgb": [
+            0.5,
+            1.0,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            -0.2,
+            0.08
+          ],
+          "freq": 1.0,
+          "phase": 2.4
+        }
+      }
+    ],
+    "refinement_passes": 2,
+    "visual_score": 6.5,
+    "motion_energy": 18.682
+  },
+  "shaheen eagle in flight": {
+    "title": "Shaheen Peregrine Ascendant: Sculpted Falcon Sovereign in Hyperbolic Flight",
+    "subtitle": "Coupled 3D Implicit SDF & Minimal-Surface Raymarched Manifold d(p, t) = 0",
+    "aspect": [
+      16,
+      10
+    ],
+    "camera_dist": 3.05,
+    "camera_height": 0.48,
+    "camera_orbit_speed": 0.38,
+    "fov": 1.72,
+    "sky_top_rgb": [
+      0.03,
+      0.09,
+      0.28
+    ],
+    "sky_horizon_rgb": [
+      0.58,
+      0.68,
+      0.82
+    ],
+    "fog_density": 0.042,
+    "sun_dir": [
+      0.5507,
+      0.721,
+      0.4206
+    ],
+    "floor_type": "ocean_waves",
+    "floor_height": -0.88,
+    "floor_rgb": [
+      0.04,
+      0.22,
+      0.52
+    ],
+    "nodes": [
+      {
+        "id": "torso_core",
+        "op": "smin",
+        "blend_k": 0.18,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          0.14,
+          0.02
+        ],
+        "size": [
+          0.28,
+          0.36,
+          0.38
+        ],
+        "rotation": [
+          0.24,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.1,
+          0.0
+        ],
+        "endpoint_b": [
+          0.0,
+          0.36,
+          0.0
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.14,
+        "fbm_amp": 0.018,
+        "fbm_freq": 4.2,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.46,
+            0.32,
+            0.16
+          ],
+          "metallic": 0.18,
+          "roughness": 0.42,
+          "subsurface": 0.32,
+          "emission": 0.06,
+          "fresnel": 0.65,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.78,
+            0.62,
+            0.36
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.045,
+            0.02
+          ],
+          "amp_rot": [
+            0.035,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "breast_keel",
+        "op": "smin",
+        "blend_k": 0.15,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          0.06,
+          0.24
+        ],
+        "size": [
+          0.2,
+          0.22,
+          0.18
+        ],
+        "rotation": [
+          0.32,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.05,
+          0.1
+        ],
+        "endpoint_b": [
+          0.0,
+          0.16,
+          0.34
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.012,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.92,
+            0.88,
+            0.8
+          ],
+          "metallic": 0.06,
+          "roughness": 0.38,
+          "subsurface": 0.48,
+          "emission": 0.08,
+          "fresnel": 0.58,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            0.98,
+            0.94,
+            0.86
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.035,
+            0.0
+          ],
+          "amp_rot": [
+            0.025,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.3
+        }
+      },
+      {
+        "id": "neck_arch",
+        "op": "smin",
+        "blend_k": 0.16,
+        "primitive": "capsule",
+        "center": [
+          0.0,
+          0.44,
+          0.32
+        ],
+        "size": [
+          0.12,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.22,
+          0.18
+        ],
+        "endpoint_b": [
+          0.0,
+          0.54,
+          0.44
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.28,
+        "fbm_amp": 0.012,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.9,
+            0.86,
+            0.76
+          ],
+          "metallic": 0.06,
+          "roughness": 0.4,
+          "subsurface": 0.42,
+          "emission": 0.06,
+          "fresnel": 0.58,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.96,
+            0.92,
+            0.82
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.035,
+            0.02
+          ],
+          "amp_rot": [
+            0.045,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.5
+        }
+      },
+      {
+        "id": "head",
+        "op": "smin",
+        "blend_k": 0.13,
+        "primitive": "ellipsoid",
+        "center": [
+          0.0,
+          0.6,
+          0.52
+        ],
+        "size": [
+          0.14,
+          0.13,
+          0.17
+        ],
+        "rotation": [
+          0.16,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.52,
+          0.42
+        ],
+        "endpoint_b": [
+          0.0,
+          0.64,
+          0.62
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.009,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.58,
+            0.44,
+            0.24
+          ],
+          "metallic": 0.12,
+          "roughness": 0.36,
+          "subsurface": 0.36,
+          "emission": 0.05,
+          "fresnel": 0.62,
+          "stripe_freq": 7.0,
+          "stripe_rgb": [
+            0.88,
+            0.74,
+            0.52
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.035,
+            0.02
+          ],
+          "amp_rot": [
+            0.055,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.7
+        }
+      },
+      {
+        "id": "beak_hook",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cone",
+        "center": [
+          0.0,
+          0.58,
+          0.7
+        ],
+        "size": [
+          0.09,
+          0.2,
+          0.09
+        ],
+        "rotation": [
+          -0.38,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.58,
+          0.6
+        ],
+        "endpoint_b": [
+          0.0,
+          0.54,
+          0.86
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.1,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.96,
+            0.74,
+            0.22
+          ],
+          "metallic": 0.58,
+          "roughness": 0.24,
+          "subsurface": 0.14,
+          "emission": 0.12,
+          "fresnel": 0.82,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            1.0,
+            0.86,
+            0.42
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.025,
+            0.01
+          ],
+          "amp_rot": [
+            0.045,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.9
+        }
+      },
+      {
+        "id": "eye_left",
+        "op": "union",
+        "blend_k": 0.05,
+        "primitive": "sphere",
+        "center": [
+          0.11,
+          0.63,
+          0.58
+        ],
+        "size": [
+          0.038,
+          0.038,
+          0.038
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.11,
+          0.63,
+          0.52
+        ],
+        "endpoint_b": [
+          0.11,
+          0.63,
+          0.64
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.92,
+            0.58,
+            0.12
+          ],
+          "metallic": 0.22,
+          "roughness": 0.1,
+          "subsurface": 0.1,
+          "emission": 1.9,
+          "fresnel": 0.92,
+          "stripe_freq": 3.0,
+          "stripe_rgb": [
+            1.0,
+            0.78,
+            0.28
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.02,
+            0.01
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.7
+        }
+      },
+      {
+        "id": "crown_crest",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "cone",
+        "center": [
+          0.0,
+          0.74,
+          0.48
+        ],
+        "size": [
+          0.09,
+          0.2,
+          0.09
+        ],
+        "rotation": [
+          -0.52,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.7,
+          0.44
+        ],
+        "endpoint_b": [
+          0.0,
+          0.82,
+          0.54
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 7,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.88,
+            0.68,
+            0.28
+          ],
+          "metallic": 0.42,
+          "roughness": 0.28,
+          "subsurface": 0.22,
+          "emission": 0.38,
+          "fresnel": 0.78,
+          "stripe_freq": 5.0,
+          "stripe_rgb": [
+            1.0,
+            0.86,
+            0.46
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.025,
+            0.0
+          ],
+          "amp_rot": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "freq": 2.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "wing_primary_left",
+        "op": "smin",
+        "blend_k": 0.15,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.66,
+          0.3,
+          -0.06
+        ],
+        "size": [
+          0.56,
+          0.2,
+          0.42
+        ],
+        "rotation": [
+          0.12,
+          -0.38,
+          0.28
+        ],
+        "endpoint_a": [
+          0.2,
+          0.24,
+          0.06
+        ],
+        "endpoint_b": [
+          1.2,
+          0.46,
+          -0.22
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.22,
+        "bend": 0.32,
+        "fbm_amp": 0.032,
+        "fbm_freq": 5.2,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.42,
+            0.3,
+            0.15
+          ],
+          "metallic": 0.16,
+          "roughness": 0.4,
+          "subsurface": 0.36,
+          "emission": 0.08,
+          "fresnel": 0.68,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            0.8,
+            0.64,
+            0.36
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.065,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.3
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "wing_secondary_left",
+        "op": "smin",
+        "blend_k": 0.13,
+        "primitive": "ruled_paraboloid",
+        "center": [
+          0.54,
+          0.16,
+          -0.14
+        ],
+        "size": [
+          0.46,
+          0.12,
+          0.32
+        ],
+        "rotation": [
+          0.16,
+          -0.22,
+          0.2
+        ],
+        "endpoint_a": [
+          0.18,
+          0.18,
+          0.12
+        ],
+        "endpoint_b": [
+          0.94,
+          0.12,
+          -0.32
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.24,
+        "fbm_amp": 0.022,
+        "fbm_freq": 4.6,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.5,
+            0.36,
+            0.19
+          ],
+          "metallic": 0.14,
+          "roughness": 0.44,
+          "subsurface": 0.42,
+          "emission": 0.06,
+          "fresnel": 0.62,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            0.86,
+            0.72,
+            0.44
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.055,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.26
+          ],
+          "freq": 1.0,
+          "phase": 0.25
+        }
+      },
+      {
+        "id": "wing_covert_left",
+        "op": "smin",
+        "blend_k": 0.13,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.4,
+          0.22,
+          0.02
+        ],
+        "size": [
+          0.3,
+          0.2,
+          0.22
+        ],
+        "rotation": [
+          0.06,
+          -0.16,
+          0.14
+        ],
+        "endpoint_a": [
+          0.16,
+          0.22,
+          0.14
+        ],
+        "endpoint_b": [
+          0.66,
+          0.28,
+          -0.1
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.12,
+        "bend": 0.16,
+        "fbm_amp": 0.022,
+        "fbm_freq": 5.6,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.58,
+            0.42,
+            0.22
+          ],
+          "metallic": 0.12,
+          "roughness": 0.38,
+          "subsurface": 0.44,
+          "emission": 0.07,
+          "fresnel": 0.62,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.92,
+            0.8,
+            0.52
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.045,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.22
+          ],
+          "freq": 1.0,
+          "phase": 0.4
+        }
+      },
+      {
+        "id": "wingtip_feather_left",
+        "op": "union",
+        "blend_k": 0.08,
+        "primitive": "capsule",
+        "center": [
+          1.1,
+          0.54,
+          -0.28
+        ],
+        "size": [
+          0.028,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          1.0,
+          0.46,
+          -0.2
+        ],
+        "endpoint_b": [
+          1.36,
+          0.66,
+          -0.38
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.12,
+        "fbm_amp": 0.012,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.32,
+            0.22,
+            0.11
+          ],
+          "metallic": 0.12,
+          "roughness": 0.44,
+          "subsurface": 0.32,
+          "emission": 0.05,
+          "fresnel": 0.72,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.72,
+            0.56,
+            0.32
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.085,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.0,
+            0.32
+          ],
+          "freq": 1.0,
+          "phase": 0.15
+        }
+      },
+      {
+        "id": "tail_fan",
+        "op": "smin",
+        "blend_k": 0.13,
+        "primitive": "floraform_ribbon",
+        "center": [
+          0.0,
+          0.02,
+          -0.46
+        ],
+        "size": [
+          0.36,
+          0.2,
+          0.26
+        ],
+        "rotation": [
+          0.32,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.12,
+          -0.16
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.1,
+          -0.8
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 7,
+        "repeat_period": null,
+        "twist": 0.16,
+        "bend": 0.28,
+        "fbm_amp": 0.028,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.48,
+            0.32,
+            0.16
+          ],
+          "metallic": 0.14,
+          "roughness": 0.4,
+          "subsurface": 0.4,
+          "emission": 0.08,
+          "fresnel": 0.68,
+          "stripe_freq": 11.0,
+          "stripe_rgb": [
+            0.84,
+            0.68,
+            0.4
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.045,
+            -0.035
+          ],
+          "amp_rot": [
+            0.09,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.6
+        }
+      },
+      {
+        "id": "talon_foot_left",
+        "op": "union",
+        "blend_k": 0.06,
+        "primitive": "capsule",
+        "center": [
+          0.1,
+          -0.14,
+          0.2
+        ],
+        "size": [
+          0.032,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.1,
+          -0.06,
+          0.15
+        ],
+        "endpoint_b": [
+          0.1,
+          -0.22,
+          0.26
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.92,
+            0.78,
+            0.32
+          ],
+          "metallic": 0.52,
+          "roughness": 0.26,
+          "subsurface": 0.14,
+          "emission": 0.14,
+          "fresnel": 0.82,
+          "stripe_freq": 4.0,
+          "stripe_rgb": [
+            1.0,
+            0.9,
+            0.52
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.035,
+            0.02
+          ],
+          "amp_rot": [
+            0.055,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.8
+        }
+      },
+      {
+        "id": "halo_ring",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "torus",
+        "center": [
+          0.0,
+          0.6,
+          0.52
+        ],
+        "size": [
+          0.56,
+          0.045,
+          0.56
+        ],
+        "rotation": [
+          0.42,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          0.6,
+          0.42
+        ],
+        "endpoint_b": [
+          0.0,
+          0.6,
+          0.62
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.006,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.96,
+            0.8,
+            0.32
+          ],
+          "metallic": 0.92,
+          "roughness": 0.14,
+          "subsurface": 0.05,
+          "emission": 0.42,
+          "fresnel": 0.92,
+          "stripe_freq": 12.0,
+          "stripe_rgb": [
+            1.0,
+            0.92,
+            0.58
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.025,
+            0.0
+          ],
+          "amp_rot": [
+            0.12,
+            0.28,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.0
+        }
+      },
+      {
+        "id": "sun_orb",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "mandelbulb_core",
+        "center": [
+          -0.9,
+          0.88,
+          -0.72
+        ],
+        "size": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          -0.9,
+          0.78,
+          -0.72
+        ],
+        "endpoint_b": [
+          -0.9,
+          0.98,
+          -0.72
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.0,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            1.0,
+            0.86,
+            0.46
+          ],
+          "metallic": 0.32,
+          "roughness": 0.2,
+          "subsurface": 0.2,
+          "emission": 1.7,
+          "fresnel": 0.92,
+          "stripe_freq": 6.0,
+          "stripe_rgb": [
+            1.0,
+            0.96,
+            0.72
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.045,
+            0.0
+          ],
+          "amp_rot": [
+            0.055,
+            0.12,
+            0.055
+          ],
+          "freq": 1.0,
+          "phase": 0.2
+        }
+      },
+      {
+        "id": "wind_gyroid_current",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "gyroid_shell",
+        "center": [
+          0.0,
+          -0.58,
+          -0.62
+        ],
+        "size": [
+          0.58,
+          0.02,
+          0.02
+        ],
+        "rotation": [
+          0.22,
+          0.0,
+          0.0
+        ],
+        "endpoint_a": [
+          0.0,
+          -0.58,
+          -0.62
+        ],
+        "endpoint_b": [
+          0.0,
+          -0.48,
+          -0.62
+        ],
+        "symmetry_x": false,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.012,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 6.8,
+        "gyroid_thickness": 0.055,
+        "material": {
+          "rgb": [
+            0.22,
+            0.52,
+            0.78
+          ],
+          "metallic": 0.38,
+          "roughness": 0.28,
+          "subsurface": 0.32,
+          "emission": 0.28,
+          "fresnel": 0.88,
+          "stripe_freq": 8.0,
+          "stripe_rgb": [
+            0.42,
+            0.82,
+            1.0
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.055,
+            0.0
+          ],
+          "amp_rot": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.45
+        }
+      },
+      {
+        "id": "spray_coral_left",
+        "op": "union",
+        "blend_k": 0.1,
+        "primitive": "floraform_ribbon",
+        "center": [
+          1.0,
+          -0.76,
+          -0.38
+        ],
+        "size": [
+          0.24,
+          0.2,
+          0.18
+        ],
+        "rotation": [
+          0.0,
+          0.32,
+          -0.22
+        ],
+        "endpoint_a": [
+          1.0,
+          -0.9,
+          -0.38
+        ],
+        "endpoint_b": [
+          1.0,
+          -0.58,
+          -0.38
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.22,
+        "bend": 0.32,
+        "fbm_amp": 0.032,
+        "fbm_freq": 5.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.16,
+            0.58,
+            0.64
+          ],
+          "metallic": 0.22,
+          "roughness": 0.34,
+          "subsurface": 0.62,
+          "emission": 0.32,
+          "fresnel": 0.82,
+          "stripe_freq": 9.0,
+          "stripe_rgb": [
+            0.32,
+            0.92,
+            0.98
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.045,
+            0.0
+          ],
+          "amp_rot": [
+            0.055,
+            0.0,
+            0.085
+          ],
+          "freq": 2.0,
+          "phase": 0.3
+        }
+      },
+      {
+        "id": "kleinian_vault_left",
+        "op": "union",
+        "blend_k": 0.12,
+        "primitive": "kleinian_fold",
+        "center": [
+          0.82,
+          -0.42,
+          0.32
+        ],
+        "size": [
+          0.18,
+          0.32,
+          0.18
+        ],
+        "rotation": [
+          0.0,
+          0.4,
+          0.0
+        ],
+        "endpoint_a": [
+          0.82,
+          -0.74,
+          0.32
+        ],
+        "endpoint_b": [
+          0.82,
+          -0.1,
+          0.32
+        ],
+        "symmetry_x": true,
+        "symmetry_radial": 0,
+        "repeat_period": null,
+        "twist": 0.0,
+        "bend": 0.0,
+        "fbm_amp": 0.02,
+        "fbm_freq": 4.0,
+        "gyroid_scale": 0.0,
+        "gyroid_thickness": 0.05,
+        "material": {
+          "rgb": [
+            0.28,
+            0.36,
+            0.42
+          ],
+          "metallic": 0.72,
+          "roughness": 0.24,
+          "subsurface": 0.1,
+          "emission": 0.12,
+          "fresnel": 0.86,
+          "stripe_freq": 10.0,
+          "stripe_rgb": [
+            0.5,
+            0.68,
+            0.78
+          ]
+        },
+        "motion": {
+          "amp_pos": [
+            0.0,
+            0.03,
+            0.0
+          ],
+          "amp_rot": [
+            0.0,
+            0.06,
+            0.0
+          ],
+          "freq": 1.0,
+          "phase": 0.55
+        }
+      }
+    ],
+    "refinement_passes": 2,
+    "visual_score": 5.5,
+    "motion_energy": 10.083
+  }
+}
