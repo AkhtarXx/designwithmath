@@ -17,7 +17,7 @@
   <em>Synthesize 100% original 2D double-exponential pixel-field paintings, parametric curves, real-time 3D SDF raymarched sculptures, minimal surfaces, PDE simulations, 4D non-Euclidean animations, and complete multi-act mathematical films — governed entirely by explicit closed-form equations.</em>
 </p>
 
-[2D Math Art & Solutions](#-original-2d-pure-math-masterpieces-with-complete-formula-solutions) •
+[2D Math Art & Solutions](#-original-2d-pure-math-masterpieces-100-closed-form-equations--computer-modern-plates) •
 [3D Raymarching](#-ultra-hd-3d-sphere-traced-raymarching-minimal-surfaces--non-euclidean-art) •
 [Live Cinema](#-live-animated-mathematical-cinema) •
 [8 Master Paradigms](#-stage-1--8-master-mathematical-paradigms) •
@@ -29,11 +29,11 @@
 
 ---
 
-## 🎨 Original 2D Pure-Math Masterpieces (With Complete Formula Solutions)
+## 🎨 Original 2D Pure-Math Masterpieces (100% Closed-Form Equations & Computer Modern Plates)
 
-> **Zero diffusion models. Zero neural pixel generators. Zero 3D polygon meshes.**  
-> Every artwork in this gallery is a **100% original creation** authored directly in explicit closed-form mathematics using double-exponential Gompertz survival kernels, analytic Porter–Duff front-to-back occlusion, golden-angle phyllotaxis, dihedral group folding, and multi-octave trigonometric fields.  
-> Every single poster below is **100% reproducible offline** (zero API keys) via `python backend/original_2d_artworks.py`.
+> **Zero diffusion models. Zero neural pixel generators. Zero 3D polygon meshes. Zero programming shortcuts.**  
+> Every artwork in this gallery is a **100% original creation** evaluated strictly from a **self-contained pure closed-form equation system $H_v(x,y)$ ($v \in \{0,1,2\}$)** — using exact **Lagrange quadratic RGB channel polynomials**, **Gompertz survival kernels** $e^{-e^{\kappa g}}$, **analytic Porter–Duff occlusion** $\prod(1-J_u)$, **$\arccos(\cos(\cdot))$ dihedral/spiral folding**, **$C^\infty$ log-sum-exp smooth unions**, and **elementary positive parts** $\frac{z+|z|}{2}$ (with **zero `clip`, zero `max/min`, zero `mod`, zero `if/else` color branches, and zero hardcoded coordinate tables**).  
+> Each archival white plate below prints the complete self-contained equation system in genuine **Computer Modern TeX typography** and is **100% reproducible offline** (zero API keys) via `python backend/original_2d_artworks.py`.
 
 ### 1. Sacred Lotus & Golden Koi Pond at Dawn
 
@@ -48,7 +48,7 @@
 
 #### Pixel Domain, Quantization & Core Operators
 
-For pixel coordinates $(m, n) \in \{1,\dots,1160\}\times\{1,\dots,696\}$, define normalized domain coordinates $(x, y) \in [-1.66, 1.66]\times[-1, 1]$ and the shared $C^\infty$ Gompertz survival mask $\Phi_\kappa$ and Hamid-paradigm channel quantizer $F$:
+For pixel coordinates $(m, n) \in \{1,\dots,1400\}\times\{1,\dots,840\}$, define rational domain coordinates $(x, y) = \left(\frac{m-700}{420},\, \frac{421-n}{420}\right)$ and the shared $C^\infty$ Gompertz survival mask $\Phi_\kappa$ and channel quantizer $F$:
 
 $$F(z) = \left\lfloor 255\, e^{-e^{-1000z}}\,|z|^{e^{-e^{1000(z-1)}}} \right\rfloor, \qquad \Phi_\kappa(g) = \exp\!\big(-\exp(\kappa\, g)\big), \qquad \operatorname{RGB}(m,n) = \big(F(H_0),\, F(H_1),\, F(H_2)\big)$$
 
@@ -159,10 +159,10 @@ With offset polar coordinates $(n_x, n_y) = (x+0.08,\, y+0.04)$, $r = \sqrt{n_x^
 
 1. **Outer Equiangular Shell Silhouette & Continuous Whorl Coordinate:**
    $$r_{\text{outer}}(\theta) = a\exp\!\left(b\left(\theta + 2\pi\left\lfloor\frac{\phi_{\max} - \theta}{2\pi}\right\rfloor\right)\right), \qquad w(x,y) = \frac{\ln(r/a)/b - \theta}{2\pi}, \qquad \{w\} = w - \lfloor w \rfloor$$
-2. **Logarithmic Spiral Wall, 15 Curved Concave Septa/Turn & Central Siphuncle Tube:**
-   $$W_{\text{spiral}} = \Phi_{140}\!\big(2\pi b\min(\{w\}, 1-\{w\}) - 0.065\big), \qquad \xi(x,y) = 15\left(\frac{\theta}{2\pi} + \lfloor w \rfloor\right) - 0.58\sin(\pi\{w\})$$
-   $$W_{\text{sept}} = \Phi_{110}\!\big(|\xi - \operatorname{round}(\xi)| - 0.042\big)\cdot I_{\text{ch}}, \qquad W_{\text{siph}} = \Phi_{130}\!\big(|\{w\} - 0.48| - 0.035\big)\cdot I_{\text{ch}}$$
-   where $I_{\text{ch}} = \Phi_{30}\big(2\pi w + \theta - (\phi_{\max} - 2.3)\big)$ cleanly separates the pearlescent concave chambered interior ($\text{bowl} = \sin(\pi\{w\})\sin(\pi\min(2|\xi-\operatorname{round}(\xi)|, 1))$) from the open burnt-sienna living chamber flame bands $\Phi_{12}(\sin(24\theta + 6.5\{w\} + 1.6 E) - 0.12)$.
+2. **Logarithmic Spiral Wall, 15 Curved Concave Septa/Turn & Central Siphuncle Tube (Zero `min`, Zero `round`):**
+   $$W_{\text{spiral}} = \Phi_{140}\!\Big(b\arccos(\cos 2\pi w) - \frac{13}{200}\Big), \qquad \xi(x,y) = 15\left(\frac{\theta}{2\pi} + \lfloor w \rfloor\right) - \frac{29}{50}\sin(\pi\{w\}), \qquad \delta_\xi = \frac{1}{2\pi}\arccos(\cos 2\pi\xi)$$
+   $$W_{\text{sept}} = \Phi_{110}\!\big(\delta_\xi - \tfrac{21}{500}\big)\cdot I_{\text{ch}}, \qquad W_{\text{siph}} = \Phi_{130}\!\big(|\{w\} - \tfrac{12}{25}| - \tfrac{7}{200}\big)\cdot I_{\text{ch}}, \qquad W = 1 - (1 - W_{\text{spiral}})(1 - W_{\text{sept}})(1 - \tfrac{17}{20}W_{\text{siph}})$$
+   where $I_{\text{ch}} = \Phi_{30}\big(2\pi w + \theta - \frac{89}{5}\big)$ separates the pearlescent concave chambered interior ($\Psi = \sin(\pi\{w\})\sin(2\pi\delta_\xi)$) from the open burnt-sienna living chamber flame bands $\Phi_{12}(\sin(24\theta + \frac{13}{2}\{w\} + \frac{8}{5} E) - \frac{3}{25})$, all colored by exact Lagrange quadratic polynomials in $v \in \{0,1,2\}$.
 3. **Dual-Lattice Ocean Floor Caustics:**
    $$C_{\text{ocean}}(x,y) = \left(\tfrac{1}{2}+\tfrac{1}{2}\cos(11x + 2.8E)\cos(10y - 2.6E)\right)^4 + \text{rotated 6th-power harmonic}$$
 
@@ -189,9 +189,9 @@ With offset polar coordinates $(n_x, n_y) = (x+0.08,\, y+0.04)$, $r = \sqrt{n_x^
 <details>
 <summary>📐 <b>Formula Solution 5 — Gothic Cathedral Stained-Glass Rose Window</b></summary>
 
-1. **$D_{12}$ Dihedral Group Polar Folding:**
-   With $r = \sqrt{x^2+y^2}$ and $\theta = \operatorname{atan2}(y,x)$, fold the entire plane into a single fundamental wedge $\theta_{12} \in [-\frac{\pi}{12}, \frac{\pi}{12}]$:
-   $$\theta_{12} = \left((\theta + \pi) \bmod \frac{\pi}{6}\right) - \frac{\pi}{12}, \qquad u = r\cos\theta_{12}, \qquad v = r\sin\theta_{12}$$
+1. **$D_{12}$ & $D_{24}$ Exact Dihedral Polar Folding (Zero `mod`, Zero `floor`):**
+   With $r = \sqrt{x^2+y^2}$ and $\theta = \operatorname{atan2}(y,x)$, fold the entire plane analytically via inverse cosine:
+   $$\alpha_{12} = \frac{1}{12}\arccos(\cos 12\theta) \in \left[0, \frac{\pi}{12}\right], \qquad \alpha_{24} = \frac{1}{24}\arccos(\cos 24\theta), \qquad u = r\cos\alpha_{12}, \qquad w = r\sin\alpha_{12}, \qquad \Omega(\theta) = e^{-e^{80\sin(6\theta)}}$$
 2. **Leaded Ironwork Tracery — Rings, Mullions, Lancet Arches & 4-Lobe Quatrefoils:**
    - 5 concentric leaded rings $R_k \in \{0.16, 0.38, 0.66, 0.88, 0.93\}$: $\max_k \Phi_{180}(|r - R_k| - 0.013)$
    - 12 primary + 24 secondary radial mullions: $\Phi_{190}(r\sin|\theta_{12}| - 0.012)\,\Phi_{120}(0.14 - r)$
@@ -215,8 +215,8 @@ With offset polar coordinates $(n_x, n_y) = (x+0.08,\, y+0.04)$, $r = \sqrt{n_x^
      $$g_{\text{fw}} = \left(\frac{|f_x|}{0.66}\right)^2 + \left(\frac{|f_y|}{0.34\,\tau(f_x)}\right)^{1.9} - 1 - 0.025\sin\!\big(14\operatorname{atan2}(f_y,f_x)\big)\Phi_{15}(0.45 - f_x)$$
    - Scalloped hindwing rotated $-0.46\text{ rad}$ around $(0.42, -0.28)$ into $(h_x, h_y)$:
      $$g_{\text{hw}} = \left(\frac{h_x}{0.46}\right)^2 + \left(\frac{h_y}{0.34}\right)^2 - \Big(1 + 0.045\cos\!\big(10\operatorname{atan2}(h_y,h_x)\big)\Big)$$
-   - Smooth polynomial union ($k = 0.08$):
-     $$h = \operatorname{clip}\!\left(\tfrac{1}{2} + \frac{g_{\text{hw}} - g_{\text{fw}}}{2k},\, 0,\, 1\right), \qquad g_{\text{wing}} = (1-h)g_{\text{hw}} + h\,g_{\text{fw}} - k\,h(1-h), \qquad W = \Phi_{160}(g_{\text{wing}})$$
+   - Exact $C^\infty$ log-sum-exp smooth union (zero `clip`, zero `min`):
+     $$g_{\text{wing}}(x,y) = -\frac{1}{22}\ln\!\Big(e^{-22 g_{\text{fw}}} + e^{-22 g_{\text{hw}}}\Big), \qquad W = \Phi_{160}(g_{\text{wing}})$$
 2. **Trigonometric Monarch Wing Venation, Velvet Border & Double-Row Pearl Spots:**
    With wing-root polar coordinates $r_w = \sqrt{(s_x-0.08)^2+(y-0.02)^2}$ and $\theta_w = \operatorname{atan2}(y-0.02, s_x-0.08)$:
    $$V_{\text{vein}} = \Phi_{120}\!\Big(\big|\sin\big(8.5\theta_w + 0.55\sin(3.2r_w) + 0.18E\big)\big| - 0.095\Big), \qquad V_{\text{cell}} = \Phi_{140}\!\Big(\big|r_w - (0.48 + 0.08\cos 2\theta_w)\big| - 0.018\Big)$$
